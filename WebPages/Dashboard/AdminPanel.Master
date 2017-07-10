@@ -1,0 +1,31 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="AdminPanel.master.cs" Inherits="WebPages.Dashboard.AdminPanel" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="Styles/AdminPanelStyles.css" rel="stylesheet" />
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div id="left">
+            <div id="header">
+            </div>
+            <div id="content">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+            <div id="footer">
+            </div>
+        </div>
+
+        <div id="right">
+            <div id="menu">
+                asdaaaaaaaaaaaaaaaaaaaaa
+                <p>hi how u doing?!</p>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
