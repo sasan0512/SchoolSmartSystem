@@ -101,7 +101,9 @@
       <DependentUpon>OnlineSchoolEDM.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Repository\StudentRepository.cs" />
+    <Compile Include="Repository\vLessonGroupRepository.cs" />
+    <Compile Include="Repository\vPresenceRepositorycs.cs" />
+    <Compile Include="Repository\vStudentRepository.cs" />
     <Compile Include="Student.cs">
       <DependentUpon>OnlineSchoolEDM.tt</DependentUpon>
     </Compile>
@@ -158,7 +160,12 @@
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{01d597c2-c02f-4685-aa57-a4097c1f7341}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

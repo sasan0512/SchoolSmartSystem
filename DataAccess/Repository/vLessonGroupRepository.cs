@@ -6,30 +6,29 @@ using System.Threading.Tasks;
 
 namespace DataAccess.Repository
 {
-    public class StudentRepository
+    public class vLessonGroupRepository
     {
         private Connection conn;
 
-        public StudentRepository()
+        public vLessonGroupRepository()
         {
             conn = new Connection();
         }
-        public Student FindByNatinalCode(int nationalCode)
-        {
-            Student result = null;
 
-            using (SchoolDBEntities sd  = conn.GetContext())
+        public vLessonGroup FindByClass(string clas)
+        {
+            vLessonGroup result = null;
+
+            using (SchoolDBEntities sd = conn.GetContext())
             {
                 //--  SELECT * FROM vPhoneList WHERE PhobeID = phoneID
 
-                result = (from r in sd.Students
-                          where r.NationalCode == nationalCode
+                result = (from r in sd.vLessonGroups
+                          where r.Class == clas
                           select r).FirstOrDefault();
             }
 
             return result;
         }
-        
     }
-
 }
