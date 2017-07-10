@@ -101,9 +101,13 @@
       <DependentUpon>OnlineSchoolEDM.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repository\AnjomanOlyaRepository.cs" />
+    <Compile Include="Repository\vJTamrinRepository.cs" />
     <Compile Include="Repository\vLessonGroupRepository.cs" />
+    <Compile Include="Repository\vNomratRepository.cs" />
     <Compile Include="Repository\vPresenceRepositorycs.cs" />
     <Compile Include="Repository\vStudentRepository.cs" />
+    <Compile Include="Repository\vTamrinRepository.cs" />
     <Compile Include="Student.cs">
       <DependentUpon>OnlineSchoolEDM.tt</DependentUpon>
     </Compile>

@@ -5,15 +5,13 @@ using System.Text;
 using System.Threading.Tasks;
 using Common;
 using System.Data;
-
 namespace DataAccess.Repository
 {
-    public class vPresenceRepositorycs
+    public class vJTamrinRepository
     {
-
         private Connection conn;
 
-        public vPresenceRepositorycs()
+        public vJTamrinRepository()
         {
             conn = new Connection();
         }

@@ -8,12 +8,11 @@ using System.Data;
 
 namespace DataAccess.Repository
 {
-    public class vPresenceRepositorycs
+    public class vNomratRepository
     {
-
         private Connection conn;
 
-        public vPresenceRepositorycs()
+        public vNomratRepository()
         {
             conn = new Connection();
         }
