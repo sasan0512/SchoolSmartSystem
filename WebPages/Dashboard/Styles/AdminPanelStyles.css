@@ -1,53 +1,29 @@
 ﻿body {
-    margin: 0;
 }
 
-#header {
-    width: 100%;
-    height: 50px;
-    background-color: cadetblue;
+.center-margin {
+    margin: 0 auto;
+    float: none !important;
 }
 
-#content {
-    width: 100%;
-    min-height: 1500px;
-    background-color: coral;
-}
-
-#footer {
-    width: 100%;
-    height: 500px;
-    background-color: bisque;
-}
-
-#right {
+.profilePic {
+    width: 35%;
     float: right;
-    width: 20%;
-    height: 100%;
-    position: fixed;
-    right: 0;
-    margin: 0;
-    padding: 0;
-    top: 0;
+    padding: 28px 15px 10px;
+    color: white;
 }
 
-#left {
-    float: left;
-    width: 80%;
+.main_menu span.fa {
+    float: left !important;
+    text-align: center;
+    margin-top: 5px;
+    font-size: 10px;
+    min-width: inherit;
+    color: #C4CFDA;
 }
 
-#menu {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    background-color: khaki;
-    margin: 0;
-    padding: 0;
-    top: 0;
-}
-
-p {
-    text-align: right;
-    margin: 0;
-    padding: 0;
+.nav {
+    padding-right: 0;
+    margin-bottom: 0;
+    list-style: none;
 }

@@ -66,8 +66,33 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Dashboard\fonts\fontawesome-webfont.svg" />
+    <Content Include="Dashboard\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Dashboard\Images\3408.jpg" />
+    <Content Include="Dashboard\JavaScript\bootstrap.min.js" />
+    <Content Include="Dashboard\JavaScript\custom.min.js" />
+    <Content Include="Dashboard\JavaScript\fastclick.js" />
+    <Content Include="Dashboard\JavaScript\jquery.mCustomScrollbar.concat.min.js" />
+    <Content Include="Dashboard\JavaScript\jquery.min.js" />
+    <Content Include="Dashboard\JavaScript\nprogress.js" />
+    <Content Include="Dashboard\Styles\bootstrap.css" />
+    <Content Include="Dashboard\Styles\custom.css" />
+    <Content Include="Dashboard\Styles\font-awesome.min.css" />
+    <Content Include="Dashboard\Styles\jquery.mCustomScrollbar.min.css" />
+    <Content Include="Dashboard\Styles\nprogress.css" />
     <Content Include="packages.config" />
     <Content Include="Dashboard\AdminPanel.Master" />
+    <Content Include="Dashboard\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Dashboard\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Dashboard\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Dashboard\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="Dashboard\JavaScript\jquery.min.map" />
+    <Content Include="Dashboard\fonts\fontawesome-webfont.eot" />
+    <Content Include="Dashboard\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Dashboard\fonts\fontawesome-webfont.woff" />
+    <Content Include="Dashboard\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Dashboard\fonts\FontAwesome.otf" />
+    <Content Include="Dashboard\Styles\font-awesome.css.map" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -122,9 +147,7 @@
       <Name>DataAccess</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Dashboard\Images\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
