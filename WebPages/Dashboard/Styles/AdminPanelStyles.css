@@ -1,29 +1,49 @@
-﻿body {
+﻿*, #col-left {
+    margin: 0;
+    padding: 0;
 }
 
-.center-margin {
-    margin: 0 auto;
-    float: none !important;
+body {
+    background-color: cadetblue;
 }
 
-.profilePic {
-    width: 35%;
-    float: right;
-    padding: 28px 15px 10px;
-    color: white;
+.top-nav {
+    padding: 0 !important;
+    display: block;
 }
 
-.main_menu span.fa {
-    float: left !important;
-    text-align: center;
-    margin-top: 5px;
-    font-size: 10px;
-    min-width: inherit;
-    color: #C4CFDA;
+.nav_menu {
+    float: left;
+    background: #EDEDED;
+    border-bottom: 1px solid #D9DEE4;
+    margin-bottom: 10px;
+    height: 57px;
+    background-color: antiquewhite;
+    width: 100%;
 }
 
-.nav {
-    padding-right: 0;
-    margin-bottom: 0;
-    list-style: none;
+.left-col {
+    z-index: 2;
+    margin-right: 230px;
+    min-height: 500px;
+}
+
+.content {
+}
+
+.right-col {
+    width: 230px;
+    padding: 0;
+    position: fixed;
+    right: 0;
+    background: #2A3F54;
+    height: 100%;
+    top: 0px;
+}
+
+.nav-title {
+    width: 230px;
+    float: left;
+    border-radius: 0;
+    height: 57px;
 }
