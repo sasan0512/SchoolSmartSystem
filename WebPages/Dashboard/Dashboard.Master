@@ -87,6 +87,7 @@
                                 <li><a href="#" class="a-properties sub-menu">
                                     <span class="glyphicon glyphicon-record icon-style" aria-hidden="true"></span>
                                     <asp:Literal runat="server" Text="<%$ Resources:Dashboard,virayesh_mshakhasat%>" />
+
                                     <span class="fa-stack fa-lg pull-left"></span>
                                 </a></li>
                             </ul>
