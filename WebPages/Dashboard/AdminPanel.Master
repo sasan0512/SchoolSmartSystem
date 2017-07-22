@@ -34,7 +34,7 @@
                         <div class="clearfix"></div>
 
                         <!-- menu profile quick info -->
-                        <div class="profile clearfix">
+                        <div class="profile ">
                             <div class="profile_pic" style="float: right">
                                 <img src="Images/3408.jpg" alt="..." class="img-responsive img-circle profile_img center-margin" />
                             </div>

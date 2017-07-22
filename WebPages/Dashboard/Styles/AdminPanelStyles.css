@@ -1,49 +1,24 @@
-﻿*, #col-left {
+﻿@font-face {
+    font-family: 'IRANSansWeb_Light';
+    src: url('../fonts/IRANSansWeb_Light.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'IRANSansWeb_Medium';
+    src: url('../fonts/IRANSansWeb_Medium.woff') format('woff');
+}
+
+@font-face {
+    font-family: '';
+    src: url('../fonts/IRANSansWeb_UltraLight.woff') format('woff');
+}
+
+*, #col-left, .container-fluid {
     margin: 0;
     padding: 0;
 }
 
 body {
-    background-color: cadetblue;
-}
-
-.top-nav {
-    padding: 0 !important;
-    display: block;
-}
-
-.nav_menu {
-    float: left;
-    background: #EDEDED;
-    border-bottom: 1px solid #D9DEE4;
-    margin-bottom: 10px;
-    height: 57px;
-    background-color: antiquewhite;
-    width: 100%;
-}
-
-.left-col {
-    z-index: 2;
-    margin-right: 230px;
-    min-height: 500px;
-}
-
-.content {
-}
-
-.right-col {
-    width: 230px;
-    padding: 0;
-    position: fixed;
-    right: 0;
-    background: #2A3F54;
-    height: 100%;
-    top: 0px;
-}
-
-.nav-title {
-    width: 230px;
-    float: left;
-    border-radius: 0;
-    height: 57px;
+    background-color: #adadad;
+    font-family: IRANSansWeb_Light,Tahoma,sans-serif;
 }

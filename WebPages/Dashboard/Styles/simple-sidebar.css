@@ -1,10 +1,4 @@
-﻿/*!
- * Start Bootstrap - Simple Sidebar HTML Template (http://startbootstrap.com)
- * Code licensed under the Apache License v2.0.
- * For details, see http://www.apache.org/licenses/LICENSE-2.0.
- */
-
-/* Toggle Styles */
+﻿/* Toggle Styles */
 #toggleButton, #bs-example-navbar-collapse-1 {
     float: right;
 }
@@ -25,12 +19,14 @@
 
 #sidebar-wrapper {
     z-index: 1000;
-    position: absolute;
+    /*position: absolute;*/
+    position: fixed;
+    top: 57px;
     right: 250px;
     width: 0;
     height: 100%;
     margin-right: -250px;
-    overflow-y: auto;
+    overflow-y: hidden;
     background: #000;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
@@ -43,8 +39,9 @@
 }
 
 #page-content-wrapper {
+    padding: 20px;
+    top: 57px;
     position: absolute;
-    padding: 15px;
     width: 100%;
     overflow-x: hidden;
 }
@@ -66,7 +63,7 @@
 
 .sidebar-nav {
     position: absolute;
-    top: 0;
+    top: 100px;
     width: 250px;
     margin: 0;
     padding: 0;
@@ -122,7 +119,7 @@
     }
 
     .fixed-brand {
-        width: 250px;
+        width: 182px;
     }
 
     #wrapper.toggled {
@@ -146,7 +143,7 @@
         }
 
     #page-content-wrapper {
-        padding: 20px;
+        margin: 10px;
         position: relative;
         -webkit-transition: all 0.5s ease;
         -moz-transition: all 0.5s ease;
@@ -170,4 +167,54 @@
         transition: all 0.5s ease;
         width: auto;
     }
+}
+
+.textRight {
+    float: right;
+}
+
+.a-properties {
+    text-align: right;
+    padding-right: 10px;
+}
+
+.icon-style {
+    float: right;
+    top: 11px;
+}
+
+.sub-active {
+    background-color: #000028;
+    border-right: 4px solid red;
+}
+
+.sid-profile {
+    height: 100px;
+    color: #fff;
+}
+
+    .sid-profile:hover {
+        visibility: visible;
+    }
+
+.profile-pic {
+    width: 25%;
+    float: right;
+}
+
+img-profile {
+    width: 70%;
+    background: #fff;
+    margin-left: 15%;
+    z-index: 1000;
+    position: inherit;
+    margin-top: 20px;
+    border: 1px solid rgba(52, 73, 94, 0.44);
+    padding: 4px;
+}
+
+.profile-info {
+    position: relative;
+    top: 10px;
+    margin-right: 72px;
 }

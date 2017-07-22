@@ -59,5 +59,104 @@ namespace Resources {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to آموزش.
+        /// </summary>
+        internal static string amoozesh {
+            get {
+                return ResourceManager.GetString("amoozesh", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to برنامه هفتگی.
+        /// </summary>
+        internal static string barname_haftegi {
+            get {
+                return ResourceManager.GetString("barname_haftegi", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to خانه                                           .
+        /// </summary>
+        internal static string Home {
+            get {
+                return ResourceManager.GetString("Home", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to تکالیف.
+        /// </summary>
+        internal static string homework {
+            get {
+                return ResourceManager.GetString("homework", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to کارنامه ماهانه.
+        /// </summary>
+        internal static string karname_mahane {
+            get {
+                return ResourceManager.GetString("karname_mahane", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to کارنامه سالانه.
+        /// </summary>
+        internal static string karname_salane {
+            get {
+                return ResourceManager.GetString("karname_salane", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to کارتابل.
+        /// </summary>
+        internal static string kartabl {
+            get {
+                return ResourceManager.GetString("kartabl", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to اخبار.
+        /// </summary>
+        internal static string news {
+            get {
+                return ResourceManager.GetString("news", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to نمودار پیشرفت تحصیلی.
+        /// </summary>
+        internal static string nmoodar {
+            get {
+                return ResourceManager.GetString("nmoodar", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to نمرات.
+        /// </summary>
+        internal static string nomarat {
+            get {
+                return ResourceManager.GetString("nomarat", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ویرایش مشخصات.
+        /// </summary>
+        internal static string virayesh_mshakhasat {
+            get {
+                return ResourceManager.GetString("virayesh_mshakhasat", resourceCulture);
+            }
+        }
     }
 }

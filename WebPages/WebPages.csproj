@@ -75,6 +75,7 @@
     <Content Include="Dashboard\JavaScript\jquery-1.11.2.min.js" />
     <Content Include="Dashboard\JavaScript\jquery.min.js" />
     <Content Include="Dashboard\JavaScript\sidebar_menu.js" />
+    <Content Include="Dashboard\News.aspx" />
     <Content Include="Dashboard\Styles\bootstrap.css" />
     <Content Include="Dashboard\Styles\simple-sidebar.css" />
     <Content Include="packages.config" />
@@ -90,6 +91,9 @@
     <Content Include="Dashboard\fonts\FontAwesome.otf" />
     <Content Include="Dashboard\Dashboard.Master" />
     <Content Include="Dashboard\font-awesome-4.3.0\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Dashboard\fonts\IRANSansWeb_Light.woff" />
+    <Content Include="Dashboard\fonts\IRANSansWeb_Medium.woff" />
+    <Content Include="Dashboard\fonts\IRANSansWeb_UltraLight.woff" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -129,6 +133,13 @@
     </Compile>
     <Compile Include="Dashboard\Dashboard.Master.designer.cs">
       <DependentUpon>Dashboard.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard\News.aspx.cs">
+      <DependentUpon>News.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\News.aspx.designer.cs">
+      <DependentUpon>News.aspx</DependentUpon>
     </Compile>
     <Compile Include="Dashboard\Panel.aspx.cs">
       <DependentUpon>Panel.aspx</DependentUpon>
