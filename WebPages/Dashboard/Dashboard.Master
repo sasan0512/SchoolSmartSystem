@@ -26,7 +26,7 @@
                 </div>
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav">
-                        <li class="active">
+                        <li>
                             <button class="navbar-toggle collapse in" data-toggle="collapse" id="menu-toggle-2"><span class="glyphicon glyphicon-th-large" aria-hidden="true"></span></button>
                         </li>
                     </ul>
@@ -63,7 +63,7 @@
                             <ul class="nav-pills nav-stacked" style="list-style-type: none; display: block;">
                                 <li class="sub-active">
 
-                                    <a href="~/News.aspx" class="a-properties sub-menu">
+                                    <a href="http://localhost:4911/Dashboard/News.aspx" class="a-properties sub-menu">
                                         <span class="glyphicon glyphicon-record icon-style" aria-hidden="true"></span>
                                         <asp:Literal runat="server" Text="<%$ Resources:Dashboard,news%>" />
                                         <span class="fa-stack fa-lg pull-left"></span>

@@ -1,4 +1,5 @@
-﻿$("#menu-toggle").click(function (e) {
+﻿var CURRENT_URL = window.location.href, $SIDEBAR_MENU = $('#menu');
+$("#menu-toggle").click(function (e) {
     e.preventDefault();
     $("#wrapper").toggleClass("toggled");
 
@@ -48,4 +49,14 @@ function initMenu() {
       }
       );
 }
-$(document).ready(function () { initMenu(); });
+$(document).ready(function () {
+    initMenu();
+    $(".active").removeClass("active");
+    $(".sub-active").removeClass("sub-active");
+    $('#menu a[href="' + CURRENT_URL + '"]').parent().addClass('sub-active').parent().slideDown(400).parent().addClass('active');
+});
+$(document).load(function () {
+    $('#menu a[href="' + CURRENT_URL + '"]').parent().addClass('sub-active');
+    console.log(CURRENT_URL);
+})
+//--------------------------------------------------------------
