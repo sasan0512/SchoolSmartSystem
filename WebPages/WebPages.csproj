@@ -78,6 +78,7 @@
     <Content Include="Dashboard\News.aspx" />
     <Content Include="Dashboard\Password.aspx" />
     <Content Include="Dashboard\ProfilePicture.aspx" />
+    <Content Include="Dashboard\Scores.aspx" />
     <Content Include="Dashboard\Styles\bootstrap.css" />
     <Content Include="Dashboard\Styles\simple-sidebar.css" />
     <Content Include="packages.config" />
@@ -147,6 +148,13 @@
     </Compile>
     <Compile Include="Dashboard\ProfilePicture.aspx.designer.cs">
       <DependentUpon>ProfilePicture.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard\Scores.aspx.cs">
+      <DependentUpon>Scores.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\Scores.aspx.designer.cs">
+      <DependentUpon>Scores.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>

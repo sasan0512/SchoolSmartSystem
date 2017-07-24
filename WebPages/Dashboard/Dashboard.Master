@@ -58,7 +58,7 @@
                             <a href="#" class="a-properties">
                                 <asp:Literal runat="server" Text="<%$ Resources:Dashboard,news%>" /><span class="fa-stack fa-lg pull-left">
 
-                                    <i class="fa fa-home fa-stack-1x " style="float: left;"></i></span>
+                                    <i class="fa fa-bell fa-stack-1x " style="float: left;"></i></span>
                             </a>
                             <ul class="nav-pills nav-stacked" style="list-style-type: none; display: block;">
                                 <li class="sub-active">
@@ -73,9 +73,9 @@
                         </li>
                         <li>
                             <a href="#" class="a-properties">
-                                <asp:Literal runat="server" Text="<%$ Resources:Dashboard,Home%>" /><span class="fa-stack fa-lg pull-left">
+                                <asp:Literal runat="server" Text="<%$ Resources:Dashboard,kartabl%>" /><span class="fa-stack fa-lg pull-left">
 
-                                    <i class="fa fa-home fa-stack-1x " style="float: left;"></i></span>
+                                    <i class="fa fa-user fa-stack-1x " style="float: left;"></i></span>
                             </a>
                             <ul class="nav-pills nav-stacked" style="list-style-type: none;">
                                 <li><a href="http://localhost:4911/Dashboard/Dashboard.aspx" class="a-properties sub-menu">
@@ -86,7 +86,7 @@
                                 </li>
                                 <li><a href="http://localhost:4911/Dashboard/ProfilePicture.aspx" class="a-properties sub-menu">
                                     <span class="glyphicon glyphicon-record icon-style" aria-hidden="true"></span>
-                                    <asp:Literal runat="server" Text="<%$ Resources:Dashboard,virayesh_mshakhasat%>" />
+                                    <asp:Literal runat="server" Text="<%$ Resources:Dashboard,change_picture%>" />
 
                                     <span class="fa-stack fa-lg pull-left"></span>
                                 </a></li>
@@ -100,14 +100,14 @@
                         </li>
                         <li class="">
                             <a href="#" class="a-properties ">
-                                <asp:Literal runat="server" Text="<%$ Resources:Dashboard,Home%>" /><span class="fa-stack fa-lg pull-left">
+                                <asp:Literal runat="server" Text="<%$ Resources:Dashboard,amoozesh%>" /><span class="fa-stack fa-lg pull-left">
 
                                     <i class="fa fa-dashboard fa-stack-1x " style="float: left;"></i></span>
                             </a>
                             <ul class="nav-pills nav-stacked" style="list-style-type: none;">
-                                <li><a href="#" class="a-properties sub-menu">
+                                <li><a href="http://localhost:4911/Dashboard/Scores.aspx"" class="a-properties sub-menu">
                                     <span class="glyphicon glyphicon-record icon-style" aria-hidden="true"></span>
-                                    <asp:Literal runat="server" Text="<%$ Resources:Dashboard,kartabl%>" />
+                                    <asp:Literal runat="server" Text="<%$ Resources:Dashboard,karname_salane%>" />
                                     <span class="fa-stack fa-lg pull-left"></span>
                                 </a>
                                 </li>

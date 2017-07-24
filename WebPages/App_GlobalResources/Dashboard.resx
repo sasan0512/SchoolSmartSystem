@@ -136,7 +136,7 @@
     <value>کارنامه سالانه</value>
   </data>
   <data name="kartabl" xml:space="preserve">
-    <value>کارتابل</value>
+    <value>کارتابل شخصی</value>
   </data>
   <data name="nmoodar" xml:space="preserve">
     <value>نمودار پیشرفت تحصیلی</value>
@@ -158,6 +158,9 @@
   </data>
   <data name="change_password" xml:space="preserve">
     <value>تغییر رمز عبور</value>
+  </data>
+  <data name="change_picture" xml:space="preserve">
+    <value>تغییر عکس پروفایل</value>
   </data>
   <data name="codemelli" xml:space="preserve">
     <value>کد ملی</value>

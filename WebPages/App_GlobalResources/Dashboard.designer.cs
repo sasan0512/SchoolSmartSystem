@@ -106,6 +106,15 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to تغییر عکس پروفایل.
+        /// </summary>
+        internal static string change_picture {
+            get {
+                return ResourceManager.GetString("change_picture", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to کد ملی.
         /// </summary>
         internal static string codemelli {
@@ -205,7 +214,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to کارتابل.
+        ///   Looks up a localized string similar to کارتابل شخصی.
         /// </summary>
         internal static string kartabl {
             get {

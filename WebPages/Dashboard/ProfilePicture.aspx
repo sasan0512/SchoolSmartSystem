@@ -17,7 +17,8 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="c-title">
 
-        <h4>تغییر عکس پروفایل</h4>
+        <h4>
+            <asp:Literal runat="server" Text="<%$ Resources:Dashboard,change_picture%>" /></h4>
     </div>
     <div class="c-content">
         <%--<div id="demo-form2" class="form-horizontal form-label-right">--%>
