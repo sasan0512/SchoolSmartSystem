@@ -111,7 +111,7 @@
                     <div class="row">
                         <div class="col-xs-12 col-sm-4 col-sm-push-8 text-right">
                             <span id="ContentPlaceHolder1_lbl_FatherName" class="control-label formLabel" style="font-size: 100%; font-weight: bold;">
-                                <asp:Literal runat="server" Text="<%$ Resources:Dashboard,maghta%>" /></span>
+                                <asp:Literal runat="server" Text="<%$ Resources:Dashboard,father_name%>" /></span>
                         </div>
 
                         <div class="col-xs-12 col-sm-8 col-sm-pull-4 text-right">
@@ -123,7 +123,8 @@
                 <div class="form-group">
                     <div class="row">
                         <div class="col-xs-12 col-sm-4 col-sm-push-8 text-right">
-                            <span id="ContentPlaceHolder1_lbl_BirthYear" class="control-label formLabel" style="font-size: 100%; font-weight: bold;">سال تولد</span>
+                            <span id="ContentPlaceHolder1_lbl_BirthYear" class="control-label formLabel" style="font-size: 100%; font-weight: bold;">
+                                <asp:Literal runat="server" Text="<%$ Resources:Dashboard,birthday%>" /></span>
                         </div>
 
                         <div class="col-xs-12 col-sm-8 col-sm-pull-4 text-right">
@@ -135,7 +136,8 @@
                 <div class="form-group">
                     <div class="row">
                         <div class="col-xs-12 col-sm-4 col-sm-push-8 text-right">
-                            <span id="ContentPlaceHolder1_lbl_IDNumber" class="control-label formLabel" style="font-size: 100%; font-weight: bold;">شماره شناسنامه</span>
+                            <span id="ContentPlaceHolder1_lbl_IDNumber" class="control-label formLabel" style="font-size: 100%; font-weight: bold;">
+                                <asp:Literal runat="server" Text="<%$ Resources:Dashboard,codemelli%>" /></span>
                         </div>
 
                         <div class="col-xs-12 col-sm-8 col-sm-pull-4 text-right">
@@ -147,7 +149,8 @@
                 <div class="form-group">
                     <div class="row">
                         <div class="col-xs-12 col-sm-4 col-sm-push-8 text-right">
-                            <span id="ContentPlaceHolder1_lbl_FixTel" class="control-label formLabel" style="font-size: 100%; font-weight: bold;">تلفن ثابت محل سکونت دائم</span>
+                            <span id="ContentPlaceHolder1_lbl_FixTel" class="control-label formLabel" style="font-size: 100%; font-weight: bold;">
+                                <asp:Literal runat="server" Text="<%$ Resources:Dashboard,telephon_sabet%>" /></span>
                         </div>
 
                         <div class="col-xs-12 col-sm-8 col-sm-pull-4 text-right">
@@ -159,7 +162,8 @@
                 <div class="form-group">
                     <div class="row">
                         <div class="col-xs-12 col-sm-4 col-sm-push-8 text-right">
-                            <span id="ContentPlaceHolder1_lbl_Mobile" class="control-label formLabel" style="font-size: 100%; font-weight: bold;">موبایل</span>
+                            <span id="ContentPlaceHolder1_lbl_Mobile" class="control-label formLabel" style="font-size: 100%; font-weight: bold;">
+                                <asp:Literal runat="server" Text="<%$ Resources:Dashboard,mobile%>" /></span>
                         </div>
 
                         <div class="col-xs-12 col-sm-8 col-sm-pull-4 text-right">
@@ -171,7 +175,8 @@
                 <div class="form-group">
                     <div class="row">
                         <div class="col-xs-12 col-sm-4 col-sm-push-8 text-right">
-                            <span id="ContentPlaceHolder1_lbl_ZipCode" class="control-label formLabel" style="font-size: 100%; font-weight: bold;">کدپستی محل سکونت دائم</span>
+                            <span id="ContentPlaceHolder1_lbl_ZipCode" class="control-label formLabel" style="font-size: 100%; font-weight: bold;">
+                                <asp:Literal runat="server" Text="<%$ Resources:Dashboard,postal_code%>" /></span>
                         </div>
 
                         <div class="col-xs-12 col-sm-8 col-sm-pull-4 text-right">
@@ -183,7 +188,8 @@
                 <div class="form-group">
                     <div class="row">
                         <div class="col-xs-12 col-sm-4 col-sm-push-8 text-right">
-                            <span id="ContentPlaceHolder1_lbl_Email" class="control-label formLabel" style="font-size: 100%; font-weight: bold;">پست الکترونیک</span>
+                            <span id="ContentPlaceHolder1_lbl_Email" class="control-label formLabel" style="font-size: 100%; font-weight: bold;">
+                                <asp:Literal runat="server" Text="<%$ Resources:Dashboard,email%>" /></span>
                         </div>
 
                         <div class="col-xs-12 col-sm-8 col-sm-pull-4 text-right">
@@ -195,7 +201,8 @@
                 <div class="form-group">
                     <div class="row">
                         <div class="col-xs-12 col-sm-4 col-sm-push-8 text-right">
-                            <span id="ContentPlaceHolder1_lbl_Address" class="control-label formLabel" style="font-size: 100%; font-weight: bold;">آدرس</span>
+                            <span id="ContentPlaceHolder1_lbl_Address" class="control-label formLabel" style="font-size: 100%; font-weight: bold;">
+                                <asp:Literal runat="server" Text="<%$ Resources:Dashboard,address%>" /></span>
                         </div>
 
                         <div class="col-xs-12 col-sm-8 col-sm-pull-4 text-right">
@@ -208,8 +215,9 @@
             <div class="ln_solid"></div>
             <div class="form-group">
                 <div class="col-xs-12 text-right">
-                    <a class="btn btn-auto-v btn-auto-h btn-primary goRight" href="/Registration/EditProfile">ویرایش
-                                        <span class="fa fa-edit"></span>
+                    <a class="btn btn-auto-v btn-auto-h btn-primary goRight" href="/Registration/EditProfile">
+                        <asp:Literal runat="server" Text="<%$ Resources:Dashboard,edite%>" />
+                        <span class="fa fa-edit"></span>
                     </a>
                 </div>
             </div>

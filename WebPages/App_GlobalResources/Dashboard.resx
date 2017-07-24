@@ -156,17 +156,29 @@
   <data name="birthday" xml:space="preserve">
     <value>سال تولد</value>
   </data>
+  <data name="change_password" xml:space="preserve">
+    <value>تغییر رمز عبور</value>
+  </data>
   <data name="codemelli" xml:space="preserve">
     <value>کد ملی</value>
   </data>
+  <data name="c_password" xml:space="preserve">
+    <value>رمز عبور فعلی</value>
+  </data>
   <data name="edite" xml:space="preserve">
     <value>ویرایش</value>
+  </data>
+  <data name="email" xml:space="preserve">
+    <value>پست الکترونیک</value>
   </data>
   <data name="family" xml:space="preserve">
     <value>نام خانوادگی</value>
   </data>
   <data name="father_name" xml:space="preserve">
     <value>نام پدر</value>
+  </data>
+  <data name="img_file" xml:space="preserve">
+    <value>فایل تصویر</value>
   </data>
   <data name="maghta" xml:space="preserve">
     <value>مقطع تحصیلی</value>
@@ -177,16 +189,31 @@
   <data name="name" xml:space="preserve">
     <value>نام</value>
   </data>
+  <data name="n_password" xml:space="preserve">
+    <value>رمز عبور جدید</value>
+  </data>
+  <data name="password" xml:space="preserve">
+    <value>رمز عبور</value>
+  </data>
   <data name="postal_code" xml:space="preserve">
     <value>کد پستی محل سکونت</value>
   </data>
   <data name="reshte_tahsili" xml:space="preserve">
     <value>رشته تحصیلی</value>
   </data>
+  <data name="sabt" xml:space="preserve">
+    <value>ثبت</value>
+  </data>
+  <data name="select_img" xml:space="preserve">
+    <value>انتخاب تصویر</value>
+  </data>
   <data name="shomare_daneshamozi" xml:space="preserve">
     <value>شماره دانش آموزی</value>
   </data>
   <data name="telephon_sabet" xml:space="preserve">
     <value>تلفن ثابت محل سکونت</value>
+  </data>
+  <data name="tn_password" xml:space="preserve">
+    <value>تکرار رمز عبور جدید</value>
   </data>
 </root>

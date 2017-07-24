@@ -97,6 +97,15 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to تغییر رمز عبور.
+        /// </summary>
+        internal static string change_password {
+            get {
+                return ResourceManager.GetString("change_password", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to کد ملی.
         /// </summary>
         internal static string codemelli {
@@ -106,11 +115,29 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to رمز عبور فعلی.
+        /// </summary>
+        internal static string c_password {
+            get {
+                return ResourceManager.GetString("c_password", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to ویرایش.
         /// </summary>
         internal static string edite {
             get {
                 return ResourceManager.GetString("edite", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to پست الکترونیک.
+        /// </summary>
+        internal static string email {
+            get {
+                return ResourceManager.GetString("email", resourceCulture);
             }
         }
         
@@ -147,6 +174,15 @@ namespace Resources {
         internal static string homework {
             get {
                 return ResourceManager.GetString("homework", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to فایل تصویر.
+        /// </summary>
+        internal static string img_file {
+            get {
+                return ResourceManager.GetString("img_file", resourceCulture);
             }
         }
         
@@ -232,6 +268,24 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to رمز عبور جدید.
+        /// </summary>
+        internal static string n_password {
+            get {
+                return ResourceManager.GetString("n_password", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to رمز عبور.
+        /// </summary>
+        internal static string password {
+            get {
+                return ResourceManager.GetString("password", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to کد پستی محل سکونت.
         /// </summary>
         internal static string postal_code {
@@ -250,6 +304,24 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to ثبت.
+        /// </summary>
+        internal static string sabt {
+            get {
+                return ResourceManager.GetString("sabt", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to انتخاب تصویر.
+        /// </summary>
+        internal static string select_img {
+            get {
+                return ResourceManager.GetString("select_img", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to شماره دانش آموزی.
         /// </summary>
         internal static string shomare_daneshamozi {
@@ -264,6 +336,15 @@ namespace Resources {
         internal static string telephon_sabet {
             get {
                 return ResourceManager.GetString("telephon_sabet", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to تکرار رمز عبور جدید.
+        /// </summary>
+        internal static string tn_password {
+            get {
+                return ResourceManager.GetString("tn_password", resourceCulture);
             }
         }
         

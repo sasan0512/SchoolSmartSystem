@@ -76,6 +76,7 @@
     <Content Include="Dashboard\JavaScript\jquery.min.js" />
     <Content Include="Dashboard\JavaScript\sidebar_menu.js" />
     <Content Include="Dashboard\News.aspx" />
+    <Content Include="Dashboard\Password.aspx" />
     <Content Include="Dashboard\ProfilePicture.aspx" />
     <Content Include="Dashboard\Styles\bootstrap.css" />
     <Content Include="Dashboard\Styles\simple-sidebar.css" />
@@ -132,6 +133,13 @@
     </Compile>
     <Compile Include="Dashboard\News.aspx.designer.cs">
       <DependentUpon>News.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard\Password.aspx.cs">
+      <DependentUpon>Password.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\Password.aspx.designer.cs">
+      <DependentUpon>Password.aspx</DependentUpon>
     </Compile>
     <Compile Include="Dashboard\ProfilePicture.aspx.cs">
       <DependentUpon>ProfilePicture.aspx</DependentUpon>

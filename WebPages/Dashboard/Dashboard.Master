@@ -90,6 +90,12 @@
 
                                     <span class="fa-stack fa-lg pull-left"></span>
                                 </a></li>
+                                <li><a href="http://localhost:4911/Dashboard/Password.aspx" class="a-properties sub-menu">
+                                    <span class="glyphicon glyphicon-record icon-style" aria-hidden="true"></span>
+                                    <asp:Literal runat="server" Text="<%$ Resources:Dashboard,change_password%>" />
+
+                                    <span class="fa-stack fa-lg pull-left"></span>
+                                </a></li>
                             </ul>
                         </li>
                         <li class="">
