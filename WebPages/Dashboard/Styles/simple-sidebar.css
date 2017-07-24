@@ -4,7 +4,8 @@
 }
 
 #wrapper {
-    padding-right: 0;
+    /*padding-right: 0;*/
+    padding: 0 10px;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
@@ -63,7 +64,6 @@
 
 .sidebar-nav {
     position: absolute;
-    top: 100px;
     width: 250px;
     margin: 0;
     padding: 0;

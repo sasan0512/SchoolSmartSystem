@@ -11,7 +11,7 @@ namespace WebPages.Dashboard
 {
 
 
-    public partial class Panel
+    public partial class ProfilePicture
     {
     }
 }

@@ -61,6 +61,15 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to آدرس محل سکونت.
+        /// </summary>
+        internal static string address {
+            get {
+                return ResourceManager.GetString("address", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to آموزش.
         /// </summary>
         internal static string amoozesh {
@@ -75,6 +84,51 @@ namespace Resources {
         internal static string barname_haftegi {
             get {
                 return ResourceManager.GetString("barname_haftegi", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to سال تولد.
+        /// </summary>
+        internal static string birthday {
+            get {
+                return ResourceManager.GetString("birthday", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to کد ملی.
+        /// </summary>
+        internal static string codemelli {
+            get {
+                return ResourceManager.GetString("codemelli", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ویرایش.
+        /// </summary>
+        internal static string edite {
+            get {
+                return ResourceManager.GetString("edite", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to نام خانوادگی.
+        /// </summary>
+        internal static string family {
+            get {
+                return ResourceManager.GetString("family", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to نام پدر.
+        /// </summary>
+        internal static string father_name {
+            get {
+                return ResourceManager.GetString("father_name", resourceCulture);
             }
         }
         
@@ -124,6 +178,33 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to مقطع تحصیلی.
+        /// </summary>
+        internal static string maghta {
+            get {
+                return ResourceManager.GetString("maghta", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to موبایل.
+        /// </summary>
+        internal static string mobile {
+            get {
+                return ResourceManager.GetString("mobile", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to نام.
+        /// </summary>
+        internal static string name {
+            get {
+                return ResourceManager.GetString("name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to اخبار.
         /// </summary>
         internal static string news {
@@ -147,6 +228,42 @@ namespace Resources {
         internal static string nomarat {
             get {
                 return ResourceManager.GetString("nomarat", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to کد پستی محل سکونت.
+        /// </summary>
+        internal static string postal_code {
+            get {
+                return ResourceManager.GetString("postal_code", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to رشته تحصیلی.
+        /// </summary>
+        internal static string reshte_tahsili {
+            get {
+                return ResourceManager.GetString("reshte_tahsili", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to شماره دانش آموزی.
+        /// </summary>
+        internal static string shomare_daneshamozi {
+            get {
+                return ResourceManager.GetString("shomare_daneshamozi", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to تلفن ثابت محل سکونت.
+        /// </summary>
+        internal static string telephon_sabet {
+            get {
+                return ResourceManager.GetString("telephon_sabet", resourceCulture);
             }
         }
         

@@ -76,10 +76,10 @@
     <Content Include="Dashboard\JavaScript\jquery.min.js" />
     <Content Include="Dashboard\JavaScript\sidebar_menu.js" />
     <Content Include="Dashboard\News.aspx" />
+    <Content Include="Dashboard\ProfilePicture.aspx" />
     <Content Include="Dashboard\Styles\bootstrap.css" />
     <Content Include="Dashboard\Styles\simple-sidebar.css" />
     <Content Include="packages.config" />
-    <Content Include="Dashboard\AdminPanel.Master" />
     <Content Include="Dashboard\fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Dashboard\fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="Dashboard\fonts\glyphicons-halflings-regular.woff" />
@@ -102,7 +102,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Dashboard\Panel.aspx" />
     <Content Include="Dashboard\Styles\AdminPanelStyles.css" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
@@ -112,13 +111,6 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Dashboard.resx</DependentUpon>
-    </Compile>
-    <Compile Include="Dashboard\AdminPanel.Master.cs">
-      <DependentUpon>AdminPanel.Master</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Dashboard\AdminPanel.Master.designer.cs">
-      <DependentUpon>AdminPanel.Master</DependentUpon>
     </Compile>
     <Compile Include="Dashboard\Dashboard.aspx.cs">
       <DependentUpon>Dashboard.aspx</DependentUpon>
@@ -141,12 +133,12 @@
     <Compile Include="Dashboard\News.aspx.designer.cs">
       <DependentUpon>News.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Dashboard\Panel.aspx.cs">
-      <DependentUpon>Panel.aspx</DependentUpon>
+    <Compile Include="Dashboard\ProfilePicture.aspx.cs">
+      <DependentUpon>ProfilePicture.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Dashboard\Panel.aspx.designer.cs">
-      <DependentUpon>Panel.aspx</DependentUpon>
+    <Compile Include="Dashboard\ProfilePicture.aspx.designer.cs">
+      <DependentUpon>ProfilePicture.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>

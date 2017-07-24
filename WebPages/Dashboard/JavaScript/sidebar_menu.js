@@ -5,11 +5,13 @@ $("#menu-toggle").click(function (e) {
 
     $('.sid-profile').toggleClass('my-hide')
 });
+
 $("#menu-toggle-2").click(function (e) {
     e.preventDefault();
     $("#wrapper").toggleClass("toggled-2");
     $('#menu ul').hide();
     $('.sid-profile').slideToggle();
+    $('#menu a[href="' + CURRENT_URL + '"]').parent().addClass('sub-active').parent().slideDown().parent().addClass('active');
 });
 
 $("#menu a").click(function (e) {
@@ -53,10 +55,7 @@ $(document).ready(function () {
     initMenu();
     $(".active").removeClass("active");
     $(".sub-active").removeClass("sub-active");
-    $('#menu a[href="' + CURRENT_URL + '"]').parent().addClass('sub-active').parent().slideDown(400).parent().addClass('active');
+    $('#menu a[href="' + CURRENT_URL + '"]').parent().addClass('sub-active').parent().slideDown().parent().addClass('active');
 });
-$(document).load(function () {
-    $('#menu a[href="' + CURRENT_URL + '"]').parent().addClass('sub-active');
-    console.log(CURRENT_URL);
-})
+
 //--------------------------------------------------------------

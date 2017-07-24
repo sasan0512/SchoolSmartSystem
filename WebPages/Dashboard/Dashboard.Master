@@ -13,7 +13,7 @@
     <form id="form1" runat="server">
         <div class="container-fluid">
 
-            <nav class="navbar navbar-default navbar-fixed-top no-margin ">
+            <nav class="navbar navbar-default navbar-fixed-top no-margin " style="background-color: #EDEDED;">
                 <!-- bs-example-navbar-collapse-1 -->
 
                 <div class="navbar-header fixed-brand" style="margin-right: 20px;">
@@ -84,7 +84,7 @@
                                     <span class="fa-stack fa-lg pull-left"></span>
                                 </a>
                                 </li>
-                                <li><a href="#" class="a-properties sub-menu">
+                                <li><a href="http://localhost:4911/Dashboard/ProfilePicture.aspx" class="a-properties sub-menu">
                                     <span class="glyphicon glyphicon-record icon-style" aria-hidden="true"></span>
                                     <asp:Literal runat="server" Text="<%$ Resources:Dashboard,virayesh_mshakhasat%>" />
 
@@ -117,12 +117,13 @@
 
                 <!-- /#sidebar-wrapper -->
                 <!-- Page Content -->
-
-                <div id="page-content-wrapper">
-                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-                    </asp:ContentPlaceHolder>
-                    <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
-                    </asp:ContentPlaceHolder>
+                <div style="margin-right: 10px">
+                    <div id="page-content-wrapper" class="ContentPlaceHolderStyle">
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        </asp:ContentPlaceHolder>
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </div>
                 </div>
             </div>
 

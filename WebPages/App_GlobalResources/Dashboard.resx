@@ -150,4 +150,43 @@
   <data name="news" xml:space="preserve">
     <value>اخبار</value>
   </data>
+  <data name="address" xml:space="preserve">
+    <value>آدرس محل سکونت</value>
+  </data>
+  <data name="birthday" xml:space="preserve">
+    <value>سال تولد</value>
+  </data>
+  <data name="codemelli" xml:space="preserve">
+    <value>کد ملی</value>
+  </data>
+  <data name="edite" xml:space="preserve">
+    <value>ویرایش</value>
+  </data>
+  <data name="family" xml:space="preserve">
+    <value>نام خانوادگی</value>
+  </data>
+  <data name="father_name" xml:space="preserve">
+    <value>نام پدر</value>
+  </data>
+  <data name="maghta" xml:space="preserve">
+    <value>مقطع تحصیلی</value>
+  </data>
+  <data name="mobile" xml:space="preserve">
+    <value>موبایل</value>
+  </data>
+  <data name="name" xml:space="preserve">
+    <value>نام</value>
+  </data>
+  <data name="postal_code" xml:space="preserve">
+    <value>کد پستی محل سکونت</value>
+  </data>
+  <data name="reshte_tahsili" xml:space="preserve">
+    <value>رشته تحصیلی</value>
+  </data>
+  <data name="shomare_daneshamozi" xml:space="preserve">
+    <value>شماره دانش آموزی</value>
+  </data>
+  <data name="telephon_sabet" xml:space="preserve">
+    <value>تلفن ثابت محل سکونت</value>
+  </data>
 </root>

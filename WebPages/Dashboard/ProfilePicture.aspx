@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Dashboard/Dashboard.Master" AutoEventWireup="true" CodeBehind="News.aspx.cs" Inherits="WebPages.Dashboard.News" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Dashboard/Dashboard.Master" AutoEventWireup="true" CodeBehind="ProfilePicture.aspx.cs" Inherits="WebPages.Dashboard.ProfilePicture" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <meta charset="utf-8" />
@@ -8,17 +8,19 @@
     <meta name="author" content="" />
     <link href="Styles/bootstrap.css" rel="stylesheet" />
     <link href="Styles/simple-sidebar.css" rel="stylesheet" />
+    <link href="Styles/AdminPanelStyles.css" rel="stylesheet" />
 
     <%--  <link href="css/bootstrap.min.css" rel="stylesheet" />
     <link href="css/simple-sidebar.css" rel="stylesheet" />--%>
     <link href="font-awesome-4.3.0/css/font-awesome.min.css" rel="stylesheet" />
-    <link href="Styles/AdminPanelStyles.css" rel="stylesheet" />
 </asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="c-title">
 
-        <h4>اخبار آموزشی</h4>
+        <h3>تغییر عکس پروفایل</h3>
     </div>
     <div class="extra" style="height: 100px">
     </div>
+</asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
 </asp:Content>
