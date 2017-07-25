@@ -219,4 +219,16 @@
   <data name="tn_password" xml:space="preserve">
     <value>تکرار رمز عبور جدید</value>
   </data>
+  <data name="homework_history" xml:space="preserve">
+    <value>تاریخچه تکالیف</value>
+  </data>
+  <data name="payments" xml:space="preserve">
+    <value>پرداخت ها</value>
+  </data>
+  <data name="salary" xml:space="preserve">
+    <value>شهریه</value>
+  </data>
+  <data name="salary_payment" xml:space="preserve">
+    <value>پرداخت شهریه</value>
+  </data>
 </root>

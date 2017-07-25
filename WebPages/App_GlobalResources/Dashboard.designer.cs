@@ -187,6 +187,15 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to تاریخچه تکالیف.
+        /// </summary>
+        internal static string homework_history {
+            get {
+                return ResourceManager.GetString("homework_history", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to فایل تصویر.
         /// </summary>
         internal static string img_file {
@@ -295,6 +304,15 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to پرداخت ها.
+        /// </summary>
+        internal static string payments {
+            get {
+                return ResourceManager.GetString("payments", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to کد پستی محل سکونت.
         /// </summary>
         internal static string postal_code {
@@ -318,6 +336,24 @@ namespace Resources {
         internal static string sabt {
             get {
                 return ResourceManager.GetString("sabt", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to شهریه.
+        /// </summary>
+        internal static string salary {
+            get {
+                return ResourceManager.GetString("salary", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to پرداخت شهریه.
+        /// </summary>
+        internal static string salary_payment {
+            get {
+                return ResourceManager.GetString("salary_payment", resourceCulture);
             }
         }
         

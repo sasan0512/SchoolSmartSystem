@@ -53,7 +53,7 @@
                     </div>
                     <%--  -----------------------sidebar---------------------------------------------------%>
                     <ul class="sidebar-nav nav-pills nav-stacked" id="menu">
-                        <li class="active">
+                        <li>
 
                             <a href="#" class="a-properties">
                                 <asp:Literal runat="server" Text="<%$ Resources:Dashboard,news%>" /><span class="fa-stack fa-lg pull-left">
@@ -61,7 +61,7 @@
                                     <i class="fa fa-bell fa-stack-1x " style="float: left;"></i></span>
                             </a>
                             <ul class="nav-pills nav-stacked" style="list-style-type: none; display: block;">
-                                <li class="sub-active">
+                                <li>
 
                                     <a href="http://localhost:4911/Dashboard/News.aspx" class="a-properties sub-menu">
                                         <span class="glyphicon glyphicon-record icon-style" aria-hidden="true"></span>
@@ -137,13 +137,36 @@
                             <a href="#" class="a-properties ">
                                 <asp:Literal runat="server" Text="<%$ Resources:Dashboard,homework%>" /><span class="fa-stack fa-lg pull-left">
 
-                                    <i class="glyphicon glyphicon-education fa-stack-1x " style="float: left;"></i></span>
+                                    <i class="fa fa-file-text-o fa-stack-1x " style="float: left;"></i></span>
                             </a>
                             <ul class="nav-pills nav-stacked" style="list-style-type: none;">
-                                <
                                 <li><a href="http://localhost:4911/Dashboard/HomeWork.aspx" class="a-properties sub-menu">
                                     <span class="glyphicon glyphicon-record icon-style" aria-hidden="true"></span>
                                     <asp:Literal runat="server" Text="<%$ Resources:Dashboard,homework%>" />
+                                    <span class="fa-stack fa-lg pull-left"></span>
+                                </a></li>
+                                <li><a href="http://localhost:4911/Dashboard/HomeWorkHistory.aspx" class="a-properties sub-menu">
+                                    <span class="glyphicon glyphicon-record icon-style" aria-hidden="true"></span>
+                                    <asp:Literal runat="server" Text="<%$ Resources:Dashboard,homework_history%>" />
+                                    <span class="fa-stack fa-lg pull-left"></span>
+                                </a></li>
+                            </ul>
+                        </li>
+                        <li class="">
+                            <a href="#" class="a-properties ">
+                                <asp:Literal runat="server" Text="<%$ Resources:Dashboard,salary%>" /><span class="fa-stack fa-lg pull-left">
+
+                                    <i class="fa fa-money fa-stack-1x " style="float: left;"></i></span>
+                            </a>
+                            <ul class="nav-pills nav-stacked" style="list-style-type: none;">
+                                <li><a href="http://localhost:4911/Dashboard/Payments.aspx" class="a-properties sub-menu">
+                                    <span class="glyphicon glyphicon-record icon-style" aria-hidden="true"></span>
+                                    <asp:Literal runat="server" Text="<%$ Resources:Dashboard,payments%>" />
+                                    <span class="fa-stack fa-lg pull-left"></span>
+                                </a></li>
+                                <li><a href="http://localhost:4911/Dashboard/SalaryPayment.aspx" class="a-properties sub-menu">
+                                    <span class="glyphicon glyphicon-record icon-style" aria-hidden="true"></span>
+                                    <asp:Literal runat="server" Text="<%$ Resources:Dashboard,salary_payment%>" />
                                     <span class="fa-stack fa-lg pull-left"></span>
                                 </a></li>
                             </ul>
