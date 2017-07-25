@@ -66,21 +66,26 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Dashboard\Charts.aspx" />
+    <Content Include="Dashboard\ClassScores.aspx" />
     <Content Include="Dashboard\Dashboard.aspx" />
     <Content Include="Dashboard\font-awesome-4.3.0\css\font-awesome.min.css" />
     <Content Include="Dashboard\fonts\fontawesome-webfont.svg" />
     <Content Include="Dashboard\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Dashboard\HomeWork.aspx" />
     <Content Include="Dashboard\Images\3408.jpg" />
     <Content Include="Dashboard\JavaScript\bootstrap.min.js" />
     <Content Include="Dashboard\JavaScript\jquery-1.11.2.min.js" />
     <Content Include="Dashboard\JavaScript\jquery.min.js" />
     <Content Include="Dashboard\JavaScript\sidebar_menu.js" />
+    <Content Include="Dashboard\MScores.aspx" />
     <Content Include="Dashboard\News.aspx" />
     <Content Include="Dashboard\Password.aspx" />
     <Content Include="Dashboard\ProfilePicture.aspx" />
     <Content Include="Dashboard\Scores.aspx" />
     <Content Include="Dashboard\Styles\bootstrap.css" />
     <Content Include="Dashboard\Styles\simple-sidebar.css" />
+    <Content Include="Dashboard\WeeklySchedule.aspx" />
     <Content Include="packages.config" />
     <Content Include="Dashboard\fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Dashboard\fonts\glyphicons-halflings-regular.ttf" />
@@ -114,6 +119,20 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Dashboard.resx</DependentUpon>
     </Compile>
+    <Compile Include="Dashboard\Charts.aspx.cs">
+      <DependentUpon>Charts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\Charts.aspx.designer.cs">
+      <DependentUpon>Charts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard\ClassScores.aspx.cs">
+      <DependentUpon>ClassScores.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\ClassScores.aspx.designer.cs">
+      <DependentUpon>ClassScores.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Dashboard\Dashboard.aspx.cs">
       <DependentUpon>Dashboard.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -127,6 +146,20 @@
     </Compile>
     <Compile Include="Dashboard\Dashboard.Master.designer.cs">
       <DependentUpon>Dashboard.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard\HomeWork.aspx.cs">
+      <DependentUpon>HomeWork.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\HomeWork.aspx.designer.cs">
+      <DependentUpon>HomeWork.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard\MScores.aspx.cs">
+      <DependentUpon>MScores.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\MScores.aspx.designer.cs">
+      <DependentUpon>MScores.aspx</DependentUpon>
     </Compile>
     <Compile Include="Dashboard\News.aspx.cs">
       <DependentUpon>News.aspx</DependentUpon>
@@ -155,6 +188,13 @@
     </Compile>
     <Compile Include="Dashboard\Scores.aspx.designer.cs">
       <DependentUpon>Scores.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard\WeeklySchedule.aspx.cs">
+      <DependentUpon>WeeklySchedule.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\WeeklySchedule.aspx.designer.cs">
+      <DependentUpon>WeeklySchedule.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>

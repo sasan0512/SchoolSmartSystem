@@ -102,18 +102,48 @@
                             <a href="#" class="a-properties ">
                                 <asp:Literal runat="server" Text="<%$ Resources:Dashboard,amoozesh%>" /><span class="fa-stack fa-lg pull-left">
 
-                                    <i class="fa fa-dashboard fa-stack-1x " style="float: left;"></i></span>
+                                    <i class="glyphicon glyphicon-education fa-stack-1x " style="float: left;"></i></span>
                             </a>
                             <ul class="nav-pills nav-stacked" style="list-style-type: none;">
-                                <li><a href="http://localhost:4911/Dashboard/Scores.aspx"" class="a-properties sub-menu">
+                                <li><a href="http://localhost:4911/Dashboard/Scores.aspx" class="a-properties sub-menu">
                                     <span class="glyphicon glyphicon-record icon-style" aria-hidden="true"></span>
                                     <asp:Literal runat="server" Text="<%$ Resources:Dashboard,karname_salane%>" />
                                     <span class="fa-stack fa-lg pull-left"></span>
                                 </a>
                                 </li>
-                                <li><a href="#" class="a-properties sub-menu">
+                                <li><a href="http://localhost:4911/Dashboard/MScores.aspx" class="a-properties sub-menu">
                                     <span class="glyphicon glyphicon-record icon-style" aria-hidden="true"></span>
-                                    <asp:Literal runat="server" Text="<%$ Resources:Dashboard,virayesh_mshakhasat%>" />
+                                    <asp:Literal runat="server" Text="<%$ Resources:Dashboard,karname_mahane%>" />
+                                    <span class="fa-stack fa-lg pull-left"></span>
+                                </a></li>
+                                <li><a href="http://localhost:4911/Dashboard/Charts.aspx" class="a-properties sub-menu">
+                                    <span class="glyphicon glyphicon-record icon-style" aria-hidden="true"></span>
+                                    <asp:Literal runat="server" Text="<%$ Resources:Dashboard,nmoodar%>" />
+                                    <span class="fa-stack fa-lg pull-left"></span>
+                                </a></li>
+                                <li><a href="http://localhost:4911/Dashboard/ClassScores.aspx" class="a-properties sub-menu">
+                                    <span class="glyphicon glyphicon-record icon-style" aria-hidden="true"></span>
+                                    <asp:Literal runat="server" Text="<%$ Resources:Dashboard,nomarat%>" />
+                                    <span class="fa-stack fa-lg pull-left"></span>
+                                </a></li>
+                                <li><a href="http://localhost:4911/Dashboard/WeeklySchedule.aspx" class="a-properties sub-menu">
+                                    <span class="glyphicon glyphicon-record icon-style" aria-hidden="true"></span>
+                                    <asp:Literal runat="server" Text="<%$ Resources:Dashboard,barname_haftegi%>" />
+                                    <span class="fa-stack fa-lg pull-left"></span>
+                                </a></li>
+                            </ul>
+                        </li>
+                        <li class="">
+                            <a href="#" class="a-properties ">
+                                <asp:Literal runat="server" Text="<%$ Resources:Dashboard,homework%>" /><span class="fa-stack fa-lg pull-left">
+
+                                    <i class="glyphicon glyphicon-education fa-stack-1x " style="float: left;"></i></span>
+                            </a>
+                            <ul class="nav-pills nav-stacked" style="list-style-type: none;">
+                                <
+                                <li><a href="http://localhost:4911/Dashboard/HomeWork.aspx" class="a-properties sub-menu">
+                                    <span class="glyphicon glyphicon-record icon-style" aria-hidden="true"></span>
+                                    <asp:Literal runat="server" Text="<%$ Resources:Dashboard,homework%>" />
                                     <span class="fa-stack fa-lg pull-left"></span>
                                 </a></li>
                             </ul>
