@@ -31,9 +31,24 @@ body {
     width: 100%;
 }
 
-    .c-title h4 {
-        float: right;
-    }
+.c-panel {
+    position: relative;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px 17px;
+    display: inline-block;
+    background: #fff;
+    border: 1px solid #E6E9ED;
+    -webkit-column-break-inside: avoid;
+    -moz-column-break-inside: avoid;
+    column-break-inside: avoid;
+    opacity: 1;
+    transition: all .2s ease;
+}
+
+.c-title h4 {
+    float: right;
+}
 
 .extra {
     width: 100%;
@@ -66,4 +81,17 @@ body {
     background-color: #ffffff;
     height: 1px;
     margin: 20px 0;
+}
+
+.editor-wrapper {
+    min-height: 250px;
+    background-color: #fff;
+    border-collapse: separate;
+    border: 1px solid #ccc;
+    padding: 4px;
+    box-sizing: content-box;
+    box-shadow: rgba(0,0,0,.07451) 0 1px 1px 0 inset;
+    overflow: scroll;
+    outline: 0;
+    border-radius: 3px;
 }

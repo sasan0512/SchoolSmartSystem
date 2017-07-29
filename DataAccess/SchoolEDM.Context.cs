@@ -35,9 +35,11 @@ namespace DataAccess
         public DbSet<Mother> Mothers { get; set; }
         public DbSet<Nomarat> Nomarats { get; set; }
         public DbSet<Ozviat> Ozviats { get; set; }
+        public DbSet<PaymentHistory> PaymentHistories { get; set; }
         public DbSet<Presence> Presences { get; set; }
+        public DbSet<Salary> Salaries { get; set; }
         public DbSet<Student> Students { get; set; }
-        public DbSet<sysdiagram> sysdiagrams { get; set; }
+        public DbSet<StuRegister> StuRegisters { get; set; }
         public DbSet<Tamarin> Tamarins { get; set; }
         public DbSet<vJTamrin> vJTamrins { get; set; }
         public DbSet<vLessonGroup> vLessonGroups { get; set; }
@@ -45,5 +47,6 @@ namespace DataAccess
         public DbSet<vPresence> vPresences { get; set; }
         public DbSet<vStudent> vStudents { get; set; }
         public DbSet<vTamrin> vTamrins { get; set; }
+        public DbSet<vBarname> vBarnames { get; set; }
     }
 }

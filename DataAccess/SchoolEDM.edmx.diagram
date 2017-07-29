@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="7266c359d6f84af7b0c01834cb2f391d" Name="Diagram1" ZoomLevel="74">
+        <EntityTypeShape EntityType="SchoolDBModel.AnjomanOlya" Width="1.5" PointX="7.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SchoolDBModel.Father" Width="1.5" PointX="0.75" PointY="7.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SchoolDBModel.Grade" Width="1.5" PointX="0.75" PointY="14" IsExpanded="true" />
+        <EntityTypeShape EntityType="SchoolDBModel.JavabeTamrin" Width="1.5" PointX="7.5" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SchoolDBModel.Karmand" Width="1.5" PointX="0.75" PointY="16.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="SchoolDBModel.LessonGroup" Width="1.5" PointX="3" PointY="16.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="SchoolDBModel.Lesson" Width="1.5" PointX="0.75" PointY="20.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="SchoolDBModel.Mother" Width="1.5" PointX="0.75" PointY="3.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SchoolDBModel.Nomarat" Width="1.5" PointX="7.5" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SchoolDBModel.Ozviat" Width="1.5" PointX="5.25" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SchoolDBModel.PaymentHistory" Width="1.5" PointX="5.25" PointY="13" IsExpanded="true" />
+        <EntityTypeShape EntityType="SchoolDBModel.Presence" Width="1.5" PointX="7.5" PointY="13" IsExpanded="true" />
+        <EntityTypeShape EntityType="SchoolDBModel.Salary" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SchoolDBModel.Student" Width="1.5" PointX="3" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SchoolDBModel.StuRegister" Width="1.5" PointX="5.25" PointY="16.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SchoolDBModel.Tamarin" Width="1.5" PointX="5.25" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SchoolDBModel.vJTamrin" Width="1.5" PointX="9.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SchoolDBModel.vLessonGroup" Width="1.5" PointX="9.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SchoolDBModel.vNomarat" Width="1.5" PointX="9.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SchoolDBModel.vPresence" Width="1.5" PointX="11.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SchoolDBModel.vStudent" Width="1.5" PointX="11.75" PointY="5.75" IsExpanded="true" />
+        <AssociationConnector Association="SchoolDBModel.FK_Students_Fathers" ManuallyRouted="false" />
+        <AssociationConnector Association="SchoolDBModel.FK_LessonGroups_Grades" ManuallyRouted="false" />
+        <AssociationConnector Association="SchoolDBModel.FK_JavabeTamrin_Ozviat" ManuallyRouted="false" />
+        <AssociationConnector Association="SchoolDBModel.FK_JavabeTamrin_Tamarin" ManuallyRouted="false" />
+        <AssociationConnector Association="SchoolDBModel.FK_LessonGroups_Karmand" ManuallyRouted="false" />
+        <AssociationConnector Association="SchoolDBModel.FK_LessonGroups_Lessons" ManuallyRouted="false" />
+        <AssociationConnector Association="SchoolDBModel.FK_Ozviat_LessonGroups" ManuallyRouted="false" />
+        <AssociationConnector Association="SchoolDBModel.FK_Tamarin_LessonGroups" ManuallyRouted="false" />
+        <AssociationConnector Association="SchoolDBModel.FK_Students_Mothers" ManuallyRouted="false" />
+        <AssociationConnector Association="SchoolDBModel.FK_Nomarat_Ozviat" ManuallyRouted="false" />
+        <AssociationConnector Association="SchoolDBModel.FK_Ozviat_Students" ManuallyRouted="false" />
+        <AssociationConnector Association="SchoolDBModel.FK_Presence_Ozviat" ManuallyRouted="false" />
+        <AssociationConnector Association="SchoolDBModel.FK_PaymentHistory_Students" ManuallyRouted="false" />
+        <AssociationConnector Association="SchoolDBModel.FK_StuRegister_Students" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="SchoolDBModel.vTamrin" Width="1.5" PointX="14.375" PointY="0.75" />
+        <EntityTypeShape EntityType="SchoolDBModel.vBarname" Width="1.5" PointX="3.375" PointY="0.75" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

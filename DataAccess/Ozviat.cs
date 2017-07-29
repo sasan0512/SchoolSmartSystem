@@ -23,7 +23,7 @@ namespace DataAccess
     
         public int OzviatID { get; set; }
         public Nullable<int> LGID { get; set; }
-        public Nullable<long> StudentCode { get; set; }
+        public string StudentCode { get; set; }
     
         public virtual ICollection<JavabeTamrin> JavabeTamrins { get; set; }
         public virtual LessonGroup LessonGroup { get; set; }

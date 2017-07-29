@@ -61,6 +61,15 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to خبر جدید.
+        /// </summary>
+        internal static string AddNews {
+            get {
+                return ResourceManager.GetString("AddNews", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to آدرس محل سکونت.
         /// </summary>
         internal static string address {

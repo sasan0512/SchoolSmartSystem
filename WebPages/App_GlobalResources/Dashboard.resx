@@ -219,6 +219,9 @@
   <data name="tn_password" xml:space="preserve">
     <value>تکرار رمز عبور جدید</value>
   </data>
+  <data name="AddNews" xml:space="preserve">
+    <value>خبر جدید</value>
+  </data>
   <data name="homework_history" xml:space="preserve">
     <value>تاریخچه تکالیف</value>
   </data>

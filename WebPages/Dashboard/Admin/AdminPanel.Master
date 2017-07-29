@@ -1,10 +1,9 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Dashboard.master.cs" Inherits="WebPages.Dashboard.Dashboard" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="AdminPanel.master.cs" Inherits="WebPages.Dashboard.AdminPanel" %>
 
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-
     <title></title>
 
     <asp:ContentPlaceHolder ID="head" runat="server">
@@ -43,7 +42,8 @@
                 <div id="sidebar-wrapper">
                     <div class=" sid-profile">
                         <div class="profile-pic" style="float: right">
-                            <img src="Images/3408.jpg" alt="..." class="img-responsive img-circle img-profile" />
+
+                            <img src="../Images/3408.jpg" alt="..." class="img-responsive img-circle img-profile" />
                         </div>
                         <div class="profile-info" style="text-align: right">
                             <span>خوش آمدید </span>
@@ -181,8 +181,6 @@
                     <div id="page-content-wrapper" class="ContentPlaceHolderStyle">
                         <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
                         </asp:ContentPlaceHolder>
-                        <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
-                        </asp:ContentPlaceHolder>
                     </div>
                 </div>
             </div>
@@ -192,12 +190,14 @@
 
         <!-- /#wrapper -->
         <!-- jQuery -->
-        <script src="JavaScript/jquery.min.js"></script>
-        <script src="JavaScript/bootstrap.min.js"></script>
-        <script src="JavaScript/sidebar_menu.js"></script>
-        <%--<script src="js/jquery-1.11.2.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/sidebar_menu.js"></script>--%>
+        <%--<script src="https://cloud.tinymce.com/stable/tinymce.min.js"></script>
+        <script>tinymce.init({ selector: 'textarea' });</script>--%>
+        <script src="../JavaScript/jquery.min.js"></script>
+        <script src="../JavaScript/bootstrap.min.js"></script>
+        <script src="../JavaScript/custom.min.js"></script>
+        <script src="../JavaScript/sidebar_menu.js"></script>
+        <%--<script src="../JavaScript/tinymce.min.js"></script>--%>
+        <script src="../JavaScript/JavaScript.js"></script>
     </form>
 </body>
 </html>

@@ -17,7 +17,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="c-title">
         <h4>
-            <asp:literal runat="server" text="<%$ Resources:Dashboard,nmoodar%>" />
+            <asp:Literal runat="server" Text="<%$ Resources:Dashboard,nmoodar%>" />
         </h4>
     </div>
     <div class="extra" style="height: 100px">

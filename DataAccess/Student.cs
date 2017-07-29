@@ -22,14 +22,15 @@ namespace DataAccess
         public int StuID { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
-        public long StudentCode { get; set; }
+        public string StudentCode { get; set; }
         public Nullable<int> SGarde { get; set; }
         public string UserName { get; set; }
         public string Password { get; set; }
+        public Nullable<int> RemainedSalary { get; set; }
         public Nullable<int> FatherID { get; set; }
         public Nullable<int> MotherID { get; set; }
-        public Nullable<long> NationalCode { get; set; }
-        public Nullable<long> IdentityCode { get; set; }
+        public string NationalCode { get; set; }
+        public string IdentityCode { get; set; }
         public string BirthDate { get; set; }
         public string BirthLocation { get; set; }
         public string Address { get; set; }
@@ -49,5 +50,7 @@ namespace DataAccess
         public virtual Father Father { get; set; }
         public virtual Mother Mother { get; set; }
         public virtual ICollection<Ozviat> Ozviats { get; set; }
+        public virtual PaymentHistory PaymentHistory { get; set; }
+        public virtual StuRegister StuRegister { get; set; }
     }
 }

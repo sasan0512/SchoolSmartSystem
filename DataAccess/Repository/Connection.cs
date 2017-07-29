@@ -4,14 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DataAccess
+namespace DataAccess.Repository
 {
-    class Connection
+    internal class Connection
     {
         public SchoolDBEntities GetContext()
         {
-            SchoolDBEntities sd = new SchoolDBEntities();
-            return sd;
+            SchoolDBEntities wt = new SchoolDBEntities();
+            return wt;
         }
     }
 }
