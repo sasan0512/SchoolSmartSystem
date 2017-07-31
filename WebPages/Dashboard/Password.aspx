@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Dashboard/Dashboard.Master" AutoEventWireup="true" CodeBehind="Password.aspx.cs" Inherits="WebPages.Dashboard.Password" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Dashboard/Dashboard.Master" AutoEventWireup="true" EnableEventValidation="false" CodeBehind="Password.aspx.cs" Inherits="WebPages.Dashboard.Password" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <meta charset="utf-8" />
@@ -39,7 +39,7 @@
                                 </div>
 
                                 <div class="col-xs-12 col-sm-8 col-sm-pull-4 text-right">
-                                    <input name="ctl00$ContentPlaceHolder1$tbxCurrentPassword" type="password" maxlength="20" id="ContentPlaceHolder1_tbxCurrentPassword" class="form-control text-right dirRight" />
+                                    <input name="ctl00$ContentPlaceHolder1$tbxCurrentPassword" runat="server" type="password" maxlength="20" id="tbxCurrentPassword" class="form-control text-right dirRight" />
                                 </div>
                             </div>
                         </div>
@@ -53,7 +53,7 @@
                                 </div>
 
                                 <div class="col-xs-12 col-sm-8 col-sm-pull-4 text-right">
-                                    <input name="ctl00$ContentPlaceHolder1$tbxNewPassword" type="password" maxlength="20" id="ContentPlaceHolder1_tbxNewPassword" class="form-control text-right dirRight" />
+                                    <input name="ctl00$ContentPlaceHolder1$tbxNewPassword" type="password" maxlength="20" runat="server" id="tbxNewPassword" class="form-control text-right dirRight" />
                                 </div>
                             </div>
                         </div>
@@ -67,7 +67,7 @@
                                 </div>
 
                                 <div class="col-xs-12 col-sm-8 col-sm-pull-4 text-right">
-                                    <input name="ctl00$ContentPlaceHolder1$tbxConfirmNewPassword" type="password" maxlength="20" id="ContentPlaceHolder1_tbxConfirmNewPassword" class="form-control text-right dirRight" />
+                                    <input name="ctl00$ContentPlaceHolder1$tbxConfirmNewPassword" type="password" maxlength="20" runat="server" id="tbxConfirmNewPassword" class="form-control text-right dirRight" />
                                 </div>
                             </div>
                         </div>
@@ -76,7 +76,7 @@
                     <div class="ln_solid"></div>
                     <div class="form-group">
                         <div class="col-xs-12 text-right">
-                            <button type="button" class="btn btn-success" data-toggle="modal" data-target="#modalAskSubmitUpdate">
+                            <button type="button" class="btn btn-success" runat="server" data-toggle="modal" data-target="#modalAskSubmitUpdate">
                                 <asp:Literal runat="server" Text="<%$ Resources:Dashboard,sabt%>" />
                                 <span class="fa fa-check"></span>
                             </button>
@@ -93,16 +93,18 @@
                                         </h4>
                                     </div>
                                     <div class="modal-body">
-                                        <p>آیا برای بروزرسانی اطلاعات اطمینان دارید؟</p>
+                                        <p>
+                                            <asp:Literal runat="server" Text="<%$ Resources:Dashboard,AreUSure%>" />
+                                        </p>
                                     </div>
                                     <div class="modal-footer">
                                         <div class="row">
                                             <div class="col-xs-12 text-center">
                                                 <button type="button" class="btn btn-danger" data-dismiss="modal">
-                                                    خیر
+                                                    <asp:Literal runat="server" Text="<%$ Resources:Dashboard,No%>" />
                                                 </button>
 
-                                                <input type="submit" name="ctl00$ContentPlaceHolder1$btnSubmit" value="بله" onclick="$('#modalAskSubmitUpdate').hide();" id="ContentPlaceHolder1_btnSubmit" class="btn btn-primary" />
+                                                <input type="submit" name="ctl00$ContentPlaceHolder1$btnSubmit" value="<%$ Resources:Dashboard,Yes%>" runat="server" onserverclick="btnSubmit_Click" onclick="$('#modalAskSubmitUpdate').hide();" id="btnSubmit" class="btn btn-primary" />
                                             </div>
                                         </div>
                                     </div>

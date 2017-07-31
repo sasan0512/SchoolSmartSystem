@@ -43,7 +43,7 @@
                 <div id="sidebar-wrapper">
                     <div class=" sid-profile">
                         <div class="profile-pic" style="float: right">
-                            <img src="Images/3408.jpg" alt="..." class="img-responsive img-circle img-profile" />
+                            <img src="Images/3408.jpg" id="imgSideProfile" runat="server" alt="..." class="img-responsive img-circle img-profile" />
                         </div>
                         <div class="profile-info" style="text-align: right">
                             <span>خوش آمدید </span>
@@ -195,6 +195,7 @@
         <script src="JavaScript/jquery.min.js"></script>
         <script src="JavaScript/bootstrap.min.js"></script>
         <script src="JavaScript/sidebar_menu.js"></script>
+        <script src="JavaScript/JavaScript.js"></script>
         <%--<script src="js/jquery-1.11.2.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <script src="js/sidebar_menu.js"></script>--%>

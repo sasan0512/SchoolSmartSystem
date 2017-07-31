@@ -7,19 +7,10 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace WebPages.Dashboard {
+namespace WebPages.Dashboard.Admin {
     
     
-    public partial class Dashboard1 {
-        
-        /// <summary>
-        /// imgUserPic control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlImage imgUserPic;
+    public partial class AddStudent {
         
         /// <summary>
         /// lblStuID control.
@@ -58,84 +49,75 @@ namespace WebPages.Dashboard {
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl lblLastName;
         
         /// <summary>
-        /// lblField control.
+        /// tbxFatherName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl lblField;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText tbxFatherName;
         
         /// <summary>
-        /// lblFatherName control.
+        /// tbxBirthYear control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl lblFatherName;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText tbxBirthYear;
         
         /// <summary>
-        /// lblBirthYear control.
+        /// tbxIDNumber control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl lblBirthYear;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText tbxIDNumber;
         
         /// <summary>
-        /// lblIDNumber control.
+        /// tbxFixTel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl lblIDNumber;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText tbxFixTel;
         
         /// <summary>
-        /// lblFixTel control.
+        /// tbxMobile control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl lblFixTel;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText tbxMobile;
         
         /// <summary>
-        /// lblMobile control.
+        /// tbxZipCode control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl lblMobile;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText tbxZipCode;
         
         /// <summary>
-        /// lblZipCode control.
+        /// tbxEmail control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl lblZipCode;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText tbxEmail;
         
         /// <summary>
-        /// lblEmail control.
+        /// btnSabtEditProfile control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl lblEmail;
-        
-        /// <summary>
-        /// lblAddress control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl lblAddress;
+        protected global::System.Web.UI.WebControls.Button btnSabtEditProfile;
     }
 }

@@ -1,10 +1,10 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Dashboard/Admin/AdminPanel.Master" AutoEventWireup="true" CodeBehind="AddNews.aspx.cs" Inherits="WebPages.Dashboard.Admin.AddNews" %>
 
-<%@ Page Theme="Default" Language="C#" AutoEventWireup="true" CodeFile="DefaultCS.aspx.cs" Inherits="Telerik.Web.Examples.Editor.Overview.DefaultCS" %>
+<%--<%@ Page Theme="Default" Language="C#" AutoEventWireup="true" CodeFile="DefaultCS.aspx.cs" Inherits="Telerik.Web.Examples.Editor.Overview.DefaultCS" %>
 
 <%@ Register TagPrefix="telerik" Namespace="Telerik.Web.UI" Assembly="Telerik.Web.UI" %>
-<%@ Register TagPrefix="qsf" Namespace="Telerik.QuickStart" %>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<%@ Register TagPrefix="qsf" Namespace="Telerik.QuickStart" %>--%>
+<!DOCTYPE html>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -28,7 +28,7 @@
         </h4>
     </div>
 
-    <div style="direction: rtl;">
+    <%-- <div style="direction: rtl;">
         <telerik:RadScriptManager runat="server" ID="RadScriptManager1" />
         <telerik:RadSkinManager ID="RadSkinManager1" runat="server" ShowChooser="true" />
         <div class="demo-containers">
@@ -84,7 +84,7 @@
             </telerik:AjaxSetting>
         </ajaxsettings>
         </telerik:RadAjaxManager>
-    </div>
+    </div>--%>
     <div class="extra" style="height: 100px">
     </div>
 </asp:Content>

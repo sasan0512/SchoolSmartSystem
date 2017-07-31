@@ -123,9 +123,6 @@
     <Compile Include="Tamarin.cs">
       <DependentUpon>SchoolEDM.tt</DependentUpon>
     </Compile>
-    <Compile Include="vBarname.cs">
-      <DependentUpon>SchoolEDM.tt</DependentUpon>
-    </Compile>
     <Compile Include="vJTamrin.cs">
       <DependentUpon>SchoolEDM.tt</DependentUpon>
     </Compile>

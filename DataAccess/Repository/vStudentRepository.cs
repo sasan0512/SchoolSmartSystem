@@ -9,7 +9,8 @@ using System.Data;
 namespace DataAccess.Repository
 {
     public class vStudentRepository
-    { 
+    {
+        private SchoolDBEntities db = new SchoolDBEntities();
         private Connection conn;
 
         public vStudentRepository()
@@ -17,11 +18,17 @@ namespace DataAccess.Repository
             conn = new Connection();
         }
 
-        public vStudent FindByNatinalCode(int nationalCode)
+        public vStudent GetStudentByUsername(string user)
+        {
+            vStudent stu = db.vStudents.Where(p => p.UserName == "javad").Single();
+            return stu;
+        }
+
+        public vStudent FindByNatinalCode(string nationalCode)
         {
             vStudent result = null;
 
-            using (SchoolDBEntities sd  = conn.GetContext())
+            using (SchoolDBEntities sd = conn.GetContext())
             {
                 //--  SELECT * FROM vPhoneList WHERE PhobeID = phoneID
 
@@ -33,7 +40,7 @@ namespace DataAccess.Repository
             return result;
         }
 
-        public vStudent FindByIdentityCode(int identityCode)
+        public vStudent FindByIdentityCode(string identityCode)
         {
             vStudent result = null;
 
@@ -49,6 +56,60 @@ namespace DataAccess.Repository
             return result;
         }
 
+        //public DataTable FindByStudentCode(int Code)
+        //{
+        //    List<vStudent> result = new List<vStudent>();
+
+        //    using (SchoolDBEntities sd = conn.GetContext())
+        //    {
+        //        IEnumerable<vStudent> pl =
+        //            from r in sd.vStudents
+        //            where r.StudentCode.Contains(Code)
+
+        //            select r;
+
+        //        result = pl.ToList();
+        //    }
+        //    return OnlineTools.ToDataTable(result);
+        //}
+
+        //public List<vStudent> FindByStudentCodeList(string Code)
+        //{
+        //    List<vStudent> result = new List<vStudent>();
+
+        //    using (SchoolDBEntities sd = conn.GetContext())
+        //    {
+        //        IEnumerable<vStudent> pl =
+        //            from r in sd.vStudents
+        //            where r.StudentCode.Contains(Code)
+
+        //            select r;
+
+        //        result = pl.ToList();
+        //    }
+        //    return result;
+        ////}
+
+        public void SaveStudent(Student student)
+        {
+            using (SchoolDBEntities pb = conn.GetContext())
+            {
+                if (student.StuID > 0)
+                {
+                    //==== UPDATE ====
+                    pb.Students.Attach(student);
+                    pb.Entry(student).State = EntityState.Modified;
+                }
+                else
+                {
+                    //==== INSERT ====
+                    pb.Students.Add(student);
+                }
+
+                pb.SaveChanges();
+            }
+        }
+
         public DataTable FindByName(string Name)
         {
             List<vStudent> result = new List<vStudent>();
@@ -58,7 +119,7 @@ namespace DataAccess.Repository
                 IEnumerable<vStudent> pl =
                     from r in sd.vStudents
                     where r.FirstName.Contains(Name)
-                    
+
                     select r;
 
                 result = pl.ToList();
@@ -91,7 +152,7 @@ namespace DataAccess.Repository
             {
                 IEnumerable<vStudent> pl =
                     from r in sd.vStudents
-                    where r.BirthDate== date
+                    where r.BirthDate == date
 
                     select r;
 
@@ -116,6 +177,22 @@ namespace DataAccess.Repository
             }
             return OnlineTools.ToDataTable(result);
         }
-    }
 
+        public DataTable GetAllStudents()
+        {
+            List<vStudent> result = new List<vStudent>();
+
+            using (SchoolDBEntities sd = conn.GetContext())
+            {
+                IEnumerable<vStudent> pl =
+                    from r in sd.vStudents
+
+                    orderby r.LastName
+                    select r;
+
+                result = pl.ToList();
+            }
+            return OnlineTools.ToDataTable(result);
+        }
+    }
 }

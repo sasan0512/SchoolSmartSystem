@@ -50,6 +50,7 @@
     <Reference Include="CKEditor.NET">
       <HintPath>C:\Users\Javad\Desktop\New Folder\bin\Release\CKEditor.NET.dll</HintPath>
     </Reference>
+    <Reference Include="EntityFramework, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
     <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
       <Private>True</Private>
@@ -74,6 +75,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Dashboard\Admin\AddNews.aspx" />
+    <Content Include="Dashboard\Admin\AddStudent.aspx" />
     <Content Include="Dashboard\Admin\ckeditor\adapters\jquery.js" />
     <Content Include="Dashboard\Admin\ckeditor\build-config.js" />
     <Content Include="Dashboard\Admin\ckeditor\ckeditor.js" />
@@ -625,6 +627,7 @@
     <Content Include="Dashboard\Charts.aspx" />
     <Content Include="Dashboard\ClassScores.aspx" />
     <Content Include="Dashboard\Dashboard.aspx" />
+    <Content Include="Dashboard\EditProfile.aspx" />
     <Content Include="Dashboard\font-awesome-4.3.0\css\font-awesome.min.css" />
     <Content Include="Dashboard\fonts\fontawesome-webfont.svg" />
     <Content Include="Dashboard\fonts\glyphicons-halflings-regular.svg" />
@@ -785,6 +788,13 @@
     <Compile Include="Dashboard\Admin\AddNews.aspx.designer.cs">
       <DependentUpon>AddNews.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Dashboard\Admin\AddStudent.aspx.cs">
+      <DependentUpon>AddStudent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\Admin\AddStudent.aspx.designer.cs">
+      <DependentUpon>AddStudent.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Dashboard\Admin\AdminPanel.Master.cs">
       <DependentUpon>AdminPanel.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -826,6 +836,13 @@
     </Compile>
     <Compile Include="Dashboard\Dashboard.Master.designer.cs">
       <DependentUpon>Dashboard.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard\EditProfile.aspx.cs">
+      <DependentUpon>EditProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\EditProfile.aspx.designer.cs">
+      <DependentUpon>EditProfile.aspx</DependentUpon>
     </Compile>
     <Compile Include="Dashboard\HomeWork.aspx.cs">
       <DependentUpon>HomeWork.aspx</DependentUpon>

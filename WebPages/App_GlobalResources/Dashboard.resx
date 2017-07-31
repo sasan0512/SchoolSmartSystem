@@ -234,4 +234,25 @@
   <data name="salary_payment" xml:space="preserve">
     <value>پرداخت شهریه</value>
   </data>
+  <data name="AreUSure" xml:space="preserve">
+    <value>آیا برای بروزرسانی اطلاعات اطمینان دارید؟</value>
+  </data>
+  <data name="Back" xml:space="preserve">
+    <value>بازگشت</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>خیر</value>
+  </data>
+  <data name="warning" xml:space="preserve">
+    <value>هشدار</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>بله</value>
+  </data>
+  <data name="ID" xml:space="preserve">
+    <value>شناسه</value>
+  </data>
+  <data name="new_student" xml:space="preserve">
+    <value>دانش آموز جدید</value>
+  </data>
 </root>

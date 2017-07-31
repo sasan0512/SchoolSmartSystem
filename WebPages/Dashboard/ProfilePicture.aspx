@@ -29,7 +29,7 @@
                     <div class="row">
                         <div class="col-xs-12 col-sm-12 text-center">
 
-                            <img id="ContentPlaceHolder1_imgUserPic" class="img-responsive center-margin" src="Images/3408.jpg" style="height: 100px; width: 100px;" />
+                            <img id="imgUserPic" class="img-responsive center-margin" runat="server" src="" style="height: 100px; width: 100px;" />
                         </div>
                     </div>
                 </div>
@@ -38,28 +38,22 @@
                     <div class="row">
                         <div class="col-xs-12 col-sm-2 col-sm-push-10 text-right">
                             <span id="ContentPlaceHolder1_lblCoverPhoto" class="control-label formLabel" style="font-size: 100%; font-weight: bold;">
-                                <asp:Literal runat="server" Text="<%$ Resources:Dashboard,img_file%>" /></span>
+                                <asp:Literal runat="server" Text="<%$ Resources:Dashboard,img_file%>" /></span><asp:FileUpload ID="FileUpload1" runat="server" BackColor="#CCCCCC" />
                         </div>
 
                         <div class="col-xs-12 col-sm-10 col-sm-pull-2 text-right">
 
-                            <label class="btn btn-info btn-upload" for="inputImage" title="Upload image file">
-                                <input class="sr-only" id="inputImage" name="file" type="file" accept="image/*" />
-                                <span class="docs-tooltip" data-toggle="tooltip" title="" data-original-title="Import image with Blob URLs">
-                                    <asp:Literal runat="server" Text="<%$ Resources:Dashboard,select_img%>" />
-                                    <span class="fa fa-photo"></span>
-                                </span>
-                            </label>
+                            <asp:Button ID="btnSabtEditProfile" name="btnSabt" class="btn btn-info" runat="server"
+                                Text="<%$ Resources:Dashboard,select_img%>" OnClick="btnSabtEditProfile_Click" />
                         </div>
                     </div>
                 </div>
+
                 <div class="ln_solid"></div>
                 <div class="form-group">
                     <div class="col-xs-12 text-right">
-                        <a class="btn btn-auto-v btn-auto-h btn-primary goRight" href="/Registration/EditProfile">
-                            <asp:Literal runat="server" Text="<%$ Resources:Dashboard,sabt%>" />
-                            <span class="fa fa-edit"></span>
-                        </a>
+                        <asp:Button ID="Button1" name="btnSabt" class="btn btn-primary" runat="server"
+                            Text="<%$ Resources:Dashboard,sabt%>" OnClick="Button1_Click" />
                     </div>
                 </div>
                 <div class="extra" style="height: 100px">

@@ -88,6 +88,24 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to آیا برای بروزرسانی اطلاعات اطمینان دارید؟.
+        /// </summary>
+        internal static string AreUSure {
+            get {
+                return ResourceManager.GetString("AreUSure", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to بازگشت.
+        /// </summary>
+        internal static string Back {
+            get {
+                return ResourceManager.GetString("Back", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to برنامه هفتگی.
         /// </summary>
         internal static string barname_haftegi {
@@ -205,6 +223,15 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to شناسه.
+        /// </summary>
+        internal static string ID {
+            get {
+                return ResourceManager.GetString("ID", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to فایل تصویر.
         /// </summary>
         internal static string img_file {
@@ -277,11 +304,29 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to دانش آموز جدید.
+        /// </summary>
+        internal static string new_student {
+            get {
+                return ResourceManager.GetString("new_student", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to نمودار پیشرفت تحصیلی.
         /// </summary>
         internal static string nmoodar {
             get {
                 return ResourceManager.GetString("nmoodar", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to خیر.
+        /// </summary>
+        internal static string No {
+            get {
+                return ResourceManager.GetString("No", resourceCulture);
             }
         }
         
@@ -408,6 +453,24 @@ namespace Resources {
         internal static string virayesh_mshakhasat {
             get {
                 return ResourceManager.GetString("virayesh_mshakhasat", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to هشدار.
+        /// </summary>
+        internal static string warning {
+            get {
+                return ResourceManager.GetString("warning", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to بله.
+        /// </summary>
+        internal static string Yes {
+            get {
+                return ResourceManager.GetString("Yes", resourceCulture);
             }
         }
     }

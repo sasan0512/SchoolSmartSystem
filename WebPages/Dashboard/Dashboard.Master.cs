@@ -4,6 +4,8 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using DataAccess;
+using DataAccess.Repository;
 
 namespace WebPages.Dashboard
 {
@@ -11,7 +13,10 @@ namespace WebPages.Dashboard
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            SchoolDBEntities db = new SchoolDBEntities();
 
+            Student stuu = db.Students.Where(p => p.UserName == "javad").Single();
+            imgSideProfile.Src = stuu.Image;
         }
     }
 }

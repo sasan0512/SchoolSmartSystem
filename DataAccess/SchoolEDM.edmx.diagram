@@ -41,7 +41,7 @@
         <AssociationConnector Association="SchoolDBModel.FK_PaymentHistory_Students" ManuallyRouted="false" />
         <AssociationConnector Association="SchoolDBModel.FK_StuRegister_Students" ManuallyRouted="false" />
         <EntityTypeShape EntityType="SchoolDBModel.vTamrin" Width="1.5" PointX="14.375" PointY="0.75" />
-        <EntityTypeShape EntityType="SchoolDBModel.vBarname" Width="1.5" PointX="3.375" PointY="0.75" />
+        <AssociationConnector Association="SchoolDBModel.FK_Students_Grades" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>
