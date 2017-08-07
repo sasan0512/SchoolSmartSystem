@@ -79,6 +79,15 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to اضافه کردن دانش آموز.
+        /// </summary>
+        internal static string add_student {
+            get {
+                return ResourceManager.GetString("add_student", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to آموزش.
         /// </summary>
         internal static string amoozesh {
@@ -165,6 +174,15 @@ namespace Resources {
         internal static string edite {
             get {
                 return ResourceManager.GetString("edite", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ویرایش.
+        /// </summary>
+        internal static string Edit_student {
+            get {
+                return ResourceManager.GetString("Edit_student", resourceCulture);
             }
         }
         
@@ -421,11 +439,29 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to مقطع تحصیلی.
+        /// </summary>
+        internal static string SGrade {
+            get {
+                return ResourceManager.GetString("SGrade", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to شماره دانش آموزی.
         /// </summary>
         internal static string shomare_daneshamozi {
             get {
                 return ResourceManager.GetString("shomare_daneshamozi", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to لیست دانش آموزان.
+        /// </summary>
+        internal static string students {
+            get {
+                return ResourceManager.GetString("students", resourceCulture);
             }
         }
         

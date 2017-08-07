@@ -24,6 +24,7 @@ namespace DataAccess
         public string LastName { get; set; }
         public string StudentCode { get; set; }
         public Nullable<int> SGarde { get; set; }
+        public Nullable<int> CGrade { get; set; }
         public string UserName { get; set; }
         public string Password { get; set; }
         public Nullable<int> RemainedSalary { get; set; }
@@ -32,9 +33,12 @@ namespace DataAccess
         public string NationalCode { get; set; }
         public string IdentityCode { get; set; }
         public string BirthDate { get; set; }
+        public string Email { get; set; }
         public string BirthLocation { get; set; }
+        public string ZipCode { get; set; }
         public string Address { get; set; }
         public string RegisterLocation { get; set; }
+        public string MobileNumber { get; set; }
         public string PhoneNumber { get; set; }
         public string PreviousSchool { get; set; }
         public string ArgentPhoneNumber { get; set; }
@@ -46,16 +50,12 @@ namespace DataAccess
         public string Description { get; set; }
         public string ParentUser { get; set; }
         public string ParentPass { get; set; }
-        public Nullable<int> CGrade { get; set; }
-        public string MobileNumber { get; set; }
-        public string ZipCode { get; set; }
-        public string Email { get; set; }
     
         public virtual Father Father { get; set; }
+        public virtual Grade Grade { get; set; }
         public virtual Mother Mother { get; set; }
         public virtual ICollection<Ozviat> Ozviats { get; set; }
         public virtual PaymentHistory PaymentHistory { get; set; }
         public virtual StuRegister StuRegister { get; set; }
-        public virtual Grade Grade { get; set; }
     }
 }

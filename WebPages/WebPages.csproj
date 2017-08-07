@@ -623,7 +623,10 @@
     <Content Include="Dashboard\Admin\ckeditor\skins\moono-lisa\images\refresh.png" />
     <Content Include="Dashboard\Admin\ckeditor\skins\moono-lisa\images\spinner.gif" />
     <Content Include="Dashboard\Admin\ckeditor\styles.js" />
+    <Content Include="Dashboard\Admin\Details.aspx" />
+    <Content Include="Dashboard\Admin\EditStudent.aspx" />
     <Content Include="Dashboard\Admin\News.aspx" />
+    <Content Include="Dashboard\Admin\Students.aspx" />
     <Content Include="Dashboard\Charts.aspx" />
     <Content Include="Dashboard\ClassScores.aspx" />
     <Content Include="Dashboard\Dashboard.aspx" />
@@ -802,12 +805,33 @@
     <Compile Include="Dashboard\Admin\AdminPanel.Master.designer.cs">
       <DependentUpon>AdminPanel.Master</DependentUpon>
     </Compile>
+    <Compile Include="Dashboard\Admin\Details.aspx.cs">
+      <DependentUpon>Details.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\Admin\Details.aspx.designer.cs">
+      <DependentUpon>Details.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard\Admin\EditStudent.aspx.cs">
+      <DependentUpon>EditStudent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\Admin\EditStudent.aspx.designer.cs">
+      <DependentUpon>EditStudent.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Dashboard\Admin\News.aspx.cs">
       <DependentUpon>News.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Dashboard\Admin\News.aspx.designer.cs">
       <DependentUpon>News.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard\Admin\Students.aspx.cs">
+      <DependentUpon>Students.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\Admin\Students.aspx.designer.cs">
+      <DependentUpon>Students.aspx</DependentUpon>
     </Compile>
     <Compile Include="Dashboard\Charts.aspx.cs">
       <DependentUpon>Charts.aspx</DependentUpon>

@@ -47,8 +47,6 @@ namespace WebPages.Dashboard
 
             Student stuu = db.Students.Where(p => p.UserName == "javad").Single();
 
-            //stu = stuu;
-
             stu.StuID = lblStuID.InnerText.ToInt();
             stu.FirstName = stuu.FirstName;
             stu.LastName = stuu.LastName;
@@ -60,7 +58,6 @@ namespace WebPages.Dashboard
             stu.MotherID = stuu.MotherID;
             stu.RemainedSalary = stuu.RemainedSalary;
             stu.StudentCode = lblStudentCode.InnerText;
-            //stu.FathersFirstName = tbxFatherName.Value;
             stu.BirthDate = string.Format("{0}{1}{2}", tbxBirthYear.Value, stuu.BirthDate.Substring(4, 2), stuu.BirthDate.Substring(6, 2));
             stu.NationalCode = stuu.NationalCode;
             stu.PhoneNumber = tbxFixTel.Value;

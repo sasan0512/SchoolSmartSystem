@@ -99,3 +99,23 @@ body {
 .dirRight {
     direction: rtl;
 }
+
+.table {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+    align-content: center;
+    vertical-align: middle;
+}
+
+    .table tr {
+        text-align: right;
+        vertical-align: middle;
+    }
+
+    .table th {
+        text-align: right;
+    }
+
+.col-xs-12 {
+}

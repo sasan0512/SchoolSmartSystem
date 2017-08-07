@@ -90,6 +90,13 @@ namespace DataAccess.Repository
         //    return result;
         ////}
 
+        public Student FindByStudentCode(string id)
+        {
+            SchoolDBEntities db = new SchoolDBEntities();
+
+            return db.Students.Where(p => p.StudentCode == id).Single();
+        }
+
         public void SaveStudent(Student student)
         {
             using (SchoolDBEntities pb = conn.GetContext())

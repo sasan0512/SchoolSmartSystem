@@ -10,7 +10,7 @@
 namespace WebPages.Dashboard.Admin {
     
     
-    public partial class AddStudent {
+    public partial class EditStudent {
         
         /// <summary>
         /// tbxStudentCode control.

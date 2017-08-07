@@ -24,27 +24,13 @@
                 <div class="form-group">
                     <div class="row">
                         <div class="col-xs-12 col-sm-4 col-sm-push-8 text-right">
-                            <span id="ContentPlaceHolder1_lbl_StuID" class="control-label formLabel" style="font-size: 100%; font-weight: bold;">
+                            <span id="lblStudentCode" class="control-label formLabel" style="font-size: 100%; font-weight: bold;">
                                 <asp:Literal runat="server" Text="<%$ Resources:Dashboard,shomare_daneshamozi%>" />
                             </span>
                         </div>
 
                         <div class="col-xs-12 col-sm-8 col-sm-pull-4 text-right">
-                            <span id="lblStuID" runat="server" class="form-control control-label formLabel"></span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="form-group">
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-4 col-sm-push-8 text-right">
-                            <span id="ContentPlaceHolder1_lbl_StudentCode" class="control-label formLabel" style="font-size: 100%; font-weight: bold;">
-                                <asp:Literal runat="server" Text="<%$ Resources:Dashboard,shomare_daneshamozi%>" />
-                            </span>
-                        </div>
-
-                        <div class="col-xs-12 col-sm-8 col-sm-pull-4 text-right">
-                            <span id="lblStudentCode" runat="server" class="form-control control-label formLabel"></span>
+                            <input name="ctl00$ContentPlaceHolder1$tbxStudentCode" type="text" maxlength="50" id="tbxStudentCode" runat="server" class="form-control text-right dirRight" />
                         </div>
                     </div>
                 </div>
@@ -58,7 +44,7 @@
                         </div>
 
                         <div class="col-xs-12 col-sm-8 col-sm-pull-4 text-right">
-                            <span id="lblFirstName" runat="server" class="form-control control-label formLabel"></span>
+                            <input name="ctl00$ContentPlaceHolder1$tbxFirstName" type="text" maxlength="50" id="tbxFirstName" runat="server" class="form-control text-right dirRight" />
                         </div>
                     </div>
                 </div>
@@ -72,7 +58,7 @@
                         </div>
 
                         <div class="col-xs-12 col-sm-8 col-sm-pull-4 text-right">
-                            <span id="lblLastName" runat="server" class="form-control control-label formLabel"></span>
+                            <input name="ctl00$ContentPlaceHolder1$tbxLastName" type="text" maxlength="50" id="tbxLastName" runat="server" class="form-control text-right dirRight" />
                         </div>
                     </div>
                 </div>
@@ -103,7 +89,6 @@
 
                         <div class="col-xs-12 col-sm-8 col-sm-pull-4 text-right">
                             <input name="ctl00$ContentPlaceHolder1$tbxBirthYear" type="text" maxlength="50" id="tbxBirthYear" runat="server" class="form-control text-right dirRight" />
-                            <%--<asp:TextBox name="ctl00$ContentPlaceHolder1$tbxBirthYear" ID="tbxBirthYear" class="form-control text-right dirRight" MaxLength="50" runat="server"></asp:TextBox>--%>
                         </div>
                     </div>
                 </div>
@@ -160,6 +145,46 @@
 
                         <div class="col-xs-12 col-sm-8 col-sm-pull-4 text-right">
                             <input name="ctl00$ContentPlaceHolder1$tbxZipCode" type="text" maxlength="10" id="tbxZipCode" runat="server" class="form-control text-right dirRight" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-4 col-sm-push-8 text-right">
+                            <span id="lbl_SGrade" class="control-label formLabel" style="font-size: 100%; font-weight: bold;">
+                                <asp:Literal runat="server" Text="<%$ Resources:Dashboard,SGrade%>" />
+                            </span>
+                        </div>
+
+                        <div class="col-xs-12 col-sm-8 col-sm-pull-4 text-right">
+                            <input name="ctl00$ContentPlaceHolder1$tbxSGrade" type="text" maxlength="10" id="Text1" runat="server" class="form-control text-right dirRight" />
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-4 col-sm-push-8 text-right">
+                            <span id="lbl_UserName" class="control-label formLabel" style="font-size: 100%; font-weight: bold;">
+                                <asp:Literal runat="server" Text="<%$ Resources:Dashboard,postal_code%>" />
+                            </span>
+                        </div>
+
+                        <div class="col-xs-12 col-sm-8 col-sm-pull-4 text-right">
+                            <input name="ctl00$ContentPlaceHolder1$tbxZipCode" type="text" maxlength="10" id="Text2" runat="server" class="form-control text-right dirRight" />
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-4 col-sm-push-8 text-right">
+                            <span id="lblPassword" class="control-label formLabel" style="font-size: 100%; font-weight: bold;">
+                                <asp:Literal runat="server" Text="<%$ Resources:Dashboard,postal_code%>" />
+                            </span>
+                        </div>
+
+                        <div class="col-xs-12 col-sm-8 col-sm-pull-4 text-right">
+                            <input name="ctl00$ContentPlaceHolder1$tbxZipCode" type="text" maxlength="10" id="Text3" runat="server" class="form-control text-right dirRight" />
                         </div>
                     </div>
                 </div>

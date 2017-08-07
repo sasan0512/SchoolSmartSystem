@@ -19,6 +19,7 @@ namespace DataAccess
         public string LastName { get; set; }
         public string StudentCode { get; set; }
         public Nullable<int> SGarde { get; set; }
+        public Nullable<int> CGrade { get; set; }
         public string NationalCode { get; set; }
         public string IdentityCode { get; set; }
         public string BirthDate { get; set; }
@@ -50,7 +51,6 @@ namespace DataAccess
         public string MothersMobileNumber { get; set; }
         public string MothersWorkPhone { get; set; }
         public string MothersEducation { get; set; }
-        public Nullable<int> CGrade { get; set; }
         public string GradeTitle { get; set; }
         public string UserName { get; set; }
         public string Password { get; set; }

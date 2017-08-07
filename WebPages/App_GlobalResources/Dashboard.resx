@@ -255,4 +255,16 @@
   <data name="new_student" xml:space="preserve">
     <value>دانش آموز جدید</value>
   </data>
+  <data name="students" xml:space="preserve">
+    <value>لیست دانش آموزان</value>
+  </data>
+  <data name="add_student" xml:space="preserve">
+    <value>اضافه کردن دانش آموز</value>
+  </data>
+  <data name="SGrade" xml:space="preserve">
+    <value>مقطع تحصیلی</value>
+  </data>
+  <data name="Edit_student" xml:space="preserve">
+    <value>ویرایش</value>
+  </data>
 </root>
