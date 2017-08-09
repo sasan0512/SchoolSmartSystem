@@ -124,7 +124,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to سال تولد.
+        ///   Looks up a localized string similar to تاریخ تولد.
         /// </summary>
         internal static string birthday {
             get {
@@ -192,6 +192,42 @@ namespace Resources {
         internal static string email {
             get {
                 return ResourceManager.GetString("email", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to مشخصات کارمند.
+        /// </summary>
+        internal static string EmployeeDetails {
+            get {
+                return ResourceManager.GetString("EmployeeDetails", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to کارمندان.
+        /// </summary>
+        internal static string Employees {
+            get {
+                return ResourceManager.GetString("Employees", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to مدیریت کارمندان.
+        /// </summary>
+        internal static string EmployeesManage {
+            get {
+                return ResourceManager.GetString("EmployeesManage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to سمت.
+        /// </summary>
+        internal static string EmployeeType {
+            get {
+                return ResourceManager.GetString("EmployeeType", resourceCulture);
             }
         }
         
@@ -313,6 +349,15 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to کارمند جدید.
+        /// </summary>
+        internal static string NewEmployee {
+            get {
+                return ResourceManager.GetString("NewEmployee", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to اخبار.
         /// </summary>
         internal static string news {
@@ -381,6 +426,15 @@ namespace Resources {
         internal static string payments {
             get {
                 return ResourceManager.GetString("payments", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to کد پرسنلی.
+        /// </summary>
+        internal static string PersonalCode {
+            get {
+                return ResourceManager.GetString("PersonalCode", resourceCulture);
             }
         }
         
@@ -457,11 +511,38 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to نمایش همه.
+        /// </summary>
+        internal static string ShowAll {
+            get {
+                return ResourceManager.GetString("ShowAll", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to مشخصات دانش آموز.
+        /// </summary>
+        internal static string StudentDetails {
+            get {
+                return ResourceManager.GetString("StudentDetails", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to لیست دانش آموزان.
         /// </summary>
         internal static string students {
             get {
                 return ResourceManager.GetString("students", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to مدریت دانش آموزان.
+        /// </summary>
+        internal static string StudentsManage {
+            get {
+                return ResourceManager.GetString("StudentsManage", resourceCulture);
             }
         }
         
@@ -480,6 +561,15 @@ namespace Resources {
         internal static string tn_password {
             get {
                 return ResourceManager.GetString("tn_password", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to نام کاربری.
+        /// </summary>
+        internal static string UserName {
+            get {
+                return ResourceManager.GetString("UserName", resourceCulture);
             }
         }
         

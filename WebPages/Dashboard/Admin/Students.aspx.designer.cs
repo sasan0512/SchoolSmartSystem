@@ -22,6 +22,33 @@ namespace WebPages.Dashboard.Admin {
         protected global::System.Web.UI.WebControls.Button btnAddStudent;
         
         /// <summary>
+        /// btnSearch control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlButton btnSearch;
+        
+        /// <summary>
+        /// tbxSearch control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputText tbxSearch;
+        
+        /// <summary>
+        /// tbxFamilySearch control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputText tbxFamilySearch;
+        
+        /// <summary>
         /// gvStudents control.
         /// </summary>
         /// <remarks>
@@ -31,12 +58,12 @@ namespace WebPages.Dashboard.Admin {
         protected global::System.Web.UI.WebControls.GridView gvStudents;
         
         /// <summary>
-        /// lbl1 control.
+        /// btnViewAll control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lbl1;
+        protected global::System.Web.UI.HtmlControls.HtmlButton btnViewAll;
     }
 }

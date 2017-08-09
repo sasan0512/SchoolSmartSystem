@@ -154,7 +154,7 @@
     <value>آدرس محل سکونت</value>
   </data>
   <data name="birthday" xml:space="preserve">
-    <value>سال تولد</value>
+    <value>تاریخ تولد</value>
   </data>
   <data name="change_password" xml:space="preserve">
     <value>تغییر رمز عبور</value>
@@ -266,5 +266,35 @@
   </data>
   <data name="Edit_student" xml:space="preserve">
     <value>ویرایش</value>
+  </data>
+  <data name="Employees" xml:space="preserve">
+    <value>کارمندان</value>
+  </data>
+  <data name="ShowAll" xml:space="preserve">
+    <value>نمایش همه</value>
+  </data>
+  <data name="StudentsManage" xml:space="preserve">
+    <value>مدریت دانش آموزان</value>
+  </data>
+  <data name="EmployeeType" xml:space="preserve">
+    <value>سمت</value>
+  </data>
+  <data name="NewEmployee" xml:space="preserve">
+    <value>کارمند جدید</value>
+  </data>
+  <data name="PersonalCode" xml:space="preserve">
+    <value>کد پرسنلی</value>
+  </data>
+  <data name="UserName" xml:space="preserve">
+    <value>نام کاربری</value>
+  </data>
+  <data name="EmployeeDetails" xml:space="preserve">
+    <value>مشخصات کارمند</value>
+  </data>
+  <data name="EmployeesManage" xml:space="preserve">
+    <value>مدیریت کارمندان</value>
+  </data>
+  <data name="StudentDetails" xml:space="preserve">
+    <value>مشخصات دانش آموز</value>
   </data>
 </root>

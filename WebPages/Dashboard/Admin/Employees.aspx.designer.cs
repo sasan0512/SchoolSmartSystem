@@ -10,25 +10,61 @@
 namespace WebPages.Dashboard.Admin {
     
     
-    public partial class Details {
+    public partial class Employees {
         
         /// <summary>
-        /// tbxStudentCode control.
+        /// btnAddEmployee control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl tbxStudentCode;
+        protected global::System.Web.UI.WebControls.Button btnAddEmployee;
         
         /// <summary>
-        /// tbxNatinalCode control.
+        /// btnSearch control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl tbxNatinalCode;
+        protected global::System.Web.UI.HtmlControls.HtmlButton btnSearch;
+        
+        /// <summary>
+        /// tbxSearch control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputText tbxSearch;
+        
+        /// <summary>
+        /// tbxFamilySearch control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputText tbxFamilySearch;
+        
+        /// <summary>
+        /// gvEmployees control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView gvEmployees;
+        
+        /// <summary>
+        /// tbxPersonalCode control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl tbxPersonalCode;
         
         /// <summary>
         /// tbxFirstName control.
@@ -112,12 +148,12 @@ namespace WebPages.Dashboard.Admin {
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl tbxEmail;
         
         /// <summary>
-        /// tbxAddress control.
+        /// btnViewAll control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlTextArea tbxAddress;
+        protected global::System.Web.UI.HtmlControls.HtmlButton btnViewAll;
     }
 }

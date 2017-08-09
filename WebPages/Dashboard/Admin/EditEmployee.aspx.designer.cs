@@ -10,25 +10,16 @@
 namespace WebPages.Dashboard.Admin {
     
     
-    public partial class Details {
+    public partial class EditEmployee {
         
         /// <summary>
-        /// tbxStudentCode control.
+        /// lblPersonalCode control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl tbxStudentCode;
-        
-        /// <summary>
-        /// tbxNatinalCode control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl tbxNatinalCode;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText lblPersonalCode;
         
         /// <summary>
         /// tbxFirstName control.
@@ -37,7 +28,7 @@ namespace WebPages.Dashboard.Admin {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl tbxFirstName;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText tbxFirstName;
         
         /// <summary>
         /// tbxLastName control.
@@ -46,7 +37,7 @@ namespace WebPages.Dashboard.Admin {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl tbxLastName;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText tbxLastName;
         
         /// <summary>
         /// tbxBirthDay control.
@@ -55,7 +46,7 @@ namespace WebPages.Dashboard.Admin {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl tbxBirthDay;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText tbxBirthDay;
         
         /// <summary>
         /// tbxFixTel control.
@@ -64,7 +55,7 @@ namespace WebPages.Dashboard.Admin {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl tbxFixTel;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText tbxFixTel;
         
         /// <summary>
         /// tbxUserName control.
@@ -73,7 +64,7 @@ namespace WebPages.Dashboard.Admin {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl tbxUserName;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText tbxUserName;
         
         /// <summary>
         /// tbxPassword control.
@@ -82,7 +73,7 @@ namespace WebPages.Dashboard.Admin {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl tbxPassword;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText tbxPassword;
         
         /// <summary>
         /// tbxMobile control.
@@ -91,7 +82,7 @@ namespace WebPages.Dashboard.Admin {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl tbxMobile;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText tbxMobile;
         
         /// <summary>
         /// tbxEmployeeType control.
@@ -100,7 +91,7 @@ namespace WebPages.Dashboard.Admin {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl tbxEmployeeType;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText tbxEmployeeType;
         
         /// <summary>
         /// tbxEmail control.
@@ -109,15 +100,15 @@ namespace WebPages.Dashboard.Admin {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl tbxEmail;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText tbxEmail;
         
         /// <summary>
-        /// tbxAddress control.
+        /// btnSabtEditProfile control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlTextArea tbxAddress;
+        protected global::System.Web.UI.WebControls.Button btnSabtEditProfile;
     }
 }

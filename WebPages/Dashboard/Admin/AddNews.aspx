@@ -4,7 +4,7 @@
 
 <%@ Register TagPrefix="telerik" Namespace="Telerik.Web.UI" Assembly="Telerik.Web.UI" %>
 <%@ Register TagPrefix="qsf" Namespace="Telerik.QuickStart" %>--%>
-<!DOCTYPE html>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -16,8 +16,8 @@
     <script src="../JavaScript/custom.min.js"></script>
     <link href="../Styles/AdminPanelStyles.css" rel="stylesheet" />
     <link href="../font-awesome-4.3.0/css/font-awesome.min.css" rel="stylesheet" />
-    <script src="ckeditor/ckeditor.js"></script>
-    <script src="ckeditor/build-config.js"></script>
+    <%-- <script src="ckeditor/ckeditor.js"></script>
+    <script src="ckeditor/build-config.js"></script>--%>
     <!-- Make sure the path to CKEditor is correct. -->
 </asp:Content>
 

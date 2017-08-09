@@ -21,7 +21,7 @@
             <asp:Literal runat="server" Text="<%$ Resources:Dashboard,News%>" />
         </h4>
     </div>
-    <ajaxToolkit:HtmlEditorExtender ID="HtmlEditorExtender1" runat="server"></ajaxToolkit:HtmlEditorExtender>
+
     <div class="extra" style="height: 100px">
     </div>
 </asp:Content>

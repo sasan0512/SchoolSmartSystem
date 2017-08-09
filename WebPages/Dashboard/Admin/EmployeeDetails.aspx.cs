@@ -9,9 +9,9 @@ using DataAccess.Repository;
 
 namespace WebPages.Dashboard.Admin
 {
-    public partial class Details : System.Web.UI.Page
+    public partial class EmployeeDetails : System.Web.UI.Page
     {
-        private vStudentRepository rep = new vStudentRepository();
+        private KarmandRepository rep = new KarmandRepository();
 
         protected void Page_Load(object sender, EventArgs e)
 
@@ -20,17 +20,15 @@ namespace WebPages.Dashboard.Admin
 
             if (id != "" || id != null)
             {
-                Student lo = rep.FindByStudentCode(id);
+                Karmand lo = rep.FindByEmployeeID(id);
                 tbxFirstName.InnerText = lo.FirstName;
                 tbxLastName.InnerText = lo.LastName;
-                tbxStudentCode.InnerText = lo.StudentCode;
-                tbxNatinalCode.InnerText = lo.NationalCode;
+                tbxPersonalCode.InnerText = lo.PersonalCode;
                 tbxBirthDay.InnerText = string.Format("{0}/{1}/{2}", lo.BirthDate.Substring(0, 4), lo.BirthDate.Substring(4, 2), lo.BirthDate.Substring(6, 2));
                 tbxUserName.InnerText = lo.UserName;
-                tbxPassword.InnerText = lo.Password;
+                tbxPassword.InnerText = lo.UserPass;
                 tbxFixTel.InnerText = lo.PhoneNumber;
-                tbxMobile.InnerText = lo.MobileNumber;
-                tbxAddress.InnerText = lo.Address;
+                tbxMobile.InnerText = lo.Mobile;
 
                 //tbxEmail.Value = lo.Email;
             }

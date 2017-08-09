@@ -10,25 +10,16 @@
 namespace WebPages.Dashboard.Admin {
     
     
-    public partial class Details {
+    public partial class EmployeeDetails {
         
         /// <summary>
-        /// tbxStudentCode control.
+        /// tbxPersonalCode control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl tbxStudentCode;
-        
-        /// <summary>
-        /// tbxNatinalCode control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl tbxNatinalCode;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl tbxPersonalCode;
         
         /// <summary>
         /// tbxFirstName control.
@@ -110,14 +101,5 @@ namespace WebPages.Dashboard.Admin {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl tbxEmail;
-        
-        /// <summary>
-        /// tbxAddress control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlTextArea tbxAddress;
     }
 }

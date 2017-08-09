@@ -40,13 +40,15 @@
             <div class="col-md-4 col-xs-12 text-righ">
                 <div class="input-group">
                     <span class="input-group-btn">
-                        <a id="btnSearch" class="btn btn-primary" href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$btnSearch','')">
+                        <button type="button" id="btnSearch" class="btn btn-primary" runat="server" onserverclick="btnSearch_Click">
                             <span class="fa fa-search"></span>
-                        </a>
+                        </button>
                     </span>
+
                     <div id="ContentPlaceHolder1_upSearch">
 
-                        <input name="ctl00$ContentPlaceHolder1$tbxSearch" type="text" maxlength="50" id="tbxSearch" class="form-control text-right dirRight" />
+                        <input name="ctl00$ContentPlaceHolder1$tbxnameSearch" runat="server" placeholder="نام دانش آموز" type="text" maxlength="50" id="tbxSearch" class="form-control text-right dirRight" />
+                        <input name="ctl00$ContentPlaceHolder1$tbxfamilySearch" runat="server" placeholder="نام خانوادگی دانش آموز" type="text" maxlength="50" id="tbxFamilySearch" class="form-control text-right dirRight" />
                     </div>
                 </div>
             </div>
@@ -96,11 +98,10 @@
 
         <div class="row">
             <div class="col-md-5 col-md-push-7 col-xs-6 col-xs-push-6">
-
-                <a id="ContentPlaceHolder1_btnViewAll" class="btn btn-auto-h btn-info goRight" href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$btnViewAll','')" style="margin-right: 5px;">نمایش همه
-                                <span class="fa fa-list"></span>
-                </a>
-                <asp:Label runat="server" ID="lbl1"> hi</asp:Label>
+                <button type="button" id="btnViewAll" class="btn btn-auto-h btn-info goRight" runat="server" style="margin-right: 5px;" onserverclick="btnShowAll_Click">
+                    <asp:Literal runat="server" Text="<%$ Resources:Dashboard,ShowAll%>" />
+                    <span class="fa fa-list"></span>
+                </button>
             </div>
             <div class="extra" style="height: 100px">
             </div>

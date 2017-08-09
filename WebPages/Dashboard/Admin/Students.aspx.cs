@@ -25,6 +25,7 @@ namespace WebPages.Dashboard.Admin
             gvStudents.DataSource = sr.GetAllStudents();
             gvStudents.DataBind();
             vStudent st = new vStudent();
+            tbxSearch.Value = "";
         }
 
         protected void gvStudents_RowDataBound(object sender, GridViewRowEventArgs e)
@@ -34,6 +35,22 @@ namespace WebPages.Dashboard.Admin
         protected void btnAddStudent_Click(object sender, EventArgs e)
         {
             Response.Redirect("http://localhost:4911/Dashboard/Admin/AddStudent.aspx");
+        }
+
+        protected void btnSearch_Click(object sender, EventArgs e)
+        {
+            if (tbxSearch.Value != "")
+            {
+                vStudentRepository sr = new vStudentRepository();
+
+                gvStudents.DataSource = sr.FindByFullName(tbxSearch.Value, tbxFamilySearch.Value);
+                gvStudents.DataBind();
+            }
+        }
+
+        protected void btnShowAll_Click(object sender, EventArgs e)
+        {
+            LoadStudents();
         }
 
         protected void gvStudents_SelectedIndexChanged(object sender, EventArgs e)

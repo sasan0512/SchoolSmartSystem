@@ -74,6 +74,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Dashboard\Admin\AddEmployee.aspx" />
     <Content Include="Dashboard\Admin\AddNews.aspx" />
     <Content Include="Dashboard\Admin\AddStudent.aspx" />
     <Content Include="Dashboard\Admin\ckeditor\adapters\jquery.js" />
@@ -624,7 +625,10 @@
     <Content Include="Dashboard\Admin\ckeditor\skins\moono-lisa\images\spinner.gif" />
     <Content Include="Dashboard\Admin\ckeditor\styles.js" />
     <Content Include="Dashboard\Admin\Details.aspx" />
+    <Content Include="Dashboard\Admin\EditEmployee.aspx" />
     <Content Include="Dashboard\Admin\EditStudent.aspx" />
+    <Content Include="Dashboard\Admin\EmployeeDetails.aspx" />
+    <Content Include="Dashboard\Admin\Employees.aspx" />
     <Content Include="Dashboard\Admin\News.aspx" />
     <Content Include="Dashboard\Admin\Students.aspx" />
     <Content Include="Dashboard\Charts.aspx" />
@@ -784,6 +788,13 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Dashboard.resx</DependentUpon>
     </Compile>
+    <Compile Include="Dashboard\Admin\AddEmployee.aspx.cs">
+      <DependentUpon>AddEmployee.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\Admin\AddEmployee.aspx.designer.cs">
+      <DependentUpon>AddEmployee.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Dashboard\Admin\AddNews.aspx.cs">
       <DependentUpon>AddNews.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -812,12 +823,33 @@
     <Compile Include="Dashboard\Admin\Details.aspx.designer.cs">
       <DependentUpon>Details.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Dashboard\Admin\EditEmployee.aspx.cs">
+      <DependentUpon>EditEmployee.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\Admin\EditEmployee.aspx.designer.cs">
+      <DependentUpon>EditEmployee.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Dashboard\Admin\EditStudent.aspx.cs">
       <DependentUpon>EditStudent.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Dashboard\Admin\EditStudent.aspx.designer.cs">
       <DependentUpon>EditStudent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard\Admin\EmployeeDetails.aspx.cs">
+      <DependentUpon>EmployeeDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\Admin\EmployeeDetails.aspx.designer.cs">
+      <DependentUpon>EmployeeDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard\Admin\Employees.aspx.cs">
+      <DependentUpon>Employees.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\Admin\Employees.aspx.designer.cs">
+      <DependentUpon>Employees.aspx</DependentUpon>
     </Compile>
     <Compile Include="Dashboard\Admin\News.aspx.cs">
       <DependentUpon>News.aspx</DependentUpon>

@@ -35,9 +35,8 @@ namespace DataAccess.Repository
                 result = (from r in sd.vStudents
                           where r.NationalCode == nationalCode
                           select r).FirstOrDefault();
+                return result;
             }
-
-            return result;
         }
 
         public vStudent FindByIdentityCode(string identityCode)
@@ -51,9 +50,8 @@ namespace DataAccess.Repository
                 result = (from r in sd.vStudents
                           where r.IdentityCode == identityCode
                           select r).FirstOrDefault();
+                return result;
             }
-
-            return result;
         }
 
         //public DataTable FindByStudentCode(int Code)
@@ -130,8 +128,25 @@ namespace DataAccess.Repository
                     select r;
 
                 result = pl.ToList();
+                return OnlineTools.ToDataTable(result);
             }
-            return OnlineTools.ToDataTable(result);
+        }
+
+        public DataTable FindByFullName(string fullName)
+        {
+            List<vStudent> result = new List<vStudent>();
+
+            using (SchoolDBEntities sd = conn.GetContext())
+            {
+                IEnumerable<vStudent> pl =
+                    from r in sd.vStudents
+                    where r.FirstName.Contains(fullName) || r.LastName.Contains(fullName)
+
+                    select r;
+
+                result = pl.ToList();
+                return OnlineTools.ToDataTable(result);
+            }
         }
 
         public DataTable FindByFullName(string firstName, string lastName)
@@ -147,8 +162,8 @@ namespace DataAccess.Repository
                     select r;
 
                 result = pl.ToList();
+                return OnlineTools.ToDataTable(result);
             }
-            return OnlineTools.ToDataTable(result);
         }
 
         public DataTable FindByBirthDate(string date)
@@ -164,8 +179,8 @@ namespace DataAccess.Repository
                     select r;
 
                 result = pl.ToList();
+                return OnlineTools.ToDataTable(result);
             }
-            return OnlineTools.ToDataTable(result);
         }
 
         public DataTable FindByHand(bool hand)
@@ -181,8 +196,8 @@ namespace DataAccess.Repository
                     select r;
 
                 result = pl.ToList();
+                return OnlineTools.ToDataTable(result);
             }
-            return OnlineTools.ToDataTable(result);
         }
 
         public DataTable GetAllStudents()
@@ -198,8 +213,8 @@ namespace DataAccess.Repository
                     select r;
 
                 result = pl.ToList();
+                return OnlineTools.ToDataTable(result);
             }
-            return OnlineTools.ToDataTable(result);
         }
     }
 }
