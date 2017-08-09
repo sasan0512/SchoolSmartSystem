@@ -78,30 +78,30 @@ namespace WebPages.Dashboard.Admin
                 // from the Rows collection.
                 GridViewRow row = gvEmployees.Rows[index];
 
-                Response.Redirect("http://localhost:4911/Dashboard/Admin/EmployeeDetails.aspx?userid=" + row.Cells[0].Text);
-                //string id = row.Cells[0].Text;
-                //KarmandRepository rep = new KarmandRepository();
-                //if (id != "" || id != null)
-                //{
-                //    Karmand lo = rep.FindByEmployeeID(id);
-                //    tbxFirstName.InnerText = lo.FirstName;
-                //    tbxLastName.InnerText = lo.LastName;
-                //    tbxPersonalCode.InnerText = lo.PersonalCode;
-                //    tbxBirthDay.InnerText = string.Format("{0}/{1}/{2}", lo.BirthDate.Substring(0, 4), lo.BirthDate.Substring(4, 2), lo.BirthDate.Substring(6, 2));
-                //    tbxUserName.InnerText = lo.UserName;
-                //    tbxPassword.InnerText = lo.UserPass;
-                //    tbxFixTel.InnerText = lo.PhoneNumber;
-                //    tbxMobile.InnerText = lo.Mobile;
+                // Response.Redirect("http://localhost:4911/Dashboard/Admin/EmployeeDetails.aspx?userid=" + row.Cells[0].Text);
+                string id = row.Cells[0].Text;
+                KarmandRepository rep = new KarmandRepository();
+                if (id != "" || id != null)
+                {
+                    Karmand lo = rep.FindByEmployeeID(id);
+                    tbxFirstName.InnerText = lo.FirstName;
+                    tbxLastName.InnerText = lo.LastName;
+                    tbxPersonalCode.InnerText = lo.PersonalCode;
+                    tbxBirthDay.InnerText = string.Format("{0}/{1}/{2}", lo.BirthDate.Substring(0, 4), lo.BirthDate.Substring(4, 2), lo.BirthDate.Substring(6, 2));
+                    tbxUserName.InnerText = lo.UserName;
+                    tbxPassword.InnerText = lo.UserPass;
+                    tbxFixTel.InnerText = lo.PhoneNumber;
+                    tbxMobile.InnerText = lo.Mobile;
 
-                //    //tbxEmail.Value = lo.Email;
+                    //tbxEmail.Value = lo.Email;
 
-                //    System.Text.StringBuilder sb = new System.Text.StringBuilder();
-                //    sb.Append(@"<script type='text/javascript'>");
-                //    sb.Append("$('#modalShowDetails').modal('show');");
-                //    sb.Append(@"</script>");
-                //    ScriptManager.RegisterClientScriptBlock(this, this.GetType(),
-                //    "ModalScript", sb.ToString(), false);
-                //}
+                    System.Text.StringBuilder sb = new System.Text.StringBuilder();
+                    sb.Append(@"<script type='text/javascript'>");
+                    sb.Append("$('#modalShowDetails').modal('show');");
+                    sb.Append(@"</script>");
+                    ScriptManager.RegisterClientScriptBlock(this, this.GetType(),
+                    "ModalScript", sb.ToString(), false);
+                }
             }
             if (e.CommandName == "Delet")
             {

@@ -124,7 +124,7 @@
                         </li>
                         <li class="">
                             <a href="#" class="a-properties ">
-                                <asp:Literal runat="server" Text="<%$ Resources:Dashboard,homework%>" /><span class="fa-stack fa-lg pull-left">
+                                <asp:Literal runat="server" Text="<%$ Resources:Dashboard,EmployeesManage%>" /><span class="fa-stack fa-lg pull-left">
 
                                     <i class="fa fa-file-text-o fa-stack-1x " style="float: left;"></i></span>
                             </a>

@@ -119,3 +119,11 @@ body {
 
 .col-xs-12 {
 }
+
+.noprint {
+    display: none;
+}
+
+.print {
+    display: block;
+}

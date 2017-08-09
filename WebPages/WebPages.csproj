@@ -624,10 +624,8 @@
     <Content Include="Dashboard\Admin\ckeditor\skins\moono-lisa\images\refresh.png" />
     <Content Include="Dashboard\Admin\ckeditor\skins\moono-lisa\images\spinner.gif" />
     <Content Include="Dashboard\Admin\ckeditor\styles.js" />
-    <Content Include="Dashboard\Admin\Details.aspx" />
     <Content Include="Dashboard\Admin\EditEmployee.aspx" />
     <Content Include="Dashboard\Admin\EditStudent.aspx" />
-    <Content Include="Dashboard\Admin\EmployeeDetails.aspx" />
     <Content Include="Dashboard\Admin\Employees.aspx" />
     <Content Include="Dashboard\Admin\News.aspx" />
     <Content Include="Dashboard\Admin\Students.aspx" />
@@ -816,13 +814,6 @@
     <Compile Include="Dashboard\Admin\AdminPanel.Master.designer.cs">
       <DependentUpon>AdminPanel.Master</DependentUpon>
     </Compile>
-    <Compile Include="Dashboard\Admin\Details.aspx.cs">
-      <DependentUpon>Details.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Dashboard\Admin\Details.aspx.designer.cs">
-      <DependentUpon>Details.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Dashboard\Admin\EditEmployee.aspx.cs">
       <DependentUpon>EditEmployee.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -836,13 +827,6 @@
     </Compile>
     <Compile Include="Dashboard\Admin\EditStudent.aspx.designer.cs">
       <DependentUpon>EditStudent.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Dashboard\Admin\EmployeeDetails.aspx.cs">
-      <DependentUpon>EmployeeDetails.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Dashboard\Admin\EmployeeDetails.aspx.designer.cs">
-      <DependentUpon>EmployeeDetails.aspx</DependentUpon>
     </Compile>
     <Compile Include="Dashboard\Admin\Employees.aspx.cs">
       <DependentUpon>Employees.aspx</DependentUpon>
