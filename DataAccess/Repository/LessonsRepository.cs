@@ -10,25 +10,25 @@ using System.Configuration;
 
 namespace DataAccess.Repository
 {
-    public class KarmandRepository
+    public class LessonsRepository
     {
         private Connection conn;
 
-        public KarmandRepository()
+        public LessonsRepository()
         {
             conn = new Connection();
         }
 
-        public DataTable GetAllEmployees()
+        public DataTable GetAllLessons()
         {
-            List<Karmand> result = new List<Karmand>();
+            List<Lesson> result = new List<Lesson>();
 
             using (SchoolDBEntities sd = conn.GetContext())
             {
-                IEnumerable<Karmand> pl =
-                    from r in sd.Karmands
+                IEnumerable<Lesson> pl =
+                    from r in sd.Lessons
 
-                    orderby r.LastName
+                    orderby r.LessonID
                     select r;
 
                 result = pl.ToList();
@@ -36,93 +36,78 @@ namespace DataAccess.Repository
             }
         }
 
-        public void SaveEmployees(Karmand kramand)
+        public void SaveLesson(Lesson lesson)
         {
             using (SchoolDBEntities pb = conn.GetContext())
             {
-                if (kramand.EID > 0)
+                if (lesson.LessonID > 0)
                 {
                     //==== UPDATE ====
-                    pb.Karmands.Attach(kramand);
-                    pb.Entry(kramand).State = EntityState.Modified;
+                    pb.Lessons.Attach(lesson);
+                    pb.Entry(lesson).State = EntityState.Modified;
                 }
                 else
                 {
                     //==== INSERT ====
-                    pb.Karmands.Add(kramand);
+                    pb.Lessons.Add(lesson);
                 }
 
                 pb.SaveChanges();
             }
         }
 
-        public Karmand FindByEmployeeID(string id)
+        public DataTable FindByTitle(string Name)
+        {
+            List<Lesson> result = new List<Lesson>();
+
+            using (SchoolDBEntities sd = conn.GetContext())
+            {
+                IEnumerable<Lesson> pl =
+                    from r in sd.Lessons
+                    where r.LessonTitle.Contains(Name)
+
+                    select r;
+
+                result = pl.ToList();
+                return OnlineTools.ToDataTable(result);
+            }
+        }
+
+        public Lesson FindByLessonID(int id)
         {
             SchoolDBEntities db = new SchoolDBEntities();
 
-            return db.Karmands.Where(p => p.PersonalCode == id).Single();
+            return db.Lessons.Where(p => p.LessonID == id).Single();
         }
 
-        public DataTable FindByName(string Name)
-        {
-            List<Karmand> result = new List<Karmand>();
+        public void DeleteLesson(int EID)
 
-            using (SchoolDBEntities sd = conn.GetContext())
-            {
-                IEnumerable<Karmand> pl =
-                    from r in sd.Karmands
-                    where r.FirstName.Contains(Name)
-
-                    select r;
-
-                result = pl.ToList();
-                return OnlineTools.ToDataTable(result);
-            }
-        }
-
-        public DataTable FindByFullName(string firstName, string lastName)
-        {
-            List<Karmand> result = new List<Karmand>();
-
-            using (SchoolDBEntities sd = conn.GetContext())
-            {
-                IEnumerable<Karmand> pl =
-                    from r in sd.Karmands
-                    where r.FirstName.Contains(firstName) && r.LastName.Contains(lastName)
-
-                    select r;
-
-                result = pl.ToList();
-                return OnlineTools.ToDataTable(result);
-            }
-        }
-
-        public void DeleteEmployee(string EID)
         {
             SchoolDBEntities pb = conn.GetContext();
 
-            Karmand selectedEmployee = pb.Karmands.Where(p => p.PersonalCode == EID).Single();
+            Lesson selectedLesson = new Lesson();
+            selectedLesson = pb.Lessons.Where(p => p.LessonID == EID).Single();
 
-            if (selectedEmployee != null)
+            if (selectedLesson != null)
             {
-                pb.Karmands.Remove(selectedEmployee);
+                pb.Lessons.Remove(selectedLesson);
                 pb.SaveChanges();
             }
         }
 
-        public void DeleteCities(List<int> EIDs)
+        public void DeleteLessons(List<int> EIDs)
         {
             using (SchoolDBEntities pb = conn.GetContext())
             {
-                var selectedEmployee =
-                    from r in pb.Karmands
+                var selectedLessons =
+                    from r in pb.Lessons
                     join at in EIDs
-                    on r.EID equals at
+                    on r.LessonID equals at
                     select r;
 
-                foreach (var karmand in selectedEmployee)
+                foreach (var lesson in selectedLessons)
                 {
-                    pb.Karmands.Remove(karmand as Karmand);
+                    pb.Lessons.Remove(lesson as Lesson);
                 }
 
                 pb.SaveChanges();
@@ -140,7 +125,7 @@ namespace DataAccess.Repository
                 {
                     System.Data.Linq.DataContext db = new System.Data.Linq.DataContext(connectionStrings["ConnectionString"].ConnectionString);
 
-                    db.ExecuteCommand("TRUNCATE TABLE CityInfo");
+                    db.ExecuteCommand("TRUNCATE TABLE Lesson");
                 }
             }
         }

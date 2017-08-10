@@ -19,8 +19,7 @@ namespace WebPages.Dashboard.Admin
 
         protected void btnSabtEditProfile_Click(object sender, EventArgs e)
         {
-            //Student stuu = rep.FindByStudentCode(id);
-            //Student stu = new Student();
+            Student stu = new Student();
 
             //stu.StuID = stuu.StuID;
             //stu.SGarde = stuu.SGarde;

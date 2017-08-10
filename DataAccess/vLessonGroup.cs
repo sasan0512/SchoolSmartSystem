@@ -18,14 +18,8 @@ namespace DataAccess
         public string Class { get; set; }
         public string LessonTitle { get; set; }
         public Nullable<int> Unit { get; set; }
-        public int EID { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
-        public string BirthDate { get; set; }
-        public string Mobile { get; set; }
-        public string PhoneNumber { get; set; }
-        public string PesonalCode { get; set; }
-        public string Type { get; set; }
         public string GradeTitle { get; set; }
         public Nullable<int> Day { get; set; }
         public Nullable<int> Time { get; set; }

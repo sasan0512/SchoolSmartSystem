@@ -5,6 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 using Common;
 using System.Data;
+using System.Web.Configuration;
+using System.Configuration;
 
 namespace DataAccess.Repository
 {
@@ -214,6 +216,55 @@ namespace DataAccess.Repository
 
                 result = pl.ToList();
                 return OnlineTools.ToDataTable(result);
+            }
+        }
+
+        public void DeleteStudent(String stuCode)
+
+        {
+            SchoolDBEntities pb = conn.GetContext();
+
+            Student selectedStudent = new Student();
+            selectedStudent = pb.Students.Where(p => p.StudentCode == stuCode).Single();
+
+            if (selectedStudent != null)
+            {
+                pb.Students.Remove(selectedStudent);
+                pb.SaveChanges();
+            }
+        }
+
+        public void DeleteStudents(List<string> StudeCodes)
+        {
+            SchoolDBEntities pb = conn.GetContext();
+
+            var selectedStudents =
+            from r in pb.Students
+            join at in StudeCodes
+            on r.StudentCode equals at
+            select r;
+
+            foreach (var student in selectedStudents)
+            {
+                pb.Students.Remove(student as Student);
+            }
+
+            pb.SaveChanges();
+        }
+
+        public void DeleteAll()
+        {
+            using (SchoolDBEntities pb = conn.GetContext())
+            {
+                System.Configuration.ConnectionStringSettingsCollection connectionStrings =
+                    WebConfigurationManager.ConnectionStrings as ConnectionStringSettingsCollection;
+
+                if (connectionStrings.Count > 0)
+                {
+                    System.Data.Linq.DataContext db = new System.Data.Linq.DataContext(connectionStrings["ConnectionString"].ConnectionString);
+
+                    db.ExecuteCommand("TRUNCATE TABLE Students");
+                }
             }
         }
     }

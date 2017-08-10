@@ -61,6 +61,24 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to اضافه کردن درس.
+        /// </summary>
+        internal static string AddLesson {
+            get {
+                return ResourceManager.GetString("AddLesson", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to اضافه کردن گروه درسی.
+        /// </summary>
+        internal static string AddLessonGroup {
+            get {
+                return ResourceManager.GetString("AddLessonGroup", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to خبر جدید.
         /// </summary>
         internal static string AddNews {
@@ -151,6 +169,15 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to کلاس.
+        /// </summary>
+        internal static string Class {
+            get {
+                return ResourceManager.GetString("Class", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to کد ملی.
         /// </summary>
         internal static string codemelli {
@@ -169,11 +196,47 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to روز.
+        /// </summary>
+        internal static string Day {
+            get {
+                return ResourceManager.GetString("Day", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to حذف.
+        /// </summary>
+        internal static string Delete {
+            get {
+                return ResourceManager.GetString("Delete", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to جزییات.
+        /// </summary>
+        internal static string Details {
+            get {
+                return ResourceManager.GetString("Details", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to ویرایش.
         /// </summary>
         internal static string edite {
             get {
                 return ResourceManager.GetString("edite", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ویرایش گروه درسی.
+        /// </summary>
+        internal static string EditeLessonGroup {
+            get {
+                return ResourceManager.GetString("EditeLessonGroup", resourceCulture);
             }
         }
         
@@ -250,6 +313,15 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to پایه تحصیلی.
+        /// </summary>
+        internal static string GradeTitle {
+            get {
+                return ResourceManager.GetString("GradeTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to خانه                                           .
         /// </summary>
         internal static string Home {
@@ -322,6 +394,69 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to مشخصات درس.
+        /// </summary>
+        internal static string LessonDetails {
+            get {
+                return ResourceManager.GetString("LessonDetails", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to جزییات گروه درسی.
+        /// </summary>
+        internal static string LessonGroupDetails {
+            get {
+                return ResourceManager.GetString("LessonGroupDetails", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to لیست گروه های درسی.
+        /// </summary>
+        internal static string LessonGroups {
+            get {
+                return ResourceManager.GetString("LessonGroups", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to مدیریت گروه های درسی.
+        /// </summary>
+        internal static string LessonGroupsManage {
+            get {
+                return ResourceManager.GetString("LessonGroupsManage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to لیست دروس.
+        /// </summary>
+        internal static string Lessons {
+            get {
+                return ResourceManager.GetString("Lessons", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to مدیریت دروس.
+        /// </summary>
+        internal static string LessonsManage {
+            get {
+                return ResourceManager.GetString("LessonsManage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to نام درس.
+        /// </summary>
+        internal static string LessonTitle {
+            get {
+                return ResourceManager.GetString("LessonTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to مقطع تحصیلی.
         /// </summary>
         internal static string maghta {
@@ -354,6 +489,24 @@ namespace Resources {
         internal static string NewEmployee {
             get {
                 return ResourceManager.GetString("NewEmployee", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to درس جدید.
+        /// </summary>
+        internal static string NewLesson {
+            get {
+                return ResourceManager.GetString("NewLesson", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to گروه درسی جدید.
+        /// </summary>
+        internal static string NewLessonGroup {
+            get {
+                return ResourceManager.GetString("NewLessonGroup", resourceCulture);
             }
         }
         
@@ -547,6 +700,24 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to نام مدرس.
+        /// </summary>
+        internal static string TeacherFName {
+            get {
+                return ResourceManager.GetString("TeacherFName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to نام خانوادگی مدرس.
+        /// </summary>
+        internal static string TeacherLName {
+            get {
+                return ResourceManager.GetString("TeacherLName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to تلفن ثابت محل سکونت.
         /// </summary>
         internal static string telephon_sabet {
@@ -556,11 +727,29 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to ساعت.
+        /// </summary>
+        internal static string Time {
+            get {
+                return ResourceManager.GetString("Time", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to تکرار رمز عبور جدید.
         /// </summary>
         internal static string tn_password {
             get {
                 return ResourceManager.GetString("tn_password", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to واحد.
+        /// </summary>
+        internal static string Unit {
+            get {
+                return ResourceManager.GetString("Unit", resourceCulture);
             }
         }
         

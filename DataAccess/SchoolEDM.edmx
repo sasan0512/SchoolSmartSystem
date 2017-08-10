@@ -213,26 +213,6 @@
           <Property Name="Description" Type="nvarchar(max)" />
         </EntityType>
         <!--Errors Found During Generation:
-warning 6013: The table/view 'SchoolDB.dbo.vBarname' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
-        <EntityType Name="vBarname">
-          <Property Name="Class" Type="nvarchar" MaxLength="50" />
-          <Property Name="Day" Type="int" />
-          <Property Name="Time" Type="int" />
-          <Property Name="StudentCode" Type="nvarchar" MaxLength="10" />
-          <Property Name="LessonTitle" Type="nvarchar" MaxLength="50" />
-        </EntityType>-->
-        <!--Errors Found During Generation:
-warning 6013: The table/view 'SchoolDB.dbo.vbarnameHaftegi' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
-        <EntityType Name="vbarnameHaftegi">
-          <Property Name="FirstName" Type="nvarchar" MaxLength="50" />
-          <Property Name="LastName" Type="nvarchar" MaxLength="50" />
-          <Property Name="Class" Type="nvarchar" MaxLength="50" />
-          <Property Name="Day" Type="int" />
-          <Property Name="Time" Type="int" />
-          <Property Name="StudentCode" Type="bigint" />
-          <Property Name="LessonTitle" Type="nvarchar" MaxLength="50" />
-        </EntityType>-->
-        <!--Errors Found During Generation:
 warning 6002: The table/view 'SchoolDB.dbo.vJTamrin' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
         <EntityType Name="vJTamrin">
           <Key>
@@ -263,21 +243,13 @@ warning 6002: The table/view 'SchoolDB.dbo.vLessonGroups' does not have a primar
         <EntityType Name="vLessonGroups">
           <Key>
             <PropertyRef Name="LGID" />
-            <PropertyRef Name="EID" />
-            <PropertyRef Name="PesonalCode" />
           </Key>
           <Property Name="LGID" Type="int" Nullable="false" />
           <Property Name="Class" Type="nvarchar" MaxLength="50" />
           <Property Name="LessonTitle" Type="nvarchar" MaxLength="50" />
           <Property Name="Unit" Type="int" />
-          <Property Name="EID" Type="int" Nullable="false" />
           <Property Name="FirstName" Type="nvarchar" MaxLength="50" />
           <Property Name="LastName" Type="nvarchar" MaxLength="50" />
-          <Property Name="BirthDate" Type="nvarchar" MaxLength="8" />
-          <Property Name="Mobile" Type="nvarchar" MaxLength="15" />
-          <Property Name="PhoneNumber" Type="nvarchar" MaxLength="10" />
-          <Property Name="PesonalCode" Type="nvarchar" MaxLength="50" Nullable="false" />
-          <Property Name="Type" Type="nvarchar" MaxLength="50" />
           <Property Name="GradeTitle" Type="nvarchar" MaxLength="50" />
           <Property Name="Day" Type="int" />
           <Property Name="Time" Type="int" />
@@ -616,14 +588,8 @@ FROM [dbo].[vJTamrin] AS [vJTamrin]</DefiningQuery>
 [vLessonGroups].[Class] AS [Class], 
 [vLessonGroups].[LessonTitle] AS [LessonTitle], 
 [vLessonGroups].[Unit] AS [Unit], 
-[vLessonGroups].[EID] AS [EID], 
 [vLessonGroups].[FirstName] AS [FirstName], 
 [vLessonGroups].[LastName] AS [LastName], 
-[vLessonGroups].[BirthDate] AS [BirthDate], 
-[vLessonGroups].[Mobile] AS [Mobile], 
-[vLessonGroups].[PhoneNumber] AS [PhoneNumber], 
-[vLessonGroups].[PesonalCode] AS [PesonalCode], 
-[vLessonGroups].[Type] AS [Type], 
 [vLessonGroups].[GradeTitle] AS [GradeTitle], 
 [vLessonGroups].[Day] AS [Day], 
 [vLessonGroups].[Time] AS [Time]
@@ -1138,21 +1104,13 @@ FROM [dbo].[vTamrin] AS [vTamrin]</DefiningQuery>
         <EntityType Name="vLessonGroup">
           <Key>
             <PropertyRef Name="LGID" />
-            <PropertyRef Name="EID" />
-            <PropertyRef Name="PesonalCode" />
           </Key>
           <Property Name="LGID" Type="Int32" Nullable="false" />
           <Property Name="Class" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="LessonTitle" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="Unit" Type="Int32" />
-          <Property Name="EID" Type="Int32" Nullable="false" />
           <Property Name="FirstName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="LastName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="BirthDate" Type="String" MaxLength="8" FixedLength="false" Unicode="true" />
-          <Property Name="Mobile" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
-          <Property Name="PhoneNumber" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
-          <Property Name="PesonalCode" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="Type" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="GradeTitle" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="Day" Type="Int32" />
           <Property Name="Time" Type="Int32" />
@@ -1697,14 +1655,8 @@ FROM [dbo].[vTamrin] AS [vTamrin]</DefiningQuery>
                 <ScalarProperty Name="Time" ColumnName="Time" />
                 <ScalarProperty Name="Day" ColumnName="Day" />
                 <ScalarProperty Name="GradeTitle" ColumnName="GradeTitle" />
-                <ScalarProperty Name="Type" ColumnName="Type" />
-                <ScalarProperty Name="PesonalCode" ColumnName="PesonalCode" />
-                <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
-                <ScalarProperty Name="Mobile" ColumnName="Mobile" />
-                <ScalarProperty Name="BirthDate" ColumnName="BirthDate" />
                 <ScalarProperty Name="LastName" ColumnName="LastName" />
                 <ScalarProperty Name="FirstName" ColumnName="FirstName" />
-                <ScalarProperty Name="EID" ColumnName="EID" />
                 <ScalarProperty Name="Unit" ColumnName="Unit" />
                 <ScalarProperty Name="LessonTitle" ColumnName="LessonTitle" />
                 <ScalarProperty Name="Class" ColumnName="Class" />

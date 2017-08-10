@@ -10,44 +10,44 @@ using Common;
 
 namespace WebPages.Dashboard.Admin
 {
-    public partial class Employees : System.Web.UI.Page
+    public partial class LessonGroups : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!IsPostBack)
             {
-                LoadEmployees();
+                LoadLessonGroups();
             }
         }
 
-        public void LoadEmployees()
+        public void LoadLessonGroups()
         {
-            KarmandRepository sr = new KarmandRepository();
-            gvEmployees.DataSource = sr.GetAllEmployees();
+            vLessonGroupRepository sr = new vLessonGroupRepository();
+            gvEmployees.DataSource = sr.GetAllLessonGroups();
             gvEmployees.DataBind();
-            Karmand st = new Karmand();
+
             tbxSearch.Value = "";
         }
 
         protected void btnShowAll_Click(object sender, EventArgs e)
         {
-            LoadEmployees();
+            LoadLessonGroups();
         }
 
         protected void btnSearch_Click(object sender, EventArgs e)
         {
             if (tbxSearch.Value != "")
             {
-                KarmandRepository sr = new KarmandRepository();
+                vLessonGroupRepository sr = new vLessonGroupRepository();
 
-                gvEmployees.DataSource = sr.FindByFullName(tbxSearch.Value, tbxFamilySearch.Value);
+                gvEmployees.DataSource = sr.FindByClass(tbxSearch.Value);
                 gvEmployees.DataBind();
             }
         }
 
-        protected void btnAddEmployee_Click(object sender, EventArgs e)
+        protected void btnAddLessonGroup_Click(object sender, EventArgs e)
         {
-            Response.Redirect("http://localhost:4911/Dashboard/Admin/AddEmployee.aspx");
+            Response.Redirect("http://localhost:4911/Dashboard/Admin/AddLessonGroup.aspx");
         }
 
         protected void gvEmployees_RowDataBound(object sender, GridViewRowEventArgs e)
@@ -66,7 +66,7 @@ namespace WebPages.Dashboard.Admin
                 // from the Rows collection.
                 GridViewRow row = gvEmployees.Rows[index];
 
-                Response.Redirect("http://localhost:4911/Dashboard/Admin/EditEmployee.aspx?userid=" + row.Cells[0].Text);
+                Response.Redirect("http://localhost:4911/Dashboard/Admin/EditEmployee.aspx?LGID=" + row.Cells[0].Text);
             }
             if (e.CommandName == "Details")
             {
@@ -78,20 +78,20 @@ namespace WebPages.Dashboard.Admin
                 // from the Rows collection.
                 GridViewRow row = gvEmployees.Rows[index];
 
-                // Response.Redirect("http://localhost:4911/Dashboard/Admin/EmployeeDetails.aspx?userid=" + row.Cells[0].Text);
+                // Response.Redirect("http://localhost:4911/Dashboard/Admin/EmployeeDetails.aspx?LGID=" + row.Cells[0].Text);
                 string id = row.Cells[0].Text;
-                KarmandRepository rep = new KarmandRepository();
+                vLessonGroupRepository rep = new vLessonGroupRepository();
                 if (id != "" || id != null)
                 {
-                    Karmand lo = rep.FindByEmployeeID(id);
-                    tbxFirstName.InnerText = lo.FirstName;
-                    tbxLastName.InnerText = lo.LastName;
-                    tbxPersonalCode.InnerText = lo.PersonalCode;
-                    tbxBirthDay.InnerText = string.Format("{0}/{1}/{2}", lo.BirthDate.Substring(0, 4), lo.BirthDate.Substring(4, 2), lo.BirthDate.Substring(6, 2));
-                    tbxUserName.InnerText = lo.UserName;
-                    tbxPassword.InnerText = lo.UserPass;
-                    tbxFixTel.InnerText = lo.PhoneNumber;
-                    tbxMobile.InnerText = lo.Mobile;
+                    vLessonGroup lo = rep.FindByLGID(id.ToInt());
+                    tbxID.InnerText = lo.LGID.ToString();
+                    tbxClass.InnerText = lo.Class;
+                    tbxLessonTitle.InnerText = lo.LessonTitle;
+                    tbxTeacherFName.InnerText = lo.FirstName;
+                    tbxTeacherLName.InnerText = lo.LastName;
+                    tbxUnit.InnerText = lo.Unit.ToString();
+                    tbxDay.InnerText = lo.Day.ToString();
+                    tbxTime.InnerText = lo.Time.ToString();
 
                     //tbxEmail.Value = lo.Email;
 
@@ -113,16 +113,16 @@ namespace WebPages.Dashboard.Admin
                 // from the Rows collection.
                 GridViewRow row = gvEmployees.Rows[index];
 
-                // KarmandRepository rep = new KarmandRepository();
+                vLessonGroupRepository rep = new vLessonGroupRepository();
 
-                //rep.DeleteEmployee(row.Cells[0].Text);
-                SchoolDBEntities db = new SchoolDBEntities();
-                Karmand k = new Karmand();
-                string a = row.Cells[0].Text;
-                k = db.Karmands.Where(p => p.PersonalCode == a).Single();
-                db.Karmands.Remove(k);
-                db.SaveChanges();
-                LoadEmployees();
+                rep.DeleteLessonGroup(row.Cells[0].Text.ToInt());
+                //SchoolDBEntities db = new SchoolDBEntities();
+                //LessonGroup k = new LessonGroup();
+                //int a = row.Cells[0].Text;
+                //k = db.LessonGroups.Where(p => p.LGID == a).Single();
+                //db.Karmands.Remove(k);
+                //db.SaveChanges();
+                //LoadLessonGroups();
             }
         }
 

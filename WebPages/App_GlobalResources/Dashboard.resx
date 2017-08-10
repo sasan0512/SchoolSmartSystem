@@ -297,4 +297,67 @@
   <data name="StudentDetails" xml:space="preserve">
     <value>مشخصات دانش آموز</value>
   </data>
+  <data name="AddLesson" xml:space="preserve">
+    <value>اضافه کردن درس</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>حذف</value>
+  </data>
+  <data name="Details" xml:space="preserve">
+    <value>جزییات</value>
+  </data>
+  <data name="LessonDetails" xml:space="preserve">
+    <value>مشخصات درس</value>
+  </data>
+  <data name="Lessons" xml:space="preserve">
+    <value>لیست دروس</value>
+  </data>
+  <data name="LessonsManage" xml:space="preserve">
+    <value>مدیریت دروس</value>
+  </data>
+  <data name="LessonTitle" xml:space="preserve">
+    <value>نام درس</value>
+  </data>
+  <data name="NewLesson" xml:space="preserve">
+    <value>درس جدید</value>
+  </data>
+  <data name="Unit" xml:space="preserve">
+    <value>واحد</value>
+  </data>
+  <data name="AddLessonGroup" xml:space="preserve">
+    <value>اضافه کردن گروه درسی</value>
+  </data>
+  <data name="Class" xml:space="preserve">
+    <value>کلاس</value>
+  </data>
+  <data name="Day" xml:space="preserve">
+    <value>روز</value>
+  </data>
+  <data name="GradeTitle" xml:space="preserve">
+    <value>پایه تحصیلی</value>
+  </data>
+  <data name="LessonGroups" xml:space="preserve">
+    <value>لیست گروه های درسی</value>
+  </data>
+  <data name="LessonGroupDetails" xml:space="preserve">
+    <value>جزییات گروه درسی</value>
+  </data>
+  <data name="LessonGroupsManage" xml:space="preserve">
+    <value>مدیریت گروه های درسی</value>
+  </data>
+  <data name="NewLessonGroup" xml:space="preserve">
+    <value>گروه درسی جدید</value>
+  </data>
+  <data name="TeacherFName" xml:space="preserve">
+    <value>نام مدرس</value>
+  </data>
+  <data name="TeacherLName" xml:space="preserve">
+    <value>نام خانوادگی مدرس</value>
+  </data>
+  <data name="Time" xml:space="preserve">
+    <value>ساعت</value>
+  </data>
+  <data name="EditeLessonGroup" xml:space="preserve">
+    <value>ویرایش گروه درسی</value>
+  </data>
 </root>
