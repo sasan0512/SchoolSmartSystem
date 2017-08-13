@@ -23,8 +23,8 @@ namespace WebPages.Dashboard.Admin
         public void LoadLessonGroups()
         {
             vLessonGroupRepository sr = new vLessonGroupRepository();
-            gvEmployees.DataSource = sr.GetAllLessonGroups();
-            gvEmployees.DataBind();
+            gvLessonGroups.DataSource = sr.GetAllLessonGroups();
+            gvLessonGroups.DataBind();
 
             tbxSearch.Value = "";
         }
@@ -40,14 +40,13 @@ namespace WebPages.Dashboard.Admin
             {
                 vLessonGroupRepository sr = new vLessonGroupRepository();
 
-                gvEmployees.DataSource = sr.FindByClass(tbxSearch.Value);
-                gvEmployees.DataBind();
+                gvLessonGroups.DataSource = sr.FindByClass(tbxSearch.Value);
+                gvLessonGroups.DataBind();
             }
         }
 
         protected void btnAddLessonGroup_Click(object sender, EventArgs e)
         {
-            Response.Redirect("http://localhost:4911/Dashboard/Admin/AddLessonGroup.aspx");
         }
 
         protected void gvEmployees_RowDataBound(object sender, GridViewRowEventArgs e)
@@ -64,9 +63,9 @@ namespace WebPages.Dashboard.Admin
 
                 // Retrieve the row that contains the button
                 // from the Rows collection.
-                GridViewRow row = gvEmployees.Rows[index];
+                GridViewRow row = gvLessonGroups.Rows[index];
 
-                Response.Redirect("http://localhost:4911/Dashboard/Admin/EditEmployee.aspx?LGID=" + row.Cells[0].Text);
+                Response.Redirect("http://localhost:4911/Dashboard/Admin/EditLessonGroup.aspx?LGID=" + row.Cells[0].Text);
             }
             if (e.CommandName == "Details")
             {
@@ -76,9 +75,8 @@ namespace WebPages.Dashboard.Admin
 
                 // Retrieve the row that contains the button
                 // from the Rows collection.
-                GridViewRow row = gvEmployees.Rows[index];
+                GridViewRow row = gvLessonGroups.Rows[index];
 
-                // Response.Redirect("http://localhost:4911/Dashboard/Admin/EmployeeDetails.aspx?LGID=" + row.Cells[0].Text);
                 string id = row.Cells[0].Text;
                 vLessonGroupRepository rep = new vLessonGroupRepository();
                 if (id != "" || id != null)
@@ -111,7 +109,7 @@ namespace WebPages.Dashboard.Admin
 
                 // Retrieve the row that contains the button
                 // from the Rows collection.
-                GridViewRow row = gvEmployees.Rows[index];
+                GridViewRow row = gvLessonGroups.Rows[index];
 
                 vLessonGroupRepository rep = new vLessonGroupRepository();
 
@@ -131,6 +129,10 @@ namespace WebPages.Dashboard.Admin
         }
 
         protected void gvEmployees_RowEditing(object sender, GridViewEditEventArgs e)
+        {
+        }
+
+        protected void Grade_SelectedIndexChanged(object sender, EventArgs e)
         {
         }
     }

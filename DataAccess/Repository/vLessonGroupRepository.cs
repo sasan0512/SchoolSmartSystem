@@ -34,41 +34,58 @@ namespace DataAccess.Repository
 
             return result;
         }
+
+        public List<string> GetlistOfAllYears()
+        {
+            List<string> result = new List<string>();
+
+            using (SchoolDBEntities sd = conn.GetContext())
+            {
+                IEnumerable<string> pl =
+                    from r in sd.vLessonGroups
+
+                    orderby r.Year
+                    select r.Year;
+
+                pl.Distinct();
+                result = pl.ToList();
+                return result;
+            }
+        }
+
         public DataTable GetAllLessonGroups()
         {
             List<vLessonGroup> result = new List<vLessonGroup>();
 
-            using (SchoolDBEntities sd = conn.GetContext())
-            {
-                IEnumerable<vLessonGroup> pl =
-                    from r in sd.vLessonGroups
+            SchoolDBEntities sd = conn.GetContext();
 
-                    orderby r.LGID
-                    select r;
+            IEnumerable<vLessonGroup> pl =
+                from r in sd.vLessonGroups
 
-                result = pl.ToList();
-                return OnlineTools.ToDataTable(result);
-            }
+                orderby r.LGID
+                select r;
+
+            result = pl.ToList();
+            return OnlineTools.ToDataTable(result);
         }
 
-        public void SaveLessonGroups(LessonGroup lessonGroup)
+        public Boolean SaveLessonGroups(LessonGroup lessonGroup)
         {
-            using (SchoolDBEntities pb = conn.GetContext())
-            {
-                if (lessonGroup.LGID > 0)
-                {
-                    //==== UPDATE ====
-                    pb.LessonGroups.Attach(lessonGroup);
-                    pb.Entry(lessonGroup).State = EntityState.Modified;
-                }
-                else
-                {
-                    //==== INSERT ====
-                    pb.LessonGroups.Add(lessonGroup);
-                }
+            SchoolDBEntities pb = conn.GetContext();
 
-                pb.SaveChanges();
+            if (lessonGroup.LGID > 0)
+            {
+                //==== UPDATE ====
+                pb.LessonGroups.Attach(lessonGroup);
+                pb.Entry(lessonGroup).State = EntityState.Modified;
             }
+            else
+            {
+                //==== INSERT ====
+                pb.LessonGroups.Add(lessonGroup);
+            }
+
+            return Convert.ToBoolean(pb.SaveChanges());
         }
 
         public vLessonGroup FindByLGID(int id)
@@ -78,21 +95,34 @@ namespace DataAccess.Repository
             return db.vLessonGroups.Where(p => p.LGID == id).Single();
         }
 
-        public DataTable FindByName(string Name)
+        public LessonGroup FindFromLgByLGID(int id)
         {
-            List<Karmand> result = new List<Karmand>();
+            SchoolDBEntities db = new SchoolDBEntities();
 
-            using (SchoolDBEntities sd = conn.GetContext())
-            {
-                IEnumerable<Karmand> pl =
-                    from r in sd.Karmands
-                    where r.FirstName.Contains(Name)
+            return db.LessonGroups.Where(p => p.LGID == id).Single();
+        }
 
-                    select r;
+        public vLessonGroup FindByYear(string year)
+        {
+            SchoolDBEntities db = new SchoolDBEntities();
 
-                result = pl.ToList();
-                return OnlineTools.ToDataTable(result);
-            }
+            return db.vLessonGroups.Where(p => p.Year == year).Single();
+        }
+
+        public DataTable FindByYeartest(string year)
+        {
+            List<vLessonGroup> result = new List<vLessonGroup>();
+
+            SchoolDBEntities sd = conn.GetContext();
+
+            IEnumerable<vLessonGroup> pl =
+                from r in sd.vLessonGroups
+                where r.Year.Contains(year)
+
+                select r;
+
+            result = pl.ToList();
+            return OnlineTools.ToDataTable(result);
         }
 
         public DataTable FindByFullName(string firstName, string lastName)
@@ -141,7 +171,6 @@ namespace DataAccess.Repository
             }
 
             pb.SaveChanges();
-
         }
 
         public void DeleteAll()

@@ -61,6 +61,15 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to افزودن برنامه هفتگی.
+        /// </summary>
+        internal static string AddClasses {
+            get {
+                return ResourceManager.GetString("AddClasses", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to اضافه کردن درس.
         /// </summary>
         internal static string AddLesson {
@@ -223,6 +232,15 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to مدیریت کلاس ها.
+        /// </summary>
+        internal static string editClasses {
+            get {
+                return ResourceManager.GetString("editClasses", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to ویرایش.
         /// </summary>
         internal static string edite {
@@ -309,6 +327,15 @@ namespace Resources {
         internal static string father_name {
             get {
                 return ResourceManager.GetString("father_name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to رشته تحصیلی.
+        /// </summary>
+        internal static string Field {
+            get {
+                return ResourceManager.GetString("Field", resourceCulture);
             }
         }
         
@@ -777,6 +804,15 @@ namespace Resources {
         internal static string warning {
             get {
                 return ResourceManager.GetString("warning", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to سال تحصیلی.
+        /// </summary>
+        internal static string Year {
+            get {
+                return ResourceManager.GetString("Year", resourceCulture);
             }
         }
         

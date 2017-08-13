@@ -23,5 +23,6 @@ namespace DataAccess
         public string GradeTitle { get; set; }
         public Nullable<int> Day { get; set; }
         public Nullable<int> Time { get; set; }
+        public string Year { get; set; }
     }
 }

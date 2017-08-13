@@ -35,8 +35,9 @@
                 </label>
             </div>
             <div class="col-md-4 col-xs-12 text-righ">
-                <asp:Button ID="btnAddLessonGroup" name="btnAdd" class="btn btn-primary" runat="server"
-                    Text="<%$ Resources:Dashboard,AddLessonGroup%>" OnClick="btnAddLessonGroup_Click" />
+                <a href="AddLessonGroup.aspx" class="btn btn-primary">
+                    <asp:Literal runat="server" Text="<%$ Resources:Dashboard,AddLessonGroup%>" />
+                </a>
             </div>
             <div class="col-md-4 col-xs-12 text-righ">
                 <div class="input-group">
@@ -54,13 +55,14 @@
             </div>
         </div>
         <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+
         <div id="ContentPlaceHolder1_upGrid">
 
             <div>
                 <asp:UpdatePanel ID="UpdatePanel1" runat="server">
                     <ContentTemplate>
-                        <asp:GridView ID="gvEmployees" runat="server" BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" CellPadding="4" ForeColor="Black" GridLines="Horizontal" AutoGenerateColumns="False"
-                            CssClass="dirRight table" HorizontalAlign="Center" OnRowDataBound="gvEmployees_RowDataBound" AllowCustomPaging="True" AllowPaging="True" OnSelectedIndexChanged="gvEmployees_SelectedIndexChanged" OnRowEditing="gvEmployees_RowEditing" OnRowCommand="gvEmployees_RowCommand">
+                        <asp:GridView ID="gvLessonGroups" runat="server" BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" CellPadding="4" ForeColor="Black" GridLines="Horizontal" AutoGenerateColumns="False"
+                            CssClass="dirRight table" HorizontalAlign="Center" OnRowDataBound="gvEmployees_RowDataBound" AllowPaging="True" OnSelectedIndexChanged="gvEmployees_SelectedIndexChanged" OnRowEditing="gvEmployees_RowEditing" OnRowCommand="gvEmployees_RowCommand" EnableSortingAndPagingCallbacks="True" PageSize="5">
                             <Columns>
                                 <asp:BoundField DataField="LGID" HeaderText="<%$ Resources:Dashboard,ID%>" />
                                 <asp:BoundField DataField="Class" HeaderText="<%$ Resources:Dashboard,Class%>" />
@@ -71,6 +73,7 @@
                                 <asp:BoundField DataField="GradeTitle" HeaderText="<%$ Resources:Dashboard,GradeTitle%>" />
                                 <asp:BoundField DataField="Day" HeaderText="<%$ Resources:Dashboard,Day%>" />
                                 <asp:BoundField DataField="Time" HeaderText="<%$ Resources:Dashboard,Time%>" />
+                                <asp:BoundField DataField="Year" HeaderText="<%$ Resources:Dashboard,Year%>" />
                                 <asp:TemplateField ItemStyle-VerticalAlign="Middle" ItemStyle-HorizontalAlign="Justify">
                                     <ItemTemplate>
                                         <asp:Button ID="Edid" runat="server"
@@ -247,6 +250,19 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div class="form-group">
+                                    <div class="row">
+                                        <div class="col-xs-12 col-sm-4 col-sm-push-8 text-right">
+                                            <span id="ContentPlaceHolder1_lbl_Year" class="control-label formLabel" style="font-size: 100%; font-weight: bold;">
+                                                <asp:Literal runat="server" Text="<%$ Resources:Dashboard,Year%>" />
+                                            </span>
+                                        </div>
+
+                                        <div class="col-xs-12 col-sm-8 col-sm-pull-4 text-right">
+                                            <span id="tbxYear" runat="server" class="form-control control-label formLabel"></span>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <div class="modal-footer">
                                 <div class="row">
@@ -275,21 +291,5 @@
             </div>
         </div>
     </div>
-    <script>
-        function my() {
-
-            var mywindow = window.open('', 'PRINT', 'height=400,width=600');
-
-            mywindow.document.write(document.getElementById("divtoprint").innerHTML);
-
-            mywindow.document.close(); // necessary for IE >= 10
-            mywindow.focus(); // necessary for IE >= 10*/
-
-            mywindow.print();
-            mywindow.close();
-
-            return true;
-
-        }
-    </script>
+    <script src="../JavaScript/JavaScript.js"></script>
 </asp:Content>

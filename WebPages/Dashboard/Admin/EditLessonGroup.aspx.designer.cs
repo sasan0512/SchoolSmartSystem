@@ -13,93 +13,93 @@ namespace WebPages.Dashboard.Admin {
     public partial class EditeLessonGroup {
         
         /// <summary>
-        /// lblLGID control.
+        /// ddGrade control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText lblLGID;
+        protected global::System.Web.UI.WebControls.DropDownList ddGrade;
         
         /// <summary>
-        /// tbxClass control.
+        /// Field control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText tbxClass;
+        protected global::System.Web.UI.WebControls.DropDownList Field;
         
         /// <summary>
-        /// tbxLessonTitle control.
+        /// Class control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText tbxLessonTitle;
+        protected global::System.Web.UI.WebControls.DropDownList Class;
         
         /// <summary>
-        /// tbxUnit control.
+        /// Day control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText tbxUnit;
+        protected global::System.Web.UI.WebControls.DropDownList Day;
         
         /// <summary>
-        /// tbxTeacherFName control.
+        /// Time control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText tbxTeacherFName;
+        protected global::System.Web.UI.WebControls.DropDownList Time;
         
         /// <summary>
-        /// tbxTeacherLName control.
+        /// LessonDrpDList control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText tbxTeacherLName;
+        protected global::System.Web.UI.WebControls.DropDownList LessonDrpDList;
         
         /// <summary>
-        /// tbxGradeTitle control.
+        /// Teacher control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText tbxGradeTitle;
+        protected global::System.Web.UI.WebControls.DropDownList Teacher;
         
         /// <summary>
-        /// tbxDay control.
+        /// Year control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText tbxDay;
+        protected global::System.Web.UI.WebControls.DropDownList Year;
         
         /// <summary>
-        /// tbxTime control.
+        /// tbxYear control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText tbxTime;
+        protected global::System.Web.UI.WebControls.TextBox tbxYear;
         
         /// <summary>
-        /// btnSabtEditProfile control.
+        /// btnEditLessonGroup control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnSabtEditProfile;
+        protected global::System.Web.UI.HtmlControls.HtmlButton btnEditLessonGroup;
     }
 }

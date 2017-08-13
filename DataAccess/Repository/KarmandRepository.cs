@@ -36,6 +36,23 @@ namespace DataAccess.Repository
             }
         }
 
+        public List<Karmand> GetListOfAllEmployees()
+        {
+            List<Karmand> result = new List<Karmand>();
+
+            using (SchoolDBEntities sd = conn.GetContext())
+            {
+                IEnumerable<Karmand> pl =
+                    from r in sd.Karmands
+
+                    orderby r.LastName
+                    select r;
+
+                result = pl.ToList();
+                return result;
+            }
+        }
+
         public void SaveEmployees(Karmand kramand)
         {
             using (SchoolDBEntities pb = conn.GetContext())

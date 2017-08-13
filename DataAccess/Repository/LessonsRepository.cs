@@ -36,6 +36,23 @@ namespace DataAccess.Repository
             }
         }
 
+        public List<Lesson> GetListOfAllLessons()
+        {
+            List<Lesson> result = new List<Lesson>();
+
+            using (SchoolDBEntities sd = conn.GetContext())
+            {
+                IEnumerable<Lesson> pl =
+                    from r in sd.Lessons
+
+                    orderby r.LessonID
+                    select r;
+
+                result = pl.ToList();
+                return result;
+            }
+        }
+
         public void SaveLesson(Lesson lesson)
         {
             using (SchoolDBEntities pb = conn.GetContext())

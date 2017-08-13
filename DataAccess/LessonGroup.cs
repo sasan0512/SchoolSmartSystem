@@ -27,6 +27,8 @@ namespace DataAccess
         public Nullable<int> GradeID { get; set; }
         public Nullable<int> Day { get; set; }
         public Nullable<int> Time { get; set; }
+        public Nullable<int> FieldID { get; set; }
+        public string Year { get; set; }
     
         public virtual Grade Grade { get; set; }
         public virtual Karmand Karmand { get; set; }

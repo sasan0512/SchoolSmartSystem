@@ -127,3 +127,29 @@ body {
 .print {
     display: block;
 }
+
+.marginRightForDrpDList {
+    margin-right: 10px !important;
+}
+
+.notvisibile {
+    display: none;
+}
+
+table tr td input {
+    float: left;
+    width: 50px;
+    margin-right: 10px;
+}
+
+div select {
+    direction: rtl;
+}
+
+dropdownlist {
+    direction: rtl;
+}
+
+.AddLesson {
+    height: 45px !important;
+}

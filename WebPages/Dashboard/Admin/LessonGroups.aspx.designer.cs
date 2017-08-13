@@ -13,15 +13,6 @@ namespace WebPages.Dashboard.Admin {
     public partial class LessonGroups {
         
         /// <summary>
-        /// btnAddLessonGroup control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnAddLessonGroup;
-        
-        /// <summary>
         /// btnSearch control.
         /// </summary>
         /// <remarks>
@@ -58,13 +49,13 @@ namespace WebPages.Dashboard.Admin {
         protected global::System.Web.UI.UpdatePanel UpdatePanel1;
         
         /// <summary>
-        /// gvEmployees control.
+        /// gvLessonGroups control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView gvEmployees;
+        protected global::System.Web.UI.WebControls.GridView gvLessonGroups;
         
         /// <summary>
         /// UpdatePanel2 control.
@@ -155,6 +146,15 @@ namespace WebPages.Dashboard.Admin {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl tbxTime;
+        
+        /// <summary>
+        /// tbxYear control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl tbxYear;
         
         /// <summary>
         /// btnViewAll control.

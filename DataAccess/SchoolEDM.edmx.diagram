@@ -10,7 +10,6 @@
         <EntityTypeShape EntityType="SchoolDBModel.Grade" Width="1.5" PointX="0.75" PointY="11.625" />
         <EntityTypeShape EntityType="SchoolDBModel.JavabeTamrin" Width="1.5" PointX="16.5" PointY="14.375" />
         <EntityTypeShape EntityType="SchoolDBModel.Karmand" Width="1.5" PointX="0.75" PointY="6.625" />
-        <EntityTypeShape EntityType="SchoolDBModel.LessonGroup" Width="1.5" PointX="3" PointY="10.875" />
         <EntityTypeShape EntityType="SchoolDBModel.Lesson" Width="1.5" PointX="0.75" PointY="14.75" />
         <EntityTypeShape EntityType="SchoolDBModel.Mother" Width="1.5" PointX="3.75" PointY="6.125" />
         <EntityTypeShape EntityType="SchoolDBModel.Nomarat" Width="1.5" PointX="13.5" PointY="9.75" />
@@ -28,20 +27,21 @@
         <EntityTypeShape EntityType="SchoolDBModel.vStudent" Width="1.5" PointX="10.75" PointY="0.75" />
         <EntityTypeShape EntityType="SchoolDBModel.vTamrin" Width="1.5" PointX="12.75" PointY="0.75" />
         <AssociationConnector Association="SchoolDBModel.FK_Students_Fathers" />
-        <AssociationConnector Association="SchoolDBModel.FK_LessonGroups_Grades" />
         <AssociationConnector Association="SchoolDBModel.FK_Students_Grades" />
         <AssociationConnector Association="SchoolDBModel.FK_JavabeTamrin_Ozviat" />
         <AssociationConnector Association="SchoolDBModel.FK_JavabeTamrin_Tamarin" />
-        <AssociationConnector Association="SchoolDBModel.FK_LessonGroups_Karmand" />
-        <AssociationConnector Association="SchoolDBModel.FK_LessonGroups_Lessons" />
-        <AssociationConnector Association="SchoolDBModel.FK_Ozviat_LessonGroups" />
-        <AssociationConnector Association="SchoolDBModel.FK_Tamarin_LessonGroups" />
         <AssociationConnector Association="SchoolDBModel.FK_Students_Mothers" />
         <AssociationConnector Association="SchoolDBModel.FK_Nomarat_Ozviat" />
         <AssociationConnector Association="SchoolDBModel.FK_Ozviat_Students" />
         <AssociationConnector Association="SchoolDBModel.FK_Presence_Ozviat" />
         <AssociationConnector Association="SchoolDBModel.FK_PaymentHistory_Students" />
         <AssociationConnector Association="SchoolDBModel.FK_StuRegister_Students" />
+        <EntityTypeShape EntityType="SchoolDBModel.LessonGroup" Width="1.5" PointX="3" PointY="10.875" />
+        <AssociationConnector Association="SchoolDBModel.FK_LessonGroups_Grades" />
+        <AssociationConnector Association="SchoolDBModel.FK_LessonGroups_Karmand" />
+        <AssociationConnector Association="SchoolDBModel.FK_LessonGroups_Lessons" />
+        <AssociationConnector Association="SchoolDBModel.FK_Ozviat_LessonGroups" />
+        <AssociationConnector Association="SchoolDBModel.FK_Tamarin_LessonGroups" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

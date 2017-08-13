@@ -54,7 +54,51 @@
             </div>
         </div>
         <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+        <div id="ContentPlaceHolder1_upGrid">
+            <div>
+                <asp:UpdatePanel ID="UpdatePanel1" runat="server">
+                    <ContentTemplate>
 
+                        <asp:GridView ID="gvStudents" runat="server" BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" CellPadding="4" ForeColor="Black" GridLines="Horizontal" AutoGenerateColumns="False" CssClass="dirRight table" HorizontalAlign="Center" OnRowDataBound="gvStudents_RowDataBound" AllowCustomPaging="True" AllowPaging="True" OnSelectedIndexChanged="gvStudents_SelectedIndexChanged" OnRowEditing="gvStudents_RowEditing" OnRowCommand="gvStudents_RowCommand">
+                            <Columns>
+                                <asp:BoundField DataField="studentCode" HeaderText="<%$ Resources:Dashboard,shomare_daneshamozi%>" />
+                                <asp:BoundField DataField="FirstName" HeaderText="<%$ Resources:Dashboard,name%>" />
+                                <asp:BoundField DataField="LastName" HeaderText="<%$ Resources:Dashboard,family%>" />
+                                <asp:BoundField DataField="FathersFirstName" HeaderText="<%$ Resources:Dashboard,father_name%>" />
+
+                                <asp:TemplateField>
+                                    <ItemTemplate>
+                                        <asp:Button ID="Edid" runat="server"
+                                            CommandName="Edit"
+                                            CommandArgument="<%# ((GridViewRow) Container).RowIndex %>"
+                                            Text="<%$ Resources:Dashboard,edite%>" />
+
+                                        <asp:Button ID="Details" runat="server"
+                                            CommandName="Details"
+                                            CommandArgument="<%# ((GridViewRow) Container).RowIndex %>"
+                                            Text="<%$ Resources:Dashboard,Details%>" />
+
+                                        <asp:Button OnClientClick="if(!confirm('ایا مطمئن هستید؟')) return false;" ID="Delet" runat="server"
+                                            CommandName="Delet"
+                                            CommandArgument="<%# ((GridViewRow) Container).RowIndex %>"
+                                            Text="<%$ Resources:Dashboard,delete%>" />
+                                    </ItemTemplate>
+                                </asp:TemplateField>
+                            </Columns>
+
+                            <FooterStyle BackColor="#CCCC99" ForeColor="Black" />
+                            <HeaderStyle BackColor="#333333" Font-Bold="True" ForeColor="White" HorizontalAlign="Center" VerticalAlign="Middle" />
+                            <PagerStyle BackColor="White" ForeColor="Black" HorizontalAlign="Right" />
+                            <SelectedRowStyle BackColor="#CC3333" Font-Bold="True" ForeColor="White" />
+                            <SortedAscendingCellStyle BackColor="#F7F7F7" />
+                            <SortedAscendingHeaderStyle BackColor="#4B4B4B" />
+                            <SortedDescendingCellStyle BackColor="#E5E5E5" />
+                            <SortedDescendingHeaderStyle BackColor="#242121" />
+                        </asp:GridView>
+                    </ContentTemplate>
+                </asp:UpdatePanel>
+            </div>
+        </div>
         <div class="row">
             <div class="col-md-5 col-md-push-7 col-xs-6 col-xs-push-6">
                 <button type="button" id="btnViewAll" class="btn btn-auto-h btn-info goRight" runat="server" style="margin-right: 5px;" onserverclick="btnShowAll_Click">
@@ -66,50 +110,7 @@
             </div>
         </div>
     </div>
-    <div id="ContentPlaceHolder1_upGrid">
-        <div>
-            <asp:UpdatePanel ID="UpdatePanel1" runat="server">
-                <ContentTemplate>
 
-                    <asp:GridView ID="gvStudents" runat="server" BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" CellPadding="4" ForeColor="Black" GridLines="Horizontal" AutoGenerateColumns="False" CssClass="dirRight table" HorizontalAlign="Center" OnRowDataBound="gvStudents_RowDataBound" AllowCustomPaging="True" AllowPaging="True" OnSelectedIndexChanged="gvStudents_SelectedIndexChanged" OnRowEditing="gvStudents_RowEditing" OnRowCommand="gvStudents_RowCommand">
-                        <Columns>
-                            <asp:BoundField DataField="studentCode" HeaderText="<%$ Resources:Dashboard,shomare_daneshamozi%>" />
-                            <asp:BoundField DataField="FirstName" HeaderText="<%$ Resources:Dashboard,name%>" />
-                            <asp:BoundField DataField="LastName" HeaderText="<%$ Resources:Dashboard,family%>" />
-                            <asp:BoundField DataField="FathersFirstName" HeaderText="<%$ Resources:Dashboard,father_name%>" />
-                            <asp:TemplateField ItemStyle-VerticalAlign="Middle" ItemStyle-HorizontalAlign="Justify">
-                                <ItemTemplate>
-                                    <asp:Button ID="Edid" runat="server"
-                                        CommandName="Edit"
-                                        CommandArgument="<%# ((GridViewRow) Container).RowIndex %>"
-                                        Text="<%$ Resources:Dashboard,edite%>" />
-
-                                    <asp:Button ID="Details" runat="server"
-                                        CommandName="Details"
-                                        CommandArgument="<%# ((GridViewRow) Container).RowIndex %>"
-                                        Text="<%$ Resources:Dashboard,Details%>" />
-
-                                    <asp:Button OnClientClick="if(!confirm('ایا مطمئن هستید؟')) return false;" ID="Delet" runat="server"
-                                        CommandName="Delet"
-                                        CommandArgument="<%# ((GridViewRow) Container).RowIndex %>"
-                                        Text="<%$ Resources:Dashboard,delete%>" />
-                                </ItemTemplate>
-                            </asp:TemplateField>
-                        </Columns>
-
-                        <FooterStyle BackColor="#CCCC99" ForeColor="Black" />
-                        <HeaderStyle BackColor="#333333" Font-Bold="True" ForeColor="White" HorizontalAlign="Center" VerticalAlign="Middle" />
-                        <PagerStyle BackColor="White" ForeColor="Black" HorizontalAlign="Right" />
-                        <SelectedRowStyle BackColor="#CC3333" Font-Bold="True" ForeColor="White" />
-                        <SortedAscendingCellStyle BackColor="#F7F7F7" />
-                        <SortedAscendingHeaderStyle BackColor="#4B4B4B" />
-                        <SortedDescendingCellStyle BackColor="#E5E5E5" />
-                        <SortedDescendingHeaderStyle BackColor="#242121" />
-                    </asp:GridView>
-                </ContentTemplate>
-            </asp:UpdatePanel>
-        </div>
-    </div>
     <asp:UpdatePanel ID="UpdatePanel2" runat="server">
         <ContentTemplate>
 

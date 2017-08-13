@@ -360,4 +360,16 @@
   <data name="EditeLessonGroup" xml:space="preserve">
     <value>ویرایش گروه درسی</value>
   </data>
+  <data name="editClasses" xml:space="preserve">
+    <value>مدیریت کلاس ها</value>
+  </data>
+  <data name="AddClasses" xml:space="preserve">
+    <value>افزودن برنامه هفتگی</value>
+  </data>
+  <data name="Year" xml:space="preserve">
+    <value>سال تحصیلی</value>
+  </data>
+  <data name="Field" xml:space="preserve">
+    <value>رشته تحصیلی</value>
+  </data>
 </root>
