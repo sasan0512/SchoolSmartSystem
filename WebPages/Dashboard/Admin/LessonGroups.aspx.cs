@@ -25,7 +25,39 @@ namespace WebPages.Dashboard.Admin
             vLessonGroupRepository sr = new vLessonGroupRepository();
             gvLessonGroups.DataSource = sr.GetAllLessonGroups();
             gvLessonGroups.DataBind();
+            foreach (GridViewRow row in gvLessonGroups.Rows)
+            {
+                switch (row.Cells[7].Text)
+                {
+                    case "1":
+                        row.Cells[7].Text = "شنبه";
+                        break;
 
+                    case "2":
+                        row.Cells[7].Text = "یک شنبه";
+                        break;
+
+                    case "3":
+                        row.Cells[7].Text = "دوشنبه";
+                        break;
+
+                    case "4":
+                        row.Cells[7].Text = "سه شنبه";
+                        break;
+
+                    case "5":
+                        row.Cells[7].Text = "چهارشنبه";
+                        break;
+
+                    case "6":
+                        row.Cells[7].Text = "پنج شنبه";
+                        break;
+
+                    case "7":
+                        row.Cells[7].Text = "جمعه";
+                        break;
+                }
+            }
             tbxSearch.Value = "";
         }
 

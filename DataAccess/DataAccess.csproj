@@ -92,6 +92,7 @@
     <Compile Include="Repository\Connection.cs" />
     <Compile Include="Repository\KarmandRepository.cs" />
     <Compile Include="Repository\LessonsRepository.cs" />
+    <Compile Include="Repository\OzviatRepository.cs" />
     <Compile Include="Repository\vJTamrinRepository.cs" />
     <Compile Include="Repository\vLessonGroupRepository.cs" />
     <Compile Include="Repository\vNomratRepository.cs" />
