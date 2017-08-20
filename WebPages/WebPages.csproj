@@ -633,7 +633,7 @@
     <Content Include="Dashboard\Admin\LessonGroups.aspx" />
     <Content Include="Dashboard\Admin\Lessons.aspx" />
     <Content Include="Dashboard\Admin\News.aspx" />
-    <Content Include="Dashboard\Admin\Ozviat.aspx" />
+    <Content Include="Dashboard\Admin\ClassMembers.aspx" />
     <Content Include="Dashboard\Admin\Students.aspx" />
     <Content Include="Dashboard\Charts.aspx" />
     <Content Include="Dashboard\ClassScores.aspx" />
@@ -883,12 +883,12 @@
     <Compile Include="Dashboard\Admin\News.aspx.designer.cs">
       <DependentUpon>News.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Dashboard\Admin\Ozviat.aspx.cs">
-      <DependentUpon>Ozviat.aspx</DependentUpon>
+    <Compile Include="Dashboard\Admin\ClassMembers.aspx.cs">
+      <DependentUpon>ClassMembers.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Dashboard\Admin\Ozviat.aspx.designer.cs">
-      <DependentUpon>Ozviat.aspx</DependentUpon>
+    <Compile Include="Dashboard\Admin\ClassMembers.aspx.designer.cs">
+      <DependentUpon>ClassMembers.aspx</DependentUpon>
     </Compile>
     <Compile Include="Dashboard\Admin\Students.aspx.cs">
       <DependentUpon>Students.aspx</DependentUpon>

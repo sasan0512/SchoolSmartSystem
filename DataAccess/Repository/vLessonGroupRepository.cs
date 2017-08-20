@@ -109,6 +109,19 @@ namespace DataAccess.Repository
             return db.vLessonGroups.Where(p => p.Year == year).Single();
         }
 
+        public List<string> GetTeacher(int lgid)
+        {
+            SchoolDBEntities sd = conn.GetContext();
+
+            IEnumerable<string> pl =
+                from r in sd.LessonGroups
+                where r.LGID == lgid
+
+                select r.TeacherCode;
+
+            return pl.ToList();
+        }
+
         public DataTable FindByYeartest(string year)
         {
             List<vLessonGroup> result = new List<vLessonGroup>();

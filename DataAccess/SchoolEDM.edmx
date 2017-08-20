@@ -274,6 +274,20 @@ warning 6002: The table/view 'SchoolDB.dbo.vNomarat' does not have a primary key
           <Property Name="NomrePercent" Type="int" />
         </EntityType>
         <!--Errors Found During Generation:
+warning 6002: The table/view 'SchoolDB.dbo.vOzviat' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="vOzviat">
+          <Key>
+            <PropertyRef Name="OzviatID" />
+            <PropertyRef Name="StudentCode" />
+          </Key>
+          <Property Name="OzviatID" Type="int" Nullable="false" />
+          <Property Name="LGID" Type="int" />
+          <Property Name="StudentCode" Type="nvarchar" MaxLength="10" Nullable="false" />
+          <Property Name="FirstName" Type="nvarchar" MaxLength="50" />
+          <Property Name="LastName" Type="nvarchar" MaxLength="50" />
+          <Property Name="FatherName" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <!--Errors Found During Generation:
 warning 6002: The table/view 'SchoolDB.dbo.vPresence' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
         <EntityType Name="vPresence">
           <Key>
@@ -612,6 +626,16 @@ FROM [dbo].[vLessonGroups] AS [vLessonGroups]</DefiningQuery>
 [vNomarat].[NomrePercent] AS [NomrePercent]
 FROM [dbo].[vNomarat] AS [vNomarat]</DefiningQuery>
           </EntitySet>
+          <EntitySet Name="vOzviat" EntityType="Self.vOzviat" store:Type="Views" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+[vOzviat].[OzviatID] AS [OzviatID], 
+[vOzviat].[LGID] AS [LGID], 
+[vOzviat].[StudentCode] AS [StudentCode], 
+[vOzviat].[FirstName] AS [FirstName], 
+[vOzviat].[LastName] AS [LastName], 
+[vOzviat].[FatherName] AS [FatherName]
+FROM [dbo].[vOzviat] AS [vOzviat]</DefiningQuery>
+          </EntitySet>
           <EntitySet Name="vPresence" EntityType="Self.vPresence" store:Type="Views" store:Schema="dbo">
             <DefiningQuery>SELECT 
 [vPresence].[StudentCode] AS [StudentCode], 
@@ -843,6 +867,7 @@ FROM [dbo].[vTamrin] AS [vTamrin]</DefiningQuery>
             <End Role="LessonGroup" EntitySet="LessonGroups" />
             <End Role="Tamarin" EntitySet="Tamarins" />
           </AssociationSet>
+          <EntitySet Name="vOzviats" EntityType="SchoolDBModel.vOzviat" />
         </EntityContainer>
         <EntityType Name="AnjomanOlya">
           <Key>
@@ -1405,6 +1430,18 @@ FROM [dbo].[vTamrin] AS [vTamrin]</DefiningQuery>
             </Dependent>
           </ReferentialConstraint>
         </Association>
+        <EntityType Name="vOzviat">
+          <Key>
+            <PropertyRef Name="OzviatID" />
+            <PropertyRef Name="StudentCode" />
+          </Key>
+          <Property Name="OzviatID" Type="Int32" Nullable="false" />
+          <Property Name="LGID" Type="Int32" />
+          <Property Name="StudentCode" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="FirstName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="LastName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="FatherName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -1775,6 +1812,18 @@ FROM [dbo].[vTamrin] AS [vTamrin]</DefiningQuery>
                 <ScalarProperty Name="LessonID" ColumnName="LessonID" />
                 <ScalarProperty Name="Class" ColumnName="Class" />
                 <ScalarProperty Name="LGID" ColumnName="LGID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="vOzviats">
+            <EntityTypeMapping TypeName="SchoolDBModel.vOzviat">
+              <MappingFragment StoreEntitySet="vOzviat">
+                <ScalarProperty Name="FatherName" ColumnName="FatherName" />
+                <ScalarProperty Name="LastName" ColumnName="LastName" />
+                <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+                <ScalarProperty Name="StudentCode" ColumnName="StudentCode" />
+                <ScalarProperty Name="LGID" ColumnName="LGID" />
+                <ScalarProperty Name="OzviatID" ColumnName="OzviatID" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

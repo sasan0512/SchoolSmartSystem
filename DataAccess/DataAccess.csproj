@@ -135,6 +135,9 @@
     <Compile Include="vNomarat.cs">
       <DependentUpon>SchoolEDM.tt</DependentUpon>
     </Compile>
+    <Compile Include="vOzviat.cs">
+      <DependentUpon>SchoolEDM.tt</DependentUpon>
+    </Compile>
     <Compile Include="vPresence.cs">
       <DependentUpon>SchoolEDM.tt</DependentUpon>
     </Compile>

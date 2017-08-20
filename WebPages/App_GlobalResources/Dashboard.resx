@@ -372,4 +372,10 @@
   <data name="Field" xml:space="preserve">
     <value>رشته تحصیلی</value>
   </data>
+  <data name="StuCount" xml:space="preserve">
+    <value>تعداد دانش آموزان</value>
+  </data>
+  <data name="Add" xml:space="preserve">
+    <value>افزودن</value>
+  </data>
 </root>

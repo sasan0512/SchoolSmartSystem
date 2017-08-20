@@ -61,6 +61,15 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to افزودن.
+        /// </summary>
+        internal static string Add {
+            get {
+                return ResourceManager.GetString("Add", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to افزودن برنامه هفتگی.
         /// </summary>
         internal static string AddClasses {
@@ -696,6 +705,15 @@ namespace Resources {
         internal static string ShowAll {
             get {
                 return ResourceManager.GetString("ShowAll", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to تعداد دانش آموزان.
+        /// </summary>
+        internal static string StuCount {
+            get {
+                return ResourceManager.GetString("StuCount", resourceCulture);
             }
         }
         
