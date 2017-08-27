@@ -156,7 +156,6 @@ input[type="reset"],
 input[type="submit"] {
     -webkit-appearance: button;
     cursor: pointer;
-    height: 37px;
 }
 
     button[disabled],
@@ -4873,6 +4872,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     .input-group-btn:first-child > .btn,
     .input-group-btn:first-child > .btn-group {
         margin-right: -1px;
+        width: 30px;
     }
 
     .input-group-btn:last-child > .btn,

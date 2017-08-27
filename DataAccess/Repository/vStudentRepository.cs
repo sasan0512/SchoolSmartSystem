@@ -219,6 +219,26 @@ namespace DataAccess.Repository
             }
         }
 
+        public DataTable GetAllStudentsExcept(List<string> stuCodes)
+        {
+            List<string> result1 = new List<string>();
+
+            using (SchoolDBEntities sd = conn.GetContext())
+            {
+                IEnumerable<string> pl =
+                    from r in sd.vStudents
+                    select r.StudentCode;
+
+                result1 = pl.ToList().Except(stuCodes).ToList();
+
+                List<vStudent> result2 = new List<vStudent>();
+
+                var query = sd.vStudents.Where(v => result1.Contains(v.StudentCode));
+                result2 = query.ToList();
+
+                return OnlineTools.ToDataTable(result2);
+            }
+        }
         public void DeleteStudent(String stuCode)
 
         {
@@ -267,5 +287,28 @@ namespace DataAccess.Repository
                 }
             }
         }
+
+        public DataTable searchStudents(string searchtxt)
+        {
+            List<vStudent> lvs = new List<vStudent>();
+
+            using (SchoolDBEntities sd = conn.GetContext())
+            {
+                var pl =
+                    from r in sd.vStudents
+                    where r.StudentCode.Contains(searchtxt)
+                    || r.FirstName.Contains(searchtxt)
+                    || r.LastName.Contains(searchtxt)
+                    || r.FathersFirstName.Contains(searchtxt)
+                    || r.GradeTitle.Contains(searchtxt)
+                    select r;
+
+                lvs = pl.ToList();
+            }
+
+            return OnlineTools.ToDataTable(lvs);
+        }
+
+
     }
 }
