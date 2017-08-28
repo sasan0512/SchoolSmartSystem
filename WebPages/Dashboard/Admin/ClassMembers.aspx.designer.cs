@@ -13,6 +13,15 @@ namespace WebPages.Dashboard.Admin {
     public partial class Ozviat {
         
         /// <summary>
+        /// ScriptManager1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.ScriptManager ScriptManager1;
+        
+        /// <summary>
         /// lblStudentsCount control.
         /// </summary>
         /// <remarks>
@@ -47,6 +56,15 @@ namespace WebPages.Dashboard.Admin {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl lblTeacherName;
+        
+        /// <summary>
+        /// UpdatePanel1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.UpdatePanel UpdatePanel1;
         
         /// <summary>
         /// gvSelectedStudents control.
@@ -85,6 +103,15 @@ namespace WebPages.Dashboard.Admin {
         protected global::System.Web.UI.WebControls.Button ContentPlaceHolder1_btnAddStudent;
         
         /// <summary>
+        /// updp1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.UpdatePanel updp1;
+        
+        /// <summary>
         /// gvStudents control.
         /// </summary>
         /// <remarks>
@@ -92,6 +119,15 @@ namespace WebPages.Dashboard.Admin {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.GridView gvStudents;
+        
+        /// <summary>
+        /// UpdatePanel2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.UpdatePanel UpdatePanel2;
         
         /// <summary>
         /// tbxStudentCode control.

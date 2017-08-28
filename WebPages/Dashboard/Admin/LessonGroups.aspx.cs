@@ -68,13 +68,11 @@ namespace WebPages.Dashboard.Admin
 
         protected void btnSearch_Click(object sender, EventArgs e)
         {
-            if (tbxSearch.Value != "")
-            {
-                vLessonGroupRepository sr = new vLessonGroupRepository();
 
-                gvLessonGroups.DataSource = sr.FindByClass(tbxSearch.Value);
-                gvLessonGroups.DataBind();
-            }
+            vLessonGroupRepository sr = new vLessonGroupRepository();
+
+            gvLessonGroups.DataSource = sr.FindByClass(tbxSearch.Value);
+            gvLessonGroups.DataBind();
         }
 
         protected void btnAddLessonGroup_Click(object sender, EventArgs e)
@@ -165,7 +163,7 @@ namespace WebPages.Dashboard.Admin
                 //k = db.LessonGroups.Where(p => p.LGID == a).Single();
                 //db.Karmands.Remove(k);
                 //db.SaveChanges();
-                //LoadLessonGroups();
+                LoadLessonGroups();
             }
         }
 

@@ -159,7 +159,7 @@ namespace DataAccess.Repository
         {
             SchoolDBEntities pb = conn.GetContext();
 
-            LessonGroup selectedLesson = pb.LessonGroups.Where(p => p.LGID == EID).Single();
+            LessonGroup selectedLesson = pb.LessonGroups.Where(p => p.LGID == EID).SingleOrDefault();
 
             if (selectedLesson != null)
             {

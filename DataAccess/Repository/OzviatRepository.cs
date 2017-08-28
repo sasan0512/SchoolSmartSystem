@@ -68,7 +68,7 @@ namespace DataAccess.Repository
         {
             SchoolDBEntities pb = conn.GetContext();
 
-            Ozviat selectedOzviat = pb.Ozviats.Where(p => p.OzviatID == oID).Single();
+            Ozviat selectedOzviat = pb.Ozviats.Where(p => p.OzviatID == oID).SingleOrDefault();
 
             if (selectedOzviat != null)
             {

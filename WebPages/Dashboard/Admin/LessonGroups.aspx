@@ -60,6 +60,9 @@
 
             <div>
                 <asp:UpdatePanel ID="UpdatePanel1" runat="server">
+                    <%--                    <Triggers>
+                        <asp:AsyncPostBackTrigger ControlID="Delet" EventName="Click" />
+                    </Triggers>--%>
                     <ContentTemplate>
                         <asp:GridView ID="gvLessonGroups" runat="server" BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" CellPadding="4" ForeColor="Black" GridLines="Horizontal" AutoGenerateColumns="False"
                             CssClass="dirRight table" HorizontalAlign="Center" OnRowDataBound="gvEmployees_RowDataBound" AllowPaging="True" OnSelectedIndexChanged="gvEmployees_SelectedIndexChanged" OnRowEditing="gvEmployees_RowEditing" OnRowCommand="gvEmployees_RowCommand" EnableSortingAndPagingCallbacks="True" PageSize="5">
@@ -90,10 +93,10 @@
                                             CommandName="Delet"
                                             CommandArgument="<%# ((GridViewRow) Container).RowIndex %>"
                                             Text="<%$ Resources:Dashboard,Delete%>" />
-                                        <asp:Button ID="Students" runat="server"
+                                        <asp:Button ID="btnStudents" runat="server"
                                             CommandName="Students"
                                             CommandArgument="<%# ((GridViewRow) Container).RowIndex %>"
-                                            Text="<%$ Resources:Dashboard,Students%>" />
+                                            Text="<%$ Resources:Dashboard,Students%>" Width="120px" />
                                     </ItemTemplate>
 
                                     <ItemStyle HorizontalAlign="Justify" VerticalAlign="Middle"></ItemStyle>

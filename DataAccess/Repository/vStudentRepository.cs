@@ -288,9 +288,9 @@ namespace DataAccess.Repository
             }
         }
 
-        public DataTable searchStudents(string searchtxt)
+        public DataTable searchStudents(string searchtxt, List<string> stuCodes)
         {
-            List<vStudent> lvs = new List<vStudent>();
+            List<string> los = new List<string>();
 
             using (SchoolDBEntities sd = conn.GetContext())
             {
@@ -301,12 +301,19 @@ namespace DataAccess.Repository
                     || r.LastName.Contains(searchtxt)
                     || r.FathersFirstName.Contains(searchtxt)
                     || r.GradeTitle.Contains(searchtxt)
-                    select r;
+                    select r.StudentCode;
 
-                lvs = pl.ToList();
+                los = pl.ToList().Except(stuCodes).ToList();
             }
 
-            return OnlineTools.ToDataTable(lvs);
+            using (SchoolDBEntities sd = conn.GetContext())
+            {
+                List<vStudent> lvs = new List<vStudent>();
+                var query = sd.vStudents.Where(v => los.Contains(v.StudentCode));
+                lvs = query.ToList();
+
+                return OnlineTools.ToDataTable(lvs);
+            }
         }
 
 

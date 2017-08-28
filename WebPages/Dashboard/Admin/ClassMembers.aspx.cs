@@ -79,10 +79,10 @@ namespace WebPages.Dashboard.Admin
 
                 // Retrieve the row that contains the button
                 // from the Rows collection.
-                GridViewRow row = gvStudents.Rows[index];
+                GridViewRow row = gvSelectedStudents.Rows[index];
 
                 //Response.Redirect("http://localhost:4911/Dashboard/Admin/Details.aspx?LGID=" + row.Cells[0].Text);
-                string id = row.Cells[0].Text;
+                string id = row.Cells[1].Text;
 
                 if (id != "" || id != null)
                 {
@@ -98,7 +98,6 @@ namespace WebPages.Dashboard.Admin
                     tbxMobile.InnerText = lo.MobileNumber;
                     tbxAddress.InnerText = lo.Address;
 
-                    //tbxEmail.Value = lo.Email;
                     System.Text.StringBuilder sb = new System.Text.StringBuilder();
                     sb.Append(@"<script type='text/javascript'>");
                     sb.Append("$('#modalShowDetails').modal('show');");
@@ -287,7 +286,13 @@ namespace WebPages.Dashboard.Admin
         }
         protected void func_search(object sender, EventArgs e)
         {
-            gvStudents.DataSource = rep.searchStudents(tbxSearch.Text);
+            List<string> stuCodes = new List<string>();
+            foreach (GridViewRow row in gvSelectedStudents.Rows)
+            {
+                stuCodes.Add(row.Cells[1].Text);
+
+            }
+            gvStudents.DataSource = rep.searchStudents(tbxSearch.Text, stuCodes);
             gvStudents.DataBind();
         }
     }
