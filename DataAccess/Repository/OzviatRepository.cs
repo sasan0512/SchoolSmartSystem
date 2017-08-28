@@ -20,7 +20,7 @@ namespace DataAccess.Repository
             conn = new Connection();
         }
 
-        public List<string> FindByLGID(int lgid)
+        public List<string> FindByLFindStudentCodeByLGIGID(int lgid)
         {
             List<string> result = new List<string>();
 
