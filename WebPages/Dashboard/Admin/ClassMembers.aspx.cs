@@ -43,7 +43,7 @@ namespace WebPages.Dashboard.Admin
         {
             string id = Request.QueryString["LGID"];
             List<vOzviat> vs = new List<vOzviat>();
-            List<string> St = or.FindByLFindStudentCodeByLGIGID(id.ToInt());
+            List<string> St = or.FindStudentCodeByLGID(id.ToInt());
             for (int i = 0; i < St.Count; i++)
             {
                 vs.Add(or.FindStudentinOzviat(St[i]));
